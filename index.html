@@ -1,123 +1,55 @@
 <!DOCTYPE html>
-<html lang="ar">
-<head>
-<meta charset="UTF-8">
-<title>فابريكا كورس</title>
-<link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
-<h1>مرحبًا بك في فابريكا كورس</h1>
-<script src="../js/script.js"></script>
-</body>
-</html>
-<!DOCTYPE html><html lang="en">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fabrica Course - Faraj Abdallah</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom right, #1E2A78, #6A1B9A);
-      color: white;
-    }
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 2rem;
-    }
-    header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
-    header img {
-      border-radius: 1rem;
-      max-width: 200px;
-    }
-    h1, h2 {
-      margin: 0.5rem 0;
-    }
-    .projects {
-      margin-top: 3rem;
-    }
-    .project-list {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
-    .card {
-      background-color: #263159;
-      border-radius: 1rem;
-      padding: 1rem;
-      width: 30%;
-      min-width: 200px;
-      text-align: center;
-    }
-    .card img {
-      width: 80px;
-      margin-bottom: 1rem;
-    }
-    .card button {
-      margin-top: 1rem;
-      background-color: #7E57C2;
-      color: white;
-      border: none;
-      padding: 0.5rem 1rem;
-      border-radius: 0.5rem;
-      cursor: pointer;
-    }
-    .whatsapp-button {
-      margin-top: 2rem;
-      background-color: #25D366;
-      color: white;
-      padding: 1rem 2rem;
-      font-size: 1.2rem;
-      border: none;
-      border-radius: 1rem;
-      cursor: pointer;
-      display: block;
-      text-align: center;
-      text-decoration: none;
-      width: fit-content;
-    }
-  </style>
+  <title>فابريكا - كتاب البرمجة للمبتدئين</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div>
-        <h1>Faraj Abdallah</h1>
-        <p>Web Developer</p>
-      </div>
-      <img src="your-photo.jpg" alt="Faraj Abdallah" />
-    </header><section class="projects">
-  <h2>Projects</h2>
-  <div class="project-list">
-    <div class="card">
-      <img src="quran-icon.png" alt="Quran Kareem" />
-      <h3>Quran Kareem</h3>
-      <a href="https://fabrica-courses.netlify.app" target="_blank">
-        <button>View</button>
-      </a>
-    </div>
-    <div class="card">
-      <img src="placeholder.png" alt="Placeholder Project" />
-      <h3>Placeholder Project</h3>
-      <button>View</button>
-    </div>
-    <div class="card">
-      <img src="placeholder.png" alt="Placeholder Project" />
-      <h3>Placeholder Project</h3>
-      <button>View</button>
-    </div>
-  </div>
-</section>
 
-<a class="whatsapp-button" href="https://wa.me/201091838789" target="_blank">اشترك في الكورس عبر واتساب</a>
+  <header class="header">
+    <img src="assets/images/logo.png" alt="شعار الموقع" class="logo" />
+    <nav>
+      <ul>
+        <li><a href="#">الرئيسية</a></li>
+        <li><a href="#book">الكتاب</a></li>
+        <li><a href="#contact">تواصل معنا</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  </div>
+  <main class="main-content">
+
+    <section class="intro">
+      <img src="assets/images/user.jpg" alt="صورة المطور" class="user-image" />
+      <h1>مرحبًا بك في فابريكا</h1>
+      <p>ابدأ رحلتك في تعلم البرمجة مع كتاب شامل ومبسط للمبتدئين، بلغة عربية سهلة، وأمثلة عملية واضحة.</p>
+      <a href="#book" class="cta-button">عرض الكتاب</a>
+    </section>
+
+    <section class="book-section" id="book">
+      <h2>📘 عن الكتاب</h2>
+      <img src="assets/images/book-cover.jpg" alt="غلاف الكتاب" class="book-cover" />
+      <p>الكتاب يحتوي على:
+        <ul>
+          <li>أساسيات HTML وCSS وJavaScript</li>
+          <li>مشروع عملي تطبيقي</li>
+          <li>شرح مبسط خطوة بخطوة</li>
+        </ul>
+      </p>
+      <a href="https://wa.me/201091838789" class="cta-button">اشتري الكتاب الآن - 2 دولار فقط</a>
+    </section>
+
+  </main>
+
+  <footer id="contact" class="footer">
+    <p>للتواصل: 
+      <a href="mailto:farajbdallh891@gmail.com">البريد الإلكتروني</a> | 
+      <a href="tel:01091838789">01091838789</a> |
+      <a href="https://wa.me/201091838789">واتساب</a>
+    </p>
+  </footer>
+
 </body>
 </html>
