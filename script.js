@@ -1,2 +1,3 @@
-// Main JavaScript file
-console.log('Welcome to Fabrica Course');
+// سكريبت جاهز لو حبيت تضيف وظائف لاحقًا مثل النقر أو التحريك
+
+console.log("مرحبًا بك في Fabrica Course!");
