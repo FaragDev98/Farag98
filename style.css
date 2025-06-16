@@ -1,2 +1,81 @@
-/* Main CSS file */
-body { font-family: 'Cairo', sans-serif; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cairo", sans-serif;
+}
+
+body {
+  background: linear-gradient(to left, #4f46e5, #9333ea);
+  color: white;
+  line-height: 1.6;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.main-content {
+  padding: 2rem;
+  text-align: center;
+}
+
+.intro .user-image {
+  width: 120px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 2px solid white;
+}
+
+h1, h2 {
+  margin-bottom: 1rem;
+}
+
+.cta-button {
+  background-color: #fff;
+  color: #4f46e5;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 1rem;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #e0e0ff;
+}
+
+.book-cover {
+  width: 200px;
+  margin: 1rem 0;
+  border-radius: 8px;
+}
+
+footer {
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  font-size: 0.9rem;
+}
