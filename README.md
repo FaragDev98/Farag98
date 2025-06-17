@@ -1,34 +1,32 @@
 # Fabrica Course
 
-مرحبًا بك في مستودع "فابريكا" لعرض وبيع كتاب البرمجة للمبتدئين.
+A simple, stylish website to showcase and sell a beginner-friendly programming book written in Arabic.
 
-## 📘 عن الكتاب
+## 🔗 Live Website
 
-كتاب شامل لتعليم أساسيات:
-- HTML
-- CSS
-- JavaScript
+[Visit Site](https://fabrica-courses.netlify.app/)
 
-باللغة العربية، وبأسلوب سهل ومبسط، مناسب تمامًا للمبتدئين.
+## 📘 About the Book
 
-## 🔗 رابط الشراء
+A PDF book that helps Arabic speakers learn programming basics step-by-step.
 
-يمكنك شراء الكتاب من خلال التواصل معنا:
+- Format: PDF
+- Language: Arabic
+- Price: $2 USD (~100 EGP)
 
-- [واتساب](https://wa.me/201091838789)
-- البريد الإلكتروني: Farajbdallh891@gmail.com
-- رقم الهاتف: 01091838789
+## 📂 Pages
 
-السعر: **2 دولار فقط** (أو ما يعادلها بالجنيه المصري)
+- Home (`index.html`)
+- Portfolio (`portfolio.html`)
+- Blog Articles (`المقالات.html`)
+- Contact (`contact.html`)
 
-## 📂 محتويات المستودع
+## 📞 Contact
 
-- `index.html`: الصفحة الرئيسية
-- `style.css`: التنسيق العام
-- `script.js`: جاهز لإضافة أي وظائف لاحقًا
-- مجلد `assets/images`: يحتوي على الصور المستخدمة
-- `README.md`: هذا الملف
+- WhatsApp: +201091838789  
+- Facebook: [Your Page]  
+- Email: Farajbdallh891@gmail.com
 
 ---
 
-💡 **تطوير بواسطة:** فراج عبدالله – مطور واجهات ومواقع عربية
+© Farag Abdallah. All rights reserved.
