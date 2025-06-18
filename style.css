@@ -1,47 +1,61 @@
+/* style.css */
+
 body {
-  font-family: Arial, sans-serif;
-  background: linear-gradient(to right, #2c3e50, #8e44ad);
-  color: white;
+  font-family: 'Tajawal', sans-serif;
+  background: linear-gradient(to bottom right, #2b2e4a, #4b6cb7);
+  color: #ffffff;
   margin: 0;
   padding: 0;
+  direction: rtl;
+  text-align: right;
+}
+
+header, footer {
+  background-color: #1f1f2e;
+  padding: 20px;
   text-align: center;
 }
 
-.logo {
-  width: 80px;
-  margin-top: 10px;
+h1, h2 {
+  color: #f9ca24;
 }
 
-.profile-img {
-  width: 120px;
-  border-radius: 50%;
-  margin: 20px 0;
+a {
+  color: #00cec9;
+  text-decoration: none;
 }
 
-.book-cover {
-  width: 180px;
-  margin: 10px auto;
+a:hover {
+  text-decoration: underline;
 }
 
-.cta-button {
-  background-color: #9b59b6;
+.btn {
+  display: inline-block;
+  background-color: #6c5ce7;
   color: white;
-  padding: 12px 24px;
+  padding: 10px 20px;
+  margin: 15px 0;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #a29bfe;
+}
+
+main {
+  padding: 20px;
+}
+
+.project {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+img {
+  max-width: 100%;
   border-radius: 10px;
-  text-decoration: none;
-  display: inline-block;
-  margin: 10px 0;
-}
-
-.links a {
-  color: #ecf0f1;
-  margin: 10px;
-  display: inline-block;
-  text-decoration: none;
-}
-
-footer {
-  background: rgba(0,0,0,0.2);
-  padding: 15px;
-  margin-top: 30px;
 }
