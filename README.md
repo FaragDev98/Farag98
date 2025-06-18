@@ -1,32 +1,32 @@
-# Fabrica Course
+# 🎓 Fabrica Course
 
-A simple, stylish website to showcase and sell a beginner-friendly programming book written in Arabic.
+A professional and elegant website for presenting and selling an Arabic beginner-friendly programming book.
 
-## 🔗 Live Website
+## 🌐 Live Website
 
-[Visit Site](https://fabrica-courses.netlify.app/)
+👉 [Visit the Live Site](https://fabrica-courses.netlify.app/)
 
 ## 📘 About the Book
 
-A PDF book that helps Arabic speakers learn programming basics step-by-step.
+This book is designed to help Arabic speakers learn programming from scratch, step by step, with clear explanations and real-world examples.
 
-- Format: PDF
-- Language: Arabic
-- Price: $2 USD (~100 EGP)
+- 📄 Format: PDF  
+- 🗣️ Language: Arabic  
+- 💵 Price: $2 USD (≈ 100 EGP)
 
-## 📂 Pages
+## 📄 Website Pages
 
-- Home (`index.html`)
-- Portfolio (`portfolio.html`)
-- Blog Articles (`المقالات.html`)
-- Contact (`contact.html`)
+- 🏠 Home — `index.html`  
+- 🧑‍💻 Portfolio — `portfolio.html`  
+- 📰 Blog Articles — `المقالات.html`  
+- 📞 Contact — `contact.html`
 
-## 📞 Contact
+## 📬 Contact Information
 
-- WhatsApp: +201091838789  
-- Facebook: [Your Page]  
-- Email: Farajbdallh891@gmail.com
+- 📱 WhatsApp: [+20 109 183 8789](https://wa.me/201091838789)  
+- 📘 Facebook: [Your Page Name]  
+- 📧 Email: Farajbdallh891@gmail.com
 
 ---
 
-© Farag Abdallah. All rights reserved.
+© 2025 Farag Abdallah — All rights reserved.
