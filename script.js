@@ -1,23 +1,25 @@
-// رسالة ترحيب في الكونسول
-console.log("مرحبًا بك في Fabrica Course!");
+// script.js
 
-// تمرير سلس عند الضغط على الروابط داخل الصفحة
-document.querySelectorAll('a[href^="#"]').forEach(link => {
-  link.addEventListener("click", function(e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute("href"));
-    if (target) {
-      target.scrollIntoView({
-        behavior: "smooth"
-      });
-    }
-  });
+// مثال لتأثير عند تحميل الصفحة
+document.addEventListener("DOMContentLoaded", function () {
+  const header = document.querySelector("header");
+  if (header) {
+    header.style.opacity = 0;
+    header.style.transform = "translateY(-20px)";
+    setTimeout(() => {
+      header.style.transition = "all 0.8s ease-in-out";
+      header.style.opacity = 1;
+      header.style.transform = "translateY(0)";
+    }, 100);
+  }
 });
 
-// تأثير عند الضغط على زر الاشتراك
-const subscribeBtn = document.querySelector("#subscribeBtn");
-if (subscribeBtn) {
-  subscribeBtn.addEventListener("click", () => {
-    alert("شكرًا لانضمامك! سيتم التواصل معك عبر واتساب.");
-  });
-}
+// زر للعودة لأعلى الصفحة
+const scrollToTopButton = document.createElement("button");
+scrollToTopButton.textContent = "⬆";
+scrollToTopButton.className = "btn";
+scrollToTopButton.style.position = "fixed";
+scrollToTopButton.style.bottom = "20px";
+scrollToTopButton.style.left = "20px";
+scrollToTopButton.style.zIndex = "999";
+scrollToTopButton.onclick = () => window.scrollTo
