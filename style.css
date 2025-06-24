@@ -1,12 +1,104 @@
+/* إعداد عام */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #fefefe;
+  color: #222;
+  direction: rtl;
+}
+
+/* الشعار */
+.site-icon {
+  height: 40px;
+  margin-left: 10px;
+}
+
+/* شريط التنقل */
+.navbar {
+  background: linear-gradient(90deg, #3204a3, #520095);
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.logo {
+  color: #fff;
+  font-size: 24px;
+}
+
+.logo span {
+  color: #ffdc00; /* أصفر */
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffdc00;
+}
+
+.whatsapp-btn {
+  background-color: #25D366;
+  padding: 8px 16px;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+}
+
+/* المقدمة */
+.header {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+}
+
+.header h1 {
+  font-size: 32px;
+  color: #333;
+}
+
+.header p {
+  font-size: 18px;
+  color: #666;
+}
+
+/* القسم الشخصي */
+.hero {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.profile-img {
+  width: 130px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* الشهادات */
 .certificates {
   padding: 40px 20px;
-  background-color: #f1f1f1;
+  background-color: #f9f9f9;
   text-align: center;
 }
 
 .certificates h2 {
   font-size: 24px;
-  color: #333;
   margin-bottom: 20px;
 }
 
@@ -35,5 +127,85 @@
 
 .cert-item p {
   font-size: 16px;
-  color: #222;
+}
+
+/* الكتاب */
+.book {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.book .price {
+  font-size: 20px;
+  color: #444;
+}
+
+.btn-whatsapp {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #25D366;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+/* الأقسام */
+.sections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px 20px;
+}
+
+.section-box {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.section-box .btn {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #3204a3;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* غلاف الكتاب */
+.book-cover-display {
+  padding: 30px 20px;
+}
+
+.book-cover-display img {
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* الفوتر */
+.footer {
+  background-color: #111;
+  color: #eee;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+.footer a {
+  color: #ffdc00;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
 }
