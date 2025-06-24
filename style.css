@@ -122,3 +122,36 @@ main {
   color: #fce38a;
   text-align: center;
 }
+/* ====== شهادة المستخدم ====== */
+.certificates {
+  padding: 60px 20px;
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+  text-align: center;
+}
+.certificates h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #4a148c;
+}
+.cert-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.cert-item {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  width: 300px;
+}
+.cert-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+.cert-item p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
