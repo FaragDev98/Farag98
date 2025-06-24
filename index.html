@@ -1,223 +1,89 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>فبريكا كورس - تعلم البرمجة بسهولة</title>
-<style>
-  /* Reset */
-  * {
-    margin: 0; padding: 0; box-sizing: border-box; font-family: "Arial", sans-serif;
-  }
-  body {
-    background: #f9f9f9;
-    color: #222;
-    padding-top: 60px;
-    min-height: 100vh;
-  }
-  a {
-    color: #b48a2f;
-    text-decoration: none;
-  }
-  a:hover {
-    color: #8c731a;
-  }
-
-  /* Navbar */
-  header.navbar {
-    position: fixed;
-    top: 0; left: 0; right: 0;
-    height: 60px;
-    background: #372e0e;
-    color: #f7d45d;
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-    z-index: 9999;
-  }
-  .nav-container {
-    max-width: 1100px;
-    margin: auto;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .nav-container img {
-    width: 40px;
-    filter: brightness(0) saturate(100%) invert(81%) sepia(58%) saturate(1464%) hue-rotate(4deg) brightness(92%) contrast(87%);
-  }
-  nav.nav-links a {
-    margin-left: 20px;
-    font-weight: 600;
-    font-size: 15px;
-  }
-  nav.nav-links a.whatsapp-btn {
-    background: #f7d45d;
-    color: #372e0e;
-    padding: 7px 14px;
-    border-radius: 5px;
-    font-weight: 700;
-    transition: background 0.3s ease;
-  }
-  nav.nav-links a.whatsapp-btn:hover {
-    background: #d4bd3a;
-  }
-
-  /* Main content */
-  main {
-    max-width: 800px;
-    margin: 30px auto 60px auto;
-    padding: 0 15px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(55,46,14,0.15);
-  }
-  main h1, main h2, main h3 {
-    color: #372e0e;
-    margin-bottom: 15px;
-  }
-  main p, main ul {
-    margin-bottom: 15px;
-    line-height: 1.6;
-  }
-  main ul {
-    padding-left: 20px;
-  }
-  main ul li {
-    margin-bottom: 7px;
-  }
-  main a.buy-link {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 18px;
-    background: #372e0e;
-    color: #f7d45d;
-    border-radius: 5px;
-    font-weight: 700;
-  }
-  main a.buy-link:hover {
-    background: #5a4c11;
-  }
-
-  /* Footer */
-  footer.footer {
-    background: #372e0e;
-    color: #f7d45d;
-    text-align: center;
-    padding: 15px 10px;
-    font-size: 0.9rem;
-    position: relative;
-  }
-  footer.footer a {
-    color: #b48a2f;
-    margin: 0 6px;
-  }
-  footer.footer a:hover {
-    color: #f7d45d;
-    text-decoration: underline;
-  }
-
-  /* بوت المساعدة */
-  #chatbot-help-icon {
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    background: #f7d45d;
-    width: 56px;
-    height: 56px;
-    border-radius: 50%;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    z-index: 9999;
-    transition: background 0.3s ease;
-  }
-  #chatbot-help-icon:hover {
-    background: #d4bd3a;
-  }
-  #chatbot-help-icon svg {
-    width: 28px;
-    height: 28px;
-    fill: #372e0e;
-  }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ابدأ في تعلم البرمجة من خلال فبريكا - كتاب شامل ومبسّط للمبتدئين مع مشاريع عملية ودعم مباشر عبر واتساب.">
+  <meta name="keywords" content="تعلم البرمجة, كورسات برمجة, HTML CSS JavaScript, فبريكا, Faraj Abdullah">
+  <meta name="author" content="Faraj Abdallah">
+  <title>فبريكا - تعلم البرمجة من الصفر</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="assets/icons/logo.png" type="image/png">
 </head>
 <body>
 
-<header class="navbar">
-  <div class="nav-container">
-    <img src="assets/icons/logo.png" alt="فبريكا" />
-    <nav class="nav-links">
-      <a href="index.html">الرئيسية</a>
-      <a href="privacy.html">الخصوصية</a>
-      <a href="terms.html">الشروط</a>
-      <a href="https://wa.me/201066047545" target="_blank" class="whatsapp-btn">اشترك عبر واتساب</a>
-    </nav>
-  </div>
-</header>
+  <!-- شريط علوي -->
+  <header class="navbar">
+    <div class="nav-container">
+      <img src="assets/icons/logo.png" class="site-icon" alt="logo">
+      <h1 class="logo">Factory <span>Course</span></h1>
+      <nav class="nav-links">
+        <a href="index.html">الرئيسية</a>
+        <a href="privacy.html">الخصوصية</a>
+        <a href="terms.html">الشروط</a>
+        <a class="whatsapp-btn" href="https://wa.me/201066047545" target="_blank">اشترك عبر واتساب</a>
+      </nav>
+    </div>
+  </header>
 
-<main>
-  <h1>مرحبًا بك في فبريكا كورس</h1>
-  <p>✅ أنت في مكانك الصحيح لتعلم البرمجة والعمل الحر مع Fabrica Course!</p>
+  <!-- مقدمة -->
+  <header class="header">
+    <h1>مرحبًا بك في فبريكا</h1>
+    <p>وجهتك الأولى لتعلم البرمجة بسهولة وباللغة العربية.</p>
+  </header>
 
-  <h2>📘 كتاب البرمجة</h2>
-  <p>كتاب PDF من إعداد Fabrica Course لتعليم البرمجة من الصفر. مناسب للمبتدئين، ويحتوي على شرح عملي لـ:</p>
-  <ul>
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>JavaScript</li>
-    <li>Python</li>
-    <li>مشروع عملي نهائي</li>
-  </ul>
-  <p><strong>السعر:</strong> 2 دولار فقط (أو ما يعادلها بالجنيه المصري)</p>
-  <a href="https://payhip.com/b/vUBAL" target="_blank" rel="noopener noreferrer" class="buy-link">رابط شراء الكتاب</a>
+  <main class="main-content">
 
-  <h2>🎓 الكورس</h2>
-  <p>دورة مقدمة من Fabrica Course للمبتدئين في البرمجة، بأسلوب سهل وعملي. تشمل دعم مباشر من فراج.</p>
-  <p>للتسجيل: <a href="https://wa.me/201066047545" target="_blank" rel="noopener noreferrer">واتساب فراج</a></p>
+    <section class="hero">
+      <img src="assets/icons/user.jpg" alt="فراج عبدالله" class="profile-img" />
+      <p>أنا <strong>فراج عبدالله</strong>، أقدّم لك كتابًا شاملاً ومبسطًا لتعلم البرمجة من البداية حتى الاحتراف، مع أمثلة ومشاريع حقيقية.</p>
+    </section>
 
-  <h2>🧠 البرمجة والعمل الحر</h2>
-  <p>تعلم البرمجة هو طريقك لاكتساب مهارة مطلوبة عالميًا. ابدأ من الصفر بدون خبرة، وتعلم بناء المواقع والتطبيقات.</p>
-  <p>بعد التعلم، يمكنك العمل على الإنترنت من بيتك من خلال منصات العمل الحر مثل:</p>
-  <ul>
-    <li><a href="https://fiverr.com" target="_blank" rel="noopener noreferrer">Fiverr</a></li>
-    <li><a href="https://upwork.com" target="_blank" rel="noopener noreferrer">Upwork</a></li>
-    <li><a href="https://mostaql.com" target="_blank" rel="noopener noreferrer">Mostaql</a></li>
-  </ul>
+    <section class="book">
+      <h2>📘 كتاب تعلم البرمجة</h2>
+      <p class="price">السعر: 2 دولار فقط (ما يعادل 100 جنيه مصري)</p>
+      <a href="https://wa.me/201066047545" class="btn-whatsapp">اطلب الكتاب الآن</a>
+    </section>
 
-  <h2>💳 وسائل الدفع</h2>
-  <ul>
-    <li>فودافون كاش: 01066047545</li>
-    <li>أورنج كاش: 01285895096</li>
-    <li>وي كاش: 01558516081</li>
-    <li>PayPal: Farajbdallh891@gmail.com</li>
-  </ul>
-</main>
+    <section class="sections">
+      <div class="section-box">
+        <h3>📂 معرض الأعمال</h3>
+        <p>تعرّف على بعض من مشاريعي كمطور واجهات أمامية.</p>
+        <a href="portfolio.html" class="btn">عرض المشاريع</a>
+      </div>
 
-<footer class="footer">
-  <p>© 2025 جميع الحقوق محفوظة - فبريكا</p>
-  <p>
-    تواصل معنا:
-    <a href="mailto:your-email@example.com">📧 بريد إلكتروني</a> |
-    <a href="#">📘 فيسبوك</a> |
-    <a href="https://wa.me/201066047545">💬 واتساب</a>
-  </p>
-  <p>
-    <a href="privacy.html">سياسة الخصوصية</a> |
-    <a href="terms.html">شروط وأحكام</a>
-  </p>
-</footer>
+      <div class="section-box">
+        <h3>📝 مقالات البرمجة</h3>
+        <p>اقرأ دروس ومقالات مفيدة للمبتدئين في مجال البرمجة.</p>
+        <a href="articles.html" class="btn">تصفح المقالات</a>
+      </div>
+    </section>
 
-<!-- أيقونة بوت المساعدة -->
-<div id="chatbot-help-icon" title="مساعدة">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-    <path d="M12 3C7.03 3 3 6.69 3 11.25c0 2.91 2.53 5.42 6 6.23V21l4.88-4.17c2.01-.31 3.93-1.39 5.12-3.18a6.837 6.837 0 0 0-6-9.4zM12 7a2.25 2.25 0 1 1 0 4.5A2.25 2.25 0 0 1 12 7z"/>
-  </svg>
-</div>
+    <section class="book-cover-display" style="text-align: center; margin-top: 50px;">
+      <h2>📖 غلاف كتاب البرمجة</h2>
+      <p>
+        <a href="assets/icons/book-cover.jpg" target="_blank">
+          <img src="assets/icons/book-cover.jpg" alt="غلاف الكتاب" style="max-width: 300px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.2);" />
+        </a>
+      </p>
+    </section>
+
+  </main>
+
+  <!-- الفوتر -->
+  <footer class="footer">
+    <p>© 2025 جميع الحقوق محفوظة - فبريكا</p>
+    <p>
+      تواصل معنا:
+      <a href="mailto:">📧 بريد إلكتروني</a> |
+      <a href="#">📘 فيسبوك</a> |
+      <a href="https://wa.me/201066047545">💬 واتساب</a>
+    </p>
+    <p>
+      <a href="privacy.html">سياسة الخصوصية</a> |
+      <a href="terms.html">شروط وأحكام</a>
+    </p>
+  </footer>
 
 </body>
 </html>
