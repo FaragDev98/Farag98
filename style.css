@@ -1,157 +1,39 @@
-body {
-  font-family: 'Tajawal', sans-serif;
-  background: linear-gradient(to bottom right, #2b2e4a, #4b6cb7);
-  color: #ffffff;
-  margin: 0;
-  padding: 0;
-  direction: rtl;
-  text-align: right;
-}
-
-/* الشريط العلوي */
-.navbar {
-  background: linear-gradient(to right, #4e54c8, #8f94fb);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  padding: 15px 0;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.nav-container {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-  color: white;
-}
-
-.logo span {
-  color: #ffd700;
-}
-
-.site-icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 8px;
-}
-
-.nav-links a {
-  margin-right: 15px;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-  transition: 0.3s;
-}
-
-.nav-links a:hover {
-  color: #ffd700;
-}
-
-.whatsapp-btn {
-  background-color: #25D366;
-  color: white !important;
-  padding: 6px 12px;
-  border-radius: 6px;
-  font-weight: bold;
-}
-
-.header, footer {
-  background-color: #1f1f2e;
-  padding: 20px;
-  text-align: center;
-}
-
-h1, h2, h3 {
-  color: #f9ca24;
-}
-
-a {
-  color: #00cec9;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.btn, .btn-whatsapp {
-  display: inline-block;
-  background-color: #6c5ce7;
-  color: white;
-  padding: 10px 20px;
-  margin: 15px 0;
-  border-radius: 8px;
-  transition: background 0.3s;
-  text-align: center;
-}
-
-.btn:hover, .btn-whatsapp:hover {
-  background-color: #a29bfe;
-}
-
-main {
-  padding: 20px;
-}
-
-.section-box {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
-  padding: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.profile-img, .book-cover {
-  max-width: 200px;
-  border-radius: 10px;
-  display: block;
-  margin: auto;
-}
-
-.price {
-  font-size: 18px;
-  font-weight: bold;
-  color: #fce38a;
-  text-align: center;
-}
-/* ====== شهادة المستخدم ====== */
 .certificates {
-  padding: 60px 20px;
-  background: linear-gradient(to right, #e0eafc, #cfdef3);
+  padding: 40px 20px;
+  background-color: #f1f1f1;
   text-align: center;
 }
+
 .certificates h2 {
-  font-size: 32px;
-  margin-bottom: 40px;
-  color: #4a148c;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
 }
+
 .cert-grid {
   display: flex;
   justify-content: center;
-  gap: 30px;
   flex-wrap: wrap;
+  gap: 20px;
 }
+
 .cert-item {
-  background-color: #ffffff;
-  border-radius: 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 280px;
   padding: 15px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-  width: 300px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
+
 .cert-item img {
   width: 100%;
-  border-radius: 10px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
+
 .cert-item p {
-  margin-top: 10px;
-  font-weight: bold;
-  color: #333;
+  font-size: 16px;
+  color: #222;
 }
