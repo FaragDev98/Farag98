@@ -10,25 +10,20 @@
   <link rel="icon" href="assets/icons/logo.png" type="image/png" />
 
   <style>
-    /* Reset بسيط */
     * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Arial', sans-serif;
+      margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif;
     }
 
     body {
-      background: #fefefe;
+      background: #fff;
       color: #222;
       line-height: 1.6;
       min-height: 100vh;
-      position: relative;
-      padding-top: 60px; /* عشان الشريط الثابت فوق */
+      padding-top: 60px; /* لشريط العلوي الثابت */
     }
 
     a {
-      color: #b49f48; /* اصفر ذهبي */
+      color: #b49f48; /* أصفر ذهبي */
       text-decoration: none;
       transition: color 0.3s ease;
     }
@@ -40,17 +35,15 @@
     /* شريط علوي ثابت */
     header.navbar {
       position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
+      top: 0; left: 0; width: 100%;
       background: #2a2a2a; /* سمرة غامقة */
       color: #f7c948; /* أصفر */
-      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-      z-index: 9999;
       height: 60px;
       display: flex;
       align-items: center;
       padding: 0 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      z-index: 9999;
     }
 
     .nav-container {
@@ -283,7 +276,6 @@
       text-align: center;
       padding: 20px 15px;
       font-size: 0.9rem;
-      position: relative;
       user-select: none;
     }
 
@@ -331,4 +323,49 @@
 </head>
 <body>
 
-  <!--
+  <!-- شريط علوي ثابت -->
+  <header class="navbar">
+    <div class="nav-container">
+      <img src="assets/icons/logo.png" alt="فبريكا" class="site-icon" />
+      <h1 class="logo">Factory <span>Course</span></h1>
+      <nav class="nav-links">
+        <a href="index.html">الرئيسية</a>
+        <a href="privacy.html">الخصوصية</a>
+        <a href="terms.html">الشروط</a>
+        <a href="https://wa.me/201066047545" target="_blank" class="whatsapp-btn">اشترك عبر واتساب</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- مقدمة -->
+  <header class="header">
+    <h1>مرحبًا بك في فبريكا</h1>
+    <p>وجهتك الأولى لتعلم البرمجة بسهولة وباللغة العربية.</p>
+  </header>
+
+  <!-- معلومات فبريكا كورس -->
+  <section id="about-fabrica-course">
+    <h2>فبريكا كورس (Fabrica Course)</h2>
+    <p>✅ أنت في مكانك الصحيح لتعلم البرمجة والعمل الحر مع Fabrica Course!</p>
+
+    <h3>📘 كتاب البرمجة:</h3>
+    <p>كتاب PDF من إعداد Fabrica Course لتعليم البرمجة من الصفر. مناسب للمبتدئين، ويحتوي على شرح عملي لـ:</p>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Python</li>
+      <li>مشروع عملي نهائي</li>
+    </ul>
+    <p><strong>السعر:</strong> 2 دولار فقط (أو ما يعادلها بالجنيه المصري)</p>
+    <p><a href="https://payhip.com/b/vUBAL" target="_blank" rel="noopener noreferrer">رابط شراء الكتاب</a></p>
+
+    <h3>🎓 الكورس:</h3>
+    <p>دورة مقدمة من Fabrica Course للمبتدئين في البرمجة، بأسلوب سهل وعملي. تشمل دعم مباشر من فراج.</p>
+    <p>للتسجيل: <a href="https://wa.me/201066047545" target="_blank" rel="noopener noreferrer">واتساب فراج</a></p>
+
+    <h3>🧠 البرمجة:</h3>
+    <p>تعلم البرمجة هو طريقك لاكتساب مهارة مطلوبة عالميًا.<br />
+    ابدأ من الصفر بدون خبرة، وتعلم بناء المواقع والتطبيقات.</p>
+
+    <h3>💼 العمل الحر:</h3
