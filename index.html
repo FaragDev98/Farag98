@@ -1,371 +1,181 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="ابدأ في تعلم البرمجة من خلال فبريكا - كتاب شامل ومبسّط للمبتدئين مع مشاريع عملية ودعم مباشر عبر واتساب." />
-  <meta name="keywords" content="تعلم البرمجة, كورسات برمجة, HTML CSS JavaScript, فبريكا, Faraj Abdullah" />
-  <meta name="author" content="Faraj Abdallah" />
-  <title>فبريكا - تعلم البرمجة من الصفر</title>
-  <link rel="icon" href="assets/icons/logo.png" type="image/png" />
-
-  <style>
-    * {
-      margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif;
-    }
-
-    body {
-      background: #fff;
-      color: #222;
-      line-height: 1.6;
-      min-height: 100vh;
-      padding-top: 60px; /* لشريط العلوي الثابت */
-    }
-
-    a {
-      color: #b49f48; /* أصفر ذهبي */
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-
-    a:hover {
-      color: #8c7a2a;
-    }
-
-    /* شريط علوي ثابت */
-    header.navbar {
-      position: fixed;
-      top: 0; left: 0; width: 100%;
-      background: #2a2a2a; /* سمرة غامقة */
-      color: #f7c948; /* أصفر */
-      height: 60px;
-      display: flex;
-      align-items: center;
-      padding: 0 20px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-      z-index: 9999;
-    }
-
-    .nav-container {
-      display: flex;
-      align-items: center;
-      width: 100%;
-      max-width: 1100px;
-      margin: auto;
-      justify-content: space-between;
-    }
-
-    .site-icon {
-      width: 40px;
-      height: 40px;
-      object-fit: contain;
-      filter: brightness(0) invert(1);
-    }
-
-    .logo {
-      font-size: 1.5rem;
-      font-weight: bold;
-      color: #f7c948;
-      user-select: none;
-    }
-
-    .logo span {
-      color: #b49f48;
-    }
-
-    nav.nav-links a {
-      margin-left: 20px;
-      font-weight: 600;
-      color: #f7c948;
-      user-select: none;
-    }
-
-    nav.nav-links a.whatsapp-btn {
-      background: #f7c948;
-      color: #2a2a2a;
-      padding: 6px 12px;
-      border-radius: 5px;
-      font-weight: 700;
-      transition: background 0.3s ease;
-    }
-
-    nav.nav-links a.whatsapp-btn:hover {
-      background: #d3b13b;
-      color: #1a1a1a;
-    }
-
-    /* مقدمة */
-    header.header {
-      max-width: 800px;
-      margin: 20px auto 40px auto;
-      text-align: center;
-      padding: 0 15px;
-    }
-
-    header.header h1 {
-      font-size: 2.8rem;
-      color: #2a2a2a;
-      margin-bottom: 8px;
-      user-select: none;
-    }
-
-    header.header p {
-      font-size: 1.2rem;
-      color: #555;
-      user-select: none;
-    }
-
-    /* المحتوى الرئيسي */
-    #about-fabrica-course {
-      max-width: 800px;
-      margin: auto;
-      padding: 0 15px 40px 15px;
-      color: #222;
-    }
-
-    #about-fabrica-course h2 {
-      font-size: 2rem;
-      margin-bottom: 15px;
-      color: #2a2a2a;
-      user-select: none;
-    }
-
-    #about-fabrica-course h3 {
-      margin-top: 25px;
-      margin-bottom: 10px;
-      color: #b49f48;
-      user-select: none;
-    }
-
-    #about-fabrica-course p, #about-fabrica-course ul {
-      margin-bottom: 10px;
-      font-size: 1rem;
-    }
-
-    #about-fabrica-course ul {
-      list-style-type: disc;
-      padding-left: 20px;
-      color: #444;
-    }
-
-    #about-fabrica-course a {
-      font-weight: 600;
-    }
-
-    /* محتوى الملف الشخصي */
-    .main-content {
-      max-width: 800px;
-      margin: 0 auto 60px auto;
-      padding: 0 15px;
-    }
-
-    .hero {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    .profile-img {
-      width: 140px;
-      height: 140px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 4px solid #b49f48;
-      margin-bottom: 15px;
-      user-select: none;
-    }
-
-    .hero p {
-      font-size: 1.1rem;
-      color: #2a2a2a;
-      font-weight: 600;
-    }
-
-    .book {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-
-    .price {
-      font-size: 1.1rem;
-      color: #444;
-      margin-bottom: 15px;
-    }
-
-    .btn-whatsapp {
-      background: #b49f48;
-      color: #fff;
-      padding: 12px 28px;
-      border-radius: 8px;
-      font-weight: 700;
-      font-size: 1rem;
-      cursor: pointer;
-      text-decoration: none;
-      display: inline-block;
-      transition: background 0.3s ease;
-    }
-
-    .btn-whatsapp:hover {
-      background: #8c7a2a;
-    }
-
-    /* أقسام إضافية */
-    .sections {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-      margin-bottom: 60px;
-    }
-
-    .section-box {
-      flex: 1 1 300px;
-      background: #f4f1e6;
-      border-radius: 10px;
-      padding: 20px;
-      box-shadow: 0 0 10px rgba(180, 159, 72, 0.3);
-      transition: box-shadow 0.3s ease;
-      user-select: none;
-    }
-
-    .section-box:hover {
-      box-shadow: 0 0 15px rgba(180, 159, 72, 0.6);
-    }
-
-    .section-box h3 {
-      color: #b49f48;
-      margin-bottom: 12px;
-    }
-
-    .section-box p {
-      color: #444;
-      margin-bottom: 15px;
-    }
-
-    .section-box .btn {
-      background: #b49f48;
-      color: #fff;
-      padding: 10px 20px;
-      border-radius: 8px;
-      font-weight: 700;
-      text-decoration: none;
-      display: inline-block;
-      transition: background 0.3s ease;
-    }
-
-    .section-box .btn:hover {
-      background: #8c7a2a;
-    }
-
-    /* غلاف الكتاب */
-    .book-cover-display {
-      text-align: center;
-      margin-bottom: 60px;
-    }
-
-    .book-cover-display img {
-      max-width: 300px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(180, 159, 72, 0.4);
-      user-select: none;
-    }
-
-    /* الفوتر */
-    footer.footer {
-      background: #2a2a2a;
-      color: #f7c948;
-      text-align: center;
-      padding: 20px 15px;
-      font-size: 0.9rem;
-      user-select: none;
-    }
-
-    footer.footer a {
-      color: #b49f48;
-      font-weight: 600;
-      margin: 0 6px;
-      transition: color 0.3s ease;
-    }
-
-    footer.footer a:hover {
-      color: #f7c948;
-      text-decoration: underline;
-    }
-
-    /* أيقونة البوت المساعدة */
-    #chatbot-help-icon {
-      position: fixed;
-      bottom: 25px;
-      right: 25px;
-      background: #f7c948;
-      border-radius: 50%;
-      width: 56px;
-      height: 56px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-      cursor: pointer;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: 10000;
-      transition: background 0.3s ease;
-    }
-
-    #chatbot-help-icon:hover {
-      background: #d3b13b;
-    }
-
-    #chatbot-help-icon img {
-      width: 28px;
-      height: 28px;
-      filter: drop-shadow(0 0 0.2px #222);
-      user-select: none;
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>فبريكا كورس</title>
+<style>
+  * {
+    margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif;
+  }
+  body {
+    padding-top: 60px;
+    background: #fff;
+    color: #222;
+    min-height: 100vh;
+  }
+  a {
+    color: #b49f48;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #8c7a2a;
+  }
+  /* Navbar */
+  header.navbar {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    height: 60px;
+    background: #2a2a2a;
+    color: #f7c948;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  }
+  .nav-container {
+    max-width: 1100px;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-container img {
+    width: 40px;
+    filter: brightness(0) invert(1);
+  }
+  nav.nav-links a {
+    margin-left: 20px;
+    font-weight: 600;
+  }
+  nav.nav-links a.whatsapp-btn {
+    background: #f7c948;
+    color: #2a2a2a;
+    padding: 6px 12px;
+    border-radius: 5px;
+  }
+  nav.nav-links a.whatsapp-btn:hover {
+    background: #d3b13b;
+  }
+  /* Footer */
+  footer.footer {
+    background: #2a2a2a;
+    color: #f7c948;
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 0.9rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 40px;
+  }
+  footer.footer a {
+    color: #b49f48;
+    margin: 0 6px;
+  }
+  footer.footer a:hover {
+    color: #f7c948;
+    text-decoration: underline;
+  }
+  /* محتوى الصفحة */
+  main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 15px 40px 15px;
+  }
+  h1, h2, h3 {
+    color: #2a2a2a;
+  }
+  ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+  }
+  /* أيقونة بوت المساعدة */
+  #chatbot-help-icon {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: #f7c948;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 2000;
+    transition: background 0.3s ease;
+  }
+  #chatbot-help-icon:hover {
+    background: #d3b13b;
+  }
+  #chatbot-help-icon img {
+    width: 28px;
+    height: 28px;
+    filter: drop-shadow(0 0 0.2px #222);
+  }
+</style>
 </head>
 <body>
 
-  <!-- شريط علوي ثابت -->
-  <header class="navbar">
-    <div class="nav-container">
-      <img src="assets/icons/logo.png" alt="فبريكا" class="site-icon" />
-      <h1 class="logo">Factory <span>Course</span></h1>
-      <nav class="nav-links">
-        <a href="index.html">الرئيسية</a>
-        <a href="privacy.html">الخصوصية</a>
-        <a href="terms.html">الشروط</a>
-        <a href="https://wa.me/201066047545" target="_blank" class="whatsapp-btn">اشترك عبر واتساب</a>
-      </nav>
-    </div>
-  </header>
+<header class="navbar">
+  <div class="nav-container">
+    <img src="assets/icons/logo.png" alt="فبريكا" />
+    <nav class="nav-links">
+      <a href="index.html">الرئيسية</a>
+      <a href="privacy.html">الخصوصية</a>
+      <a href="terms.html">الشروط</a>
+      <a href="https://wa.me/201066047545" target="_blank" class="whatsapp-btn">اشترك عبر واتساب</a>
+    </nav>
+  </div>
+</header>
 
-  <!-- مقدمة -->
-  <header class="header">
-    <h1>مرحبًا بك في فبريكا</h1>
-    <p>وجهتك الأولى لتعلم البرمجة بسهولة وباللغة العربية.</p>
-  </header>
+<main>
+  <h1>مرحبًا بك في فبريكا كورس</h1>
+  <p>✅ أنت في مكانك الصحيح لتعلم البرمجة والعمل الحر مع Fabrica Course!</p>
+  <h2>كتاب البرمجة</h2>
+  <p>كتاب PDF من إعداد Fabrica Course لتعليم البرمجة من الصفر. مناسب للمبتدئين، ويحتوي على شرح عملي لـ:</p>
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>Python</li>
+    <li>مشروع عملي نهائي</li>
+  </ul>
+  <p><strong>السعر:</strong> 2 دولار فقط (أو ما يعادلها بالجنيه المصري)</p>
+  <p><a href="https://payhip.com/b/vUBAL" target="_blank" rel="noopener noreferrer">رابط شراء الكتاب</a></p>
 
-  <!-- معلومات فبريكا كورس -->
-  <section id="about-fabrica-course">
-    <h2>فبريكا كورس (Fabrica Course)</h2>
-    <p>✅ أنت في مكانك الصحيح لتعلم البرمجة والعمل الحر مع Fabrica Course!</p>
+  <h2>الكورس</h2>
+  <p>دورة مقدمة من Fabrica Course للمبتدئين في البرمجة، بأسلوب سهل وعملي. تشمل دعم مباشر من فراج.</p>
+  <p>للتسجيل: <a href="https://wa.me/201066047545" target="_blank" rel="noopener noreferrer">واتساب فراج</a></p>
 
-    <h3>📘 كتاب البرمجة:</h3>
-    <p>كتاب PDF من إعداد Fabrica Course لتعليم البرمجة من الصفر. مناسب للمبتدئين، ويحتوي على شرح عملي لـ:</p>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-      <li>Python</li>
-      <li>مشروع عملي نهائي</li>
-    </ul>
-    <p><strong>السعر:</strong> 2 دولار فقط (أو ما يعادلها بالجنيه المصري)</p>
-    <p><a href="https://payhip.com/b/vUBAL" target="_blank" rel="noopener noreferrer">رابط شراء الكتاب</a></p>
+  <h2>البرمجة والعمل الحر</h2>
+  <p>تعلم البرمجة هو طريقك لاكتساب مهارة مطلوبة عالميًا. ابدأ من الصفر بدون خبرة، وتعلم بناء المواقع والتطبيقات.</p>
+</main>
 
-    <h3>🎓 الكورس:</h3>
-    <p>دورة مقدمة من Fabrica Course للمبتدئين في البرمجة، بأسلوب سهل وعملي. تشمل دعم مباشر من فراج.</p>
-    <p>للتسجيل: <a href="https://wa.me/201066047545" target="_blank" rel="noopener noreferrer">واتساب فراج</a></p>
+<footer class="footer">
+  <p>© 2025 جميع الحقوق محفوظة - فبريكا</p>
+  <p>
+    تواصل معنا:
+    <a href="mailto:your-email@example.com">📧 بريد إلكتروني</a> |
+    <a href="#">📘 فيسبوك</a> |
+    <a href="https://wa.me/201066047545">💬 واتساب</a>
+  </p>
+  <p>
+    <a href="privacy.html">سياسة الخصوصية</a> |
+    <a href="terms.html">شروط وأحكام</a>
+  </p>
+</footer>
 
-    <h3>🧠 البرمجة:</h3>
-    <p>تعلم البرمجة هو طريقك لاكتساب مهارة مطلوبة عالميًا.<br />
-    ابدأ من الصفر بدون خبرة، وتعلم بناء المواقع والتطبيقات.</p>
+<!-- أيقونة بوت المساعدة -->
+<div id="chatbot-help-icon" title="مساعدة">
+  <img src="assets/icons/chatbot-icon.svg" alt="بوت المساعدة" />
+</div>
 
-    <h3>💼 العمل الحر:</h3
+<!-- كود بوت الشات (إذا عندك) أضفه هنا -->
+
+</body>
+</html>
