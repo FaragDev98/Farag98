@@ -1,144 +1,164 @@
-<!DOCTYPE html><html lang="ar" dir="rtl">
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FaragDev98 | كورسات وكتب ومشاريع</title>
-  <meta name="description" content="موقع تعليمي احترافي يقدمه FaragDev98 لتعلم البرمجة وتصميم المواقع من الصفر وحتى الاحتراف." />
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="assets/logo.png" type="image/png">
+  <title>FaragDev98 | موقع تعليمي</title>
+  <meta name="description" content="موقع FaragDev98 يقدم كورسات، مقالات، وأعمال برمجية بجودة عالية.">
+  <link rel="icon" href="assets/logo.png" type="image/png" />
+  <link rel="stylesheet" href="style.css" />
+
   <style>
-    * {margin: 0; padding: 0; box-sizing: border-box;}
     body {
       font-family: 'Segoe UI', Tahoma, sans-serif;
-      background: linear-gradient(to bottom, #6b46c1, #b28ff9);
+      margin: 0;
+      background: linear-gradient(to bottom, #b28ff9, #e0ccff);
       color: #222;
-      line-height: 1.6;
     }
+
     header {
-      background-color: #fff;
+      background-color: #6b46c1;
+      color: white;
+      padding: 1rem;
       text-align: center;
-      padding: 1.5rem;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
-    header img {
-      max-height: 80px;
-    }
-    header h1 {
-      color: #6b46c1;
-      margin-top: 0.5rem;
-    }
+
     nav {
       display: flex;
       justify-content: center;
-      background-color: #6b46c1;
-      padding: 0.75rem;
-      gap: 1.5rem;
+      flex-wrap: wrap;
+      background-color: #542a99;
+      padding: 0.5rem;
     }
+
     nav a {
       color: white;
-      font-weight: bold;
       text-decoration: none;
+      margin: 0.5rem 1rem;
+      font-weight: bold;
     }
+
     nav a:hover {
       text-decoration: underline;
     }
+
     .hero {
       text-align: center;
-      padding: 3rem 1rem;
-      background: white;
+      padding: 2rem 1rem;
     }
-    .hero h2 {
-      font-size: 2.5rem;
+
+    .hero h1 {
+      font-size: 2.2rem;
       color: #6b46c1;
     }
+
     .hero p {
       font-size: 1.2rem;
-      margin: 1rem auto;
-      max-width: 600px;
+      margin-top: 0.5rem;
     }
-    .cta-btn {
-      padding: 0.8rem 1.5rem;
+
+    .cta-button {
+      margin-top: 1rem;
       background-color: #6b46c1;
       color: white;
+      padding: 0.8rem 1.5rem;
       border: none;
-      border-radius: 10px;
+      border-radius: 8px;
       font-size: 1rem;
+      cursor: pointer;
       text-decoration: none;
-      font-weight: bold;
-      margin-top: 1rem;
       display: inline-block;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
     }
-    .sections {
+
+    .cards {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
       padding: 2rem;
     }
+
     .card {
-      background: #fff;
-      border-radius: 10px;
+      background-color: #d0e6ff;
       padding: 1.5rem;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       text-align: center;
+      text-decoration: none;
+      color: #222;
+      transition: transform 0.2s;
     }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
     .card h3 {
-      color: #6b46c1;
-      margin-bottom: 1rem;
+      color: #0066cc;
+      margin-bottom: 0.5rem;
     }
+
     footer {
-      background: #f0f0f0;
+      background-color: #f4f4f4;
       text-align: center;
-      padding: 1.2rem;
+      padding: 1rem;
       font-size: 0.9rem;
       margin-top: 2rem;
     }
-    .footer-links a {
-      margin: 0 0.7rem;
+
+    .footer a {
+      margin: 0 10px;
       color: #6b46c1;
       text-decoration: none;
     }
-    .footer-links a:hover {
+
+    .footer a:hover {
       text-decoration: underline;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <img src="assets/logo.png" alt="شعار الموقع">
     <h1>FaragDev98</h1>
-    <p>ابدأ رحلتك التعليمية باحترافية 💡</p>
-  </header>  <nav>
+    <p>مرحبًا بك في موقع تعليمي احترافي لتطوير مهاراتك</p>
+  </header>
+
+  <nav>
     <a href="index.html">الرئيسية</a>
     <a href="عن-الموقع.html">عن الموقع</a>
     <a href="معرض-الأعمال.html">معرض الأعمال</a>
     <a href="contact.html">تواصل</a>
-  </nav>  <section class="hero">
-    <h2>📘 حمل كتاب البرمجة الآن</h2>
-    <p>كتاب شامل لتعلم البرمجة من الصفر باللغة العربية، يناسب المبتدئين وأصحاب المشاريع.</p>
-    <a href="assets/book-cover.jpg" download class="cta-btn">تحميل الكتاب PDF</a>
-  </section>  <section class="sections">
-    <div class="card">
-      <h3>📚 مقالات تعليمية</h3>
-      <p>اطلع على مقالات مفيدة في مجالات البرمجة وتطوير الذات.</p>
-      <a href="articles.html" class="cta-btn">دخول المقالات</a>
-    </div>
-    <div class="card">
-      <h3>🎓 كورسات</h3>
-      <p>دورات تدريبية متكاملة تشمل HTML, CSS, JavaScript وغيرها.</p>
-      <a href="الدروس.html" class="cta-btn">مشاهدة الدروس</a>
-    </div>
-    <div class="card">
+  </nav>
+
+  <section class="hero">
+    <h1>ابدأ رحلتك الآن مع FaragDev98</h1>
+    <p>كورسات، مقالات، كتاب مجاني، معرض أعمال، كل شيء في مكان واحد</p>
+    <a href="assets/book-cover.jpg" class="cta-button" download>📘 تحميل الكتاب</a>
+  </section>
+
+  <section class="cards">
+    <a href="الدروس.html" class="card">
+      <h3>📚 كورسات</h3>
+      <p>دورات مبسطة لتعلم البرمجة واللغات.</p>
+    </a>
+    <a href="المقالات.html" class="card">
+      <h3>📝 مقالات</h3>
+      <p>مقالات تعليمية تساعدك على الفهم والتطوير.</p>
+    </a>
+    <a href="portfolio.html" class="card">
       <h3>💼 معرض الأعمال</h3>
-      <p>شاهد مشاريع تم تنفيذها وواجهات جاهزة للاستخدام.</p>
-      <a href="معرض-الأعمال.html" class="cta-btn">زيارة المعرض</a>
-    </div>
-  </section>  <footer>
-    <div class="footer-links">
+      <p>اطّلع على مشاريعي السابقة وخبرتي العملية.</p>
+    </a>
+  </section>
+
+  <footer class="footer">
+    <div>
       <a href="terms.html">الشروط</a>
       <a href="privacy.html">الخصوصية</a>
     </div>
-    <div>© 2025 جميع الحقوق محفوظة - FaragDev98</div>
+    <div>© 2025 - جميع الحقوق محفوظة - FaragDev98</div>
   </footer>
+
 </body>
 </html>
