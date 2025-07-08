@@ -1,66 +1,144 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<!DOCTYPE html><html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FaragDev98 | تعلم وابدأ مشروعك</title>
-  <meta name="description" content="موقع تعليمي شامل مقدم من FaragDev98، يشمل كورسات، مقالات، كتاب، وأعمال برمجية جاهزة.">
-  <meta name="theme-color" content="#6b46c1" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="assets/logo.png" type="image/png" />
+  <title>FaragDev98 | كورسات وكتب ومشاريع</title>
+  <meta name="description" content="موقع تعليمي احترافي يقدمه FaragDev98 لتعلم البرمجة وتصميم المواقع من الصفر وحتى الاحتراف." />
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/logo.png" type="image/png">
+  <style>
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: linear-gradient(to bottom, #6b46c1, #b28ff9);
+      color: #222;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #fff;
+      text-align: center;
+      padding: 1.5rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    header img {
+      max-height: 80px;
+    }
+    header h1 {
+      color: #6b46c1;
+      margin-top: 0.5rem;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #6b46c1;
+      padding: 0.75rem;
+      gap: 1.5rem;
+    }
+    nav a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: white;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      color: #6b46c1;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin: 1rem auto;
+      max-width: 600px;
+    }
+    .cta-btn {
+      padding: 0.8rem 1.5rem;
+      background-color: #6b46c1;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 1rem;
+      display: inline-block;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    .sections {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .card h3 {
+      color: #6b46c1;
+      margin-bottom: 1rem;
+    }
+    footer {
+      background: #f0f0f0;
+      text-align: center;
+      padding: 1.2rem;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+    .footer-links a {
+      margin: 0 0.7rem;
+      color: #6b46c1;
+      text-decoration: none;
+    }
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
-
 <body>
-  <!-- رأس الموقع -->
-  <header class="main-header">
-    <img src="assets/logo.png" alt="شعار الموقع" class="logo" />
+  <header>
+    <img src="assets/logo.png" alt="شعار الموقع">
     <h1>FaragDev98</h1>
-    <p>تعلم البرمجة وابدأ مشروعك مع دعم شامل</p>
-  </header>
-
-  <!-- شريط التنقل -->
-  <nav class="nav-bar">
+    <p>ابدأ رحلتك التعليمية باحترافية 💡</p>
+  </header>  <nav>
     <a href="index.html">الرئيسية</a>
     <a href="عن-الموقع.html">عن الموقع</a>
     <a href="معرض-الأعمال.html">معرض الأعمال</a>
-    <a href="contact.html">تواصل معنا</a>
-  </nav>
-
-  <!-- قسم البطل -->
-  <section class="hero-section">
-    <h2>ابدأ الآن وحقق حلمك!</h2>
-    <p>احصل على كتاب مجاني، وشاهد مقالات مفيدة، وابدأ كورسك الأول.</p>
-    <a href="assets/book-cover.jpg" class="cta-button" download>📘 تحميل الكتاب</a>
-  </section>
-
-  <!-- معرض الأعمال -->
-  <section class="section">
-    <h2>📂 معرض الأعمال</h2>
-    <p>مشاريع جاهزة وبرمجة احترافية لمختلف المستويات.</p>
-    <a href="معرض-الأعمال.html" class="cta-button">عرض المعرض</a>
-  </section>
-
-  <!-- المقالات -->
-  <section class="section">
-    <h2>📝 مقالات تعليمية</h2>
-    <p>اقرأ مقالات مختارة عن البرمجة وتعلم المهارات خطوة بخطوة.</p>
-    <a href="المقالات.html" class="cta-button">دخول المقالات</a>
-  </section>
-
-  <!-- الاشتراك -->
-  <section class="section highlight">
-    <h2>🎯 اشترك في الكورس</h2>
-    <p>ابدأ تعلم البرمجة بأسلوب عملي وبدعم مباشر من FaragDev98.</p>
-    <a href="https://wa.me/201091838789" class="cta-button">💬 اشترك الآن عبر واتساب</a>
-  </section>
-
-  <!-- الفوتر -->
-  <footer class="footer">
+    <a href="contact.html">تواصل</a>
+  </nav>  <section class="hero">
+    <h2>📘 حمل كتاب البرمجة الآن</h2>
+    <p>كتاب شامل لتعلم البرمجة من الصفر باللغة العربية، يناسب المبتدئين وأصحاب المشاريع.</p>
+    <a href="assets/book-cover.jpg" download class="cta-btn">تحميل الكتاب PDF</a>
+  </section>  <section class="sections">
+    <div class="card">
+      <h3>📚 مقالات تعليمية</h3>
+      <p>اطلع على مقالات مفيدة في مجالات البرمجة وتطوير الذات.</p>
+      <a href="articles.html" class="cta-btn">دخول المقالات</a>
+    </div>
+    <div class="card">
+      <h3>🎓 كورسات</h3>
+      <p>دورات تدريبية متكاملة تشمل HTML, CSS, JavaScript وغيرها.</p>
+      <a href="الدروس.html" class="cta-btn">مشاهدة الدروس</a>
+    </div>
+    <div class="card">
+      <h3>💼 معرض الأعمال</h3>
+      <p>شاهد مشاريع تم تنفيذها وواجهات جاهزة للاستخدام.</p>
+      <a href="معرض-الأعمال.html" class="cta-btn">زيارة المعرض</a>
+    </div>
+  </section>  <footer>
     <div class="footer-links">
-      <a href="terms.html">الشروط</a> |
+      <a href="terms.html">الشروط</a>
       <a href="privacy.html">الخصوصية</a>
     </div>
-    <p>© 2025 جميع الحقوق محفوظة - <a href="https://github.com/FaragDev98" target="_blank">FaragDev98</a></p>
+    <div>© 2025 جميع الحقوق محفوظة - FaragDev98</div>
   </footer>
 </body>
 </html>
