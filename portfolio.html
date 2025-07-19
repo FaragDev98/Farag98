@@ -2,110 +2,125 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>معرض أعمال Faraj Abdallah</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FaragDev98 | معرض الأعمال والكتب</title>
+  <link rel="stylesheet" href="styles.css" />
   <style>
     body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to right, #4f46e5, #9333ea);
       margin: 0;
-      font-family: 'Cairo', sans-serif;
-      background: linear-gradient(to right, #3f51b5, #9c27b0);
+      padding: 0;
       color: white;
-      padding: 20px;
     }
-
     header {
       text-align: center;
-      padding: 30px 0;
-      font-size: 28px;
-      font-weight: bold;
+      padding: 2rem;
     }
-
-    .projects {
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    .portfolio {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-      max-width: 1100px;
+      gap: 2rem;
+      padding: 2rem;
+      max-width: 1200px;
       margin: auto;
     }
-
     .card {
       background-color: rgba(255, 255, 255, 0.1);
-      border-radius: 12px;
-      padding: 20px;
-      transition: transform 0.3s ease;
+      padding: 1rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
       text-align: center;
     }
-
-    .card:hover {
-      transform: scale(1.03);
-    }
-
     .card img {
       width: 100%;
-      max-height: 180px;
-      object-fit: cover;
-      border-radius: 8px;
-      margin-bottom: 10px;
+      border-radius: 0.5rem;
     }
-
     .card h3 {
-      margin: 0;
-      color: #ffeb3b;
+      margin: 1rem 0 0.5rem;
     }
-
-    .card p {
-      margin: 10px 0;
-    }
-
     .card a {
+      display: inline-block;
+      margin-top: 0.5rem;
       color: #fff;
-      text-decoration: underline;
+      background-color: #6366f1;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      transition: background 0.3s;
     }
-
+    .card a:hover {
+      background-color: #4f46e5;
+    }
     footer {
       text-align: center;
-      padding: 30px;
-      margin-top: 40px;
-      background: rgba(255, 255, 255, 0.1);
+      padding: 1rem;
+      font-size: 0.9rem;
+      background-color: rgba(0, 0, 0, 0.1);
+      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
 
-  <header>معرض أعمال Faraj Abdallah</header>
+<header>
+  <h1>معرض أعمال FaragDev98</h1>
+  <p>تعرف على مشاريعي وكتبي الرقمية في مجال البرمجة والتطوير</p>
+</header>
 
-  <div class="projects">
-
-    <div class="card">
-      <img src="images/fabrica.png" alt="منصة Fabrica" />
-      <h3>منصة Fabrica</h3>
-      <p>مشروع تعليمي يقدم كورسات برمجة بالعربية مع تصميم أنيق وطرق دفع متعددة.</p>
-      <a href="https://fabrica-courses.netlify.app/" target="_blank">زيارة الموقع</a>
-    </div>
-
-    <div class="card">
-      <img src="images/quran-app.png" alt="تطبيق القرآن الكريم" />
-      <h3>تطبيق القرآن الكريم</h3>
-      <p>تطبيق PWA يعرض سور القرآن الكريم بواجهة بسيطة ويعمل بدون إنترنت. (عرض فقط)</p>
-    </div>
-
-    <div class="card">
-      <img src="images/cms.png" alt="نظام إدارة محتوى" />
-      <h3>نظام إدارة محتوى</h3>
-      <p>نموذج أولي لمنصة إدارة محتوى تصلح للمدونات أو المواقع الصغيرة. (قيد التصميم)</p>
-    </div>
-
-    <div class="card">
-      <img src="images/resume-tool.png" alt="أداة إنشاء مواقع شخصية" />
-      <h3>أداة إنشاء مواقع شخصية</h3>
-      <p>فكرة أداة تتيح إنشاء سيرة ذاتية احترافية بسهولة عبر المتصفح. (سيتم تطويرها لاحقًا)</p>
-    </div>
-
+<section class="portfolio">
+  <div class="card">
+    <img src="images/cms.png" alt="نظام إدارة محتوى" />
+    <h3>نظام إدارة محتوى</h3>
+    <p>تصميم نظام CMS بسيط وسهل الاستخدام.</p>
+  </div>
+  
+  <div class="card">
+    <img src="images/resume-tool.png" alt="أداة إنشاء سيرة ذاتية" />
+    <h3>أداة إنشاء سيرة ذاتية</h3>
+    <p>واجهة تفاعلية تساعدك في إنشاء CV احترافي بسهولة.</p>
+  </div>
+  
+  <div class="card">
+    <img src="images/quran-app.png" alt="تطبيق القرآن الكريم" />
+    <h3>تطبيق القرآن الكريم</h3>
+    <p>تطبيق PWA يعمل بدون إنترنت يحتوي على القرآن الكريم كاملًا.</p>
+    <a href="https://fabrica-courses.netlify.app/">عرض التطبيق</a>
+  </div>
+  
+  <div class="card">
+    <img src="images/fabrica.png" alt="موقع فبريكا" />
+    <h3>موقع Fabrica</h3>
+    <p>موقع الكورسات والمحتوى البرمجي الذي أنشأته لتعليم المبتدئين.</p>
+    <a href="https://fabrica-courses.netlify.app/">زيارة الموقع</a>
   </div>
 
-  <footer>
-    &copy; 2025 Faraj Abdallah - جميع الحقوق محفوظة
-  </footer>
+  <div class="card">
+    <h3>كتاب HTML</h3>
+    <p>كتاب شامل لتعلم HTML من الصفر حتى الاحتراف، مناسب للمبتدئين.</p>
+    <a href="https://dxbbs.netlify.app" target="_blank">قراءة الكتاب</a>
+  </div>
+
+  <div class="card">
+    <h3>تطبيق تعلم الإنجليزية</h3>
+    <p>تطبيق يساعدك في تطوير لغتك الإنجليزية بطريقة تفاعلية.</p>
+    <a href="https://learnenglise.netlify.app" target="_blank">اكتشف التطبيق</a>
+  </div>
+
+  <div class="card">
+    <h3>لعبة اختبر عقلك</h3>
+    <p>لعبة ممتعة لاختبار الذكاء والتركيز.</p>
+    <a href="https://gorgeous-speculoos-510e75.netlify.app" target="_blank">جرب الآن</a>
+  </div>
+</section>
+
+<footer>
+  جميع الحقوق محفوظة © FaragDev98 - 2025
+</footer>
 
 </body>
 </html>
