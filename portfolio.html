@@ -3,42 +3,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>معرض أعمالي - FaragDev</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>معرض أعمال Faraj Abdallah</title>
   <style>
     body {
-      font-family: 'Arial', sans-serif;
-      background: linear-gradient(to left, #160032, #270047);
-      color: #fff;
       margin: 0;
-      padding: 0;
+      font-family: 'Cairo', sans-serif;
+      background: linear-gradient(to right, #3f51b5, #9c27b0);
+      color: white;
+      padding: 20px;
     }
 
     header {
       text-align: center;
-      padding: 2rem 1rem;
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
+      padding: 30px 0;
+      font-size: 28px;
+      font-weight: bold;
     }
 
     .projects {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
-      padding: 2rem;
-      max-width: 1200px;
+      gap: 20px;
+      max-width: 1100px;
       margin: auto;
     }
 
     .card {
-      background-color: #1f0033;
-      border-radius: 15px;
-      overflow: hidden;
-      box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 20px;
       transition: transform 0.3s ease;
+      text-align: center;
     }
 
     .card:hover {
@@ -47,101 +42,90 @@
 
     .card img {
       width: 100%;
-      height: 180px;
+      max-height: 200px;
       object-fit: cover;
-    }
-
-    .card-content {
-      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 15px;
     }
 
     .card h3 {
-      margin: 0 0 10px;
-      font-size: 1.2rem;
-      color: #ffccff;
+      margin: 0;
+      color: #ffeb3b;
     }
 
     .card p {
-      font-size: 0.95rem;
-      color: #ddd;
-      margin-bottom: 1rem;
+      margin: 10px 0;
     }
 
     .card a {
-      display: inline-block;
-      background-color: #6f00ff;
-      color: white;
-      padding: 0.5rem 1rem;
-      border-radius: 8px;
-      text-decoration: none;
-      transition: background 0.3s;
-    }
-
-    .card a:hover {
-      background-color: #9d00ff;
+      color: #fff;
+      text-decoration: underline;
     }
 
     footer {
       text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      background-color: #120027;
+      padding: 30px;
+      margin-top: 40px;
+      background: rgba(255, 255, 255, 0.1);
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>معرض أعمال FaragDev</h1>
-    <p>أبرز المشاريع التي قمت بتطويرها</p>
-  </header>
+  <header>معرض أعمال Faraj Abdallah</header>
 
-  <section class="projects">
+  <div class="projects">
 
-    <!-- Fabrica Courses -->
     <div class="card">
-      <img src="images/fabrica.png" alt="Fabrica Courses" />
-      <div class="card-content">
-        <h3>منصة Fabrica Courses</h3>
-        <p>موقع تعليمي يعرض الكورسات والدورات مع تصميم تفاعلي وواجهة مستخدم احترافية.</p>
-        <a href="https://fabrica-courses.netlify.app/" target="_blank">زيارة المشروع</a>
-      </div>
+      <img src="https://i.imgur.com/6QExmZp.png" alt="منصة Fabrica" />
+      <h3>منصة Fabrica</h3>
+      <p>مشروع تعليمي يقدم كورسات برمجة بالعربية مع تصميم أنيق وطرق دفع متعددة.</p>
+      <a href="https://fabrica-courses.netlify.app/" target="_blank">زيارة الموقع</a>
     </div>
 
-    <!-- كتاب HTML -->
     <div class="card">
-      <img src="images/dubsugar-cover.png" alt="كتاب HTML" />
-      <div class="card-content">
-        <h3>كتاب HTML التفاعلي</h3>
-        <p>كتاب بصيغة PDF لتعليم HTML للمبتدئين، مع تصميم جذاب وصفحات جاهزة للبيع والتحميل.</p>
-        <a href="https://حساس-136dbb.netlify.app/" target="_blank">زيارة الموقع</a>
-      </div>
+      <img src="https://i.imgur.com/zlMBhRH.png" alt="تطبيق القرآن الكريم" />
+      <h3>تطبيق القرآن الكريم</h3>
+      <p>تطبيق PWA يعرض سور القرآن الكريم بواجهة بسيطة ويعمل بدون إنترنت. (عرض فقط)</p>
     </div>
 
-    <!-- Learn English App -->
     <div class="card">
-      <img src="images/learnenglish.png" alt="Learn English App" />
-      <div class="card-content">
-        <h3>تطبيق تعلم الإنجليزية</h3>
-        <p>تطبيق تفاعلي لتعلم اللغة الإنجليزية بطريقة بسيطة وممتعة يناسب المبتدئين.</p>
-        <a href="https://learnenglise.netlify.app/" target="_blank">زيارة التطبيق</a>
-      </div>
+      <img src="https://i.imgur.com/hIMXvNo.png" alt="نظام إدارة محتوى" />
+      <h3>نظام إدارة محتوى</h3>
+      <p>نموذج أولي لمنصة إدارة محتوى تصلح للمدونات أو المواقع الصغيرة. (قيد التصميم)</p>
     </div>
 
-    <!-- لعبة اختبر عقلك -->
     <div class="card">
-      <img src="images/mind-test.png" alt="لعبة اختبار الذكاء" />
-      <div class="card-content">
-        <h3>لعبة اختبر عقلك</h3>
-        <p>لعبة ترفيهية تعليمية لاختبار الذكاء والتركيز، مناسبة لكافة الأعمار.</p>
-        <a href="https://gorgeous-speculoos-510e75.netlify.app/" target="_blank">جرب اللعبة</a>
-      </div>
+      <img src="https://i.imgur.com/TXYzNTU.png" alt="أداة إنشاء مواقع" />
+      <h3>أداة إنشاء مواقع شخصية</h3>
+      <p>فكرة أداة تتيح إنشاء سيرة ذاتية احترافية بسهولة عبر المتصفح. (سيتم تطويرها لاحقًا)</p>
     </div>
 
-  </section>
+    <div class="card">
+      <img src="https://i.imgur.com/I0m5i4X.png" alt="موقع HTML" />
+      <h3>كتاب HTML + موقع</h3>
+      <p>مشروع لتعليم HTML للمبتدئين بلغة سهلة وواجهة عربية، يمكنك تجربته ومتابعة التحديثات.</p>
+      <a href="https://دبس-السكر-الحساس-136dbb.netlify.app" target="_blank">زيارة الموقع</a>
+    </div>
+
+    <div class="card">
+      <img src="https://i.imgur.com/Wocbi0K.png" alt="لعبة اختبر عقلك" />
+      <h3>لعبة اختبر عقلك</h3>
+      <p>لعبة تفاعلية لاختبار الذكاء والتركيز من خلال أسئلة قصيرة وممتعة. (نسخة تجريبية)</p>
+      <a href="https://gorgeous-speculoos-510e75.netlify.app/" target="_blank">تجربة اللعبة</a>
+    </div>
+
+    <div class="card">
+      <img src="https://i.imgur.com/3igKuOo.png" alt="تطبيق تعليم الإنجليزية" />
+      <h3>تطبيق تعليم الإنجليزية</h3>
+      <p>تطبيق بسيط لتعليم الكلمات الإنجليزية بطريقة سهلة ومناسبة للمبتدئين.</p>
+      <a href="https://learnenglise.netlify.app/" target="_blank">جرب التطبيق</a>
+    </div>
+
+  </div>
 
   <footer>
-    &copy; 2025 FaragDev | جميع الحقوق محفوظة
+    &copy; 2025 Faraj Abdallah - جميع الحقوق محفوظة
   </footer>
 
 </body>
