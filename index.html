@@ -3,69 +3,94 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>FaragDev98 | الموقع الرسمي</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>FaragDev98 | مطور ويب ومؤلف تقني</title>
   <link rel="icon" type="image/png" href="images/fabrica.png" />
+  <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
-  <header class="hero-section">
-    <div class="container">
-      <img src="images/fabrica.png" alt="شعار الموقع" class="logo" />
-      <h1>مرحبًا بك في FaragDev98</h1>
-      <p>أقوى كورسات البرمجة + كتاب حصري</p>
-      <a href="https://wa.me/201091838789" class="cta-btn">اشترك في الكورس الآن</a>
+
+  <!-- رأس الموقع -->
+  <header class="site-header">
+    <div class="container header-flex">
+      <div class="logo-box">
+        <img src="images/fabrica.png" alt="FaragDev98 Logo" class="logo" />
+        <span class="site-name">FaragDev98</span>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html" class="active">الرئيسية</a></li>
+          <li><a href="portfolio.html">معرض الأعمال</a></li>
+          <li><a href="articles.html">مقالات</a></li>
+          <li><a href="contact.html">تواصل</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
-  <nav class="main-nav">
-    <ul>
-      <li><a href="index.html" class="active">الرئيسية</a></li>
-      <li><a href="articles.html">مقالات</a></li>
-      <li><a href="portfolio.html">معرض الأعمال</a></li>
-      <li><a href="contact.html">تواصل معنا</a></li>
-    </ul>
-  </nav>
+  <!-- القسم الترحيبي -->
+  <section class="hero">
+    <div class="container hero-content">
+      <h1>مرحبًا بك في FaragDev98</h1>
+      <p>مطور ويب | مؤلف كتاب البرمجة | مقدم كورسات برمجية</p>
+      <a href="https://wa.me/201091838789" class="cta-btn">اشترك في الكورس الآن</a>
+    </div>
+  </section>
 
+  <!-- الميزات -->
   <section class="features">
     <div class="container">
-      <h2>لماذا تختار FaragDev98؟</h2>
-      <div class="feature-box">
-        <i class="fas fa-laptop-code fa-2x"></i>
-        <h3>كورس شامل</h3>
-        <p>تعلم HTML, CSS, JavaScript من الصفر حتى الاحتراف.</p>
-      </div>
-      <div class="feature-box">
-        <i class="fas fa-book fa-2x"></i>
-        <h3>كتاب PDF حصري</h3>
-        <p>اشترِ كتابنا التعليمي بسعر رمزي وابدأ رحلتك البرمجية الآن.</p>
-      </div>
-      <div class="feature-box">
-        <i class="fas fa-wallet fa-2x"></i>
-        <h3>وسائل دفع متنوعة</h3>
-        <p>فودافون كاش، أورنج كاش، وي كاش، باي بال.</p>
+      <h2 class="section-title">لماذا تختار FaragDev98؟</h2>
+      <div class="feature-grid">
+        <div class="feature-box">
+          <i class="fas fa-code fa-2x"></i>
+          <h3>خدمات برمجية</h3>
+          <p>أدوات، سكربتات، وتطبيقات ويب مخصصة. <br> <a href="https://delicate-treacle-136dbb.netlify.app/" target="_blank">زيارة الموقع</a></p>
+        </div>
+        <div class="feature-box">
+          <i class="fas fa-book-open fa-2x"></i>
+          <h3>الكتاب الرقمي</h3>
+          <p>كتاب شامل لتعلم HTML وCSS وJS بطريقة مبسطة.</p>
+        </div>
+        <div class="feature-box">
+          <i class="fas fa-language fa-2x"></i>
+          <h3>تطبيق تعلم الإنجليزية</h3>
+          <p>حمّل التطبيق وابدأ التطوير الآن. <br> <a href="#" class="download-btn">تحميل التطبيق</a></p>
+        </div>
+        <div class="feature-box">
+          <i class="fas fa-brain fa-2x"></i>
+          <h3>لعبة اختبر عقلك</h3>
+          <p>لعبة ممتعة لقياس تركيزك وذكائك. <br> <a href="#" class="download-btn">جرب الآن</a></p>
+        </div>
+        <div class="feature-box">
+          <i class="fas fa-mosque fa-2x"></i>
+          <h3>تطبيق القرآن الكريم</h3>
+          <p>تطبيق بدون إنترنت يحتوي القرآن كاملًا. <br> <em>جارٍ العمل عليه</em></p>
+        </div>
       </div>
     </div>
   </section>
 
+  <!-- رابط مباشر للكتاب -->
   <section class="book-promo">
     <div class="container">
-      <h2>كتاب البرمجة للمبتدئين</h2>
-      <img src="images/book-cover.png" alt="غلاف الكتاب" class="book-cover" />
-      <p>احصل على نسختك الآن فقط بـ <strong>2 دولار</strong> أو ما يعادلها بالجنيه المصري.</p>
+      <h2>احصل على كتاب البرمجة الآن</h2>
+      <img src="images/book-cover.png" alt="غلاف كتاب HTML" class="book-cover" />
+      <p>فقط بـ <strong>2 دولار</strong> أو ما يعادله بالجنيه المصري.</p>
       <a href="https://wa.me/201091838789" class="cta-btn">شراء الكتاب</a>
     </div>
   </section>
 
+  <!-- التذييل -->
   <footer>
     <div class="container">
-      <p>جميع الحقوق محفوظة &copy; FaragDev98 - 2025</p>
+      <p>جميع الحقوق محفوظة © FaragDev98 - 2025</p>
       <p>
         <i class="fab fa-whatsapp"></i> 01091838789 |
-        <i class="fab fa-facebook"></i> <a href="https://facebook.com" target="_blank">فيسبوك</a> |
         <i class="fas fa-envelope"></i> <a href="mailto:faragbdallh891@gmail.com">faragbdallh891@gmail.com</a>
       </p>
     </div>
   </footer>
+
 </body>
 </html>
