@@ -3,103 +3,57 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fabrica Course - فراج عبدالله</title>
+  <meta name="description" content="كورس فابريكا - تعلم البرمجة وشراء كتاب PDF.">
+  <meta name="keywords" content="برمجة, كورسات, كتاب, تعلم, HTML, CSS, JavaScript, Fabrica Course">
+  <meta name="author" content="FaragDev98">
+  <title>كورس فابريكا | FaragDev98</title>
+  <link rel="icon" href="logo.png" type="image/png" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Tajawal', sans-serif;
-      background: linear-gradient(to bottom, #1e1e2f, #3b3b98);
-      color: #fff;
-      text-align: center;
-    }
-
-    header {
-      background-color: #2c2c54;
-      padding: 20px 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-      color: #f1c40f;
-    }
-
-    main {
-      padding: 40px 20px;
-    }
-
-    .book-cover {
-      max-width: 250px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
-    }
-
-    .description {
-      margin-top: 20px;
-      font-size: 1.2rem;
-      color: #eee;
-    }
-
-    .cta-button {
-      margin-top: 30px;
-      padding: 15px 30px;
-      background-color: #9b59b6;
-      color: #fff;
-      border: none;
-      border-radius: 30px;
-      font-size: 1.1rem;
-      cursor: pointer;
-      transition: background 0.3s;
-      text-decoration: none;
-      display: inline-block;
-    }
-
-    .cta-button:hover {
-      background-color: #8e44ad;
-    }
-
-    footer {
-      margin-top: 50px;
-      padding: 20px;
-      background-color: #222;
-      font-size: 0.9rem;
-      color: #bbb;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.5rem;
-      }
-
-      .description {
-        font-size: 1rem;
-      }
-
-      .cta-button {
-        padding: 12px 20px;
-        font-size: 1rem;
-      }
-    }
-  </style>
 </head>
 <body>
-
-  <header>
-    <h1>Fabrica Course</h1>
+  <header class="hero">
+    <div class="container">
+      <img src="logo.png" alt="Fabrica Logo" class="logo" />
+      <h1>أهلاً بك في كورس فابريكا</h1>
+      <p>تعلم البرمجة وابدأ مسيرتك التقنية اليوم!</p>
+      <a href="https://wa.me/201091838789" class="btn">اشترك في الكورس</a>
+    </div>
   </header>
 
-  <main>
-    <img src="images/book-cover.jpg" alt="غلاف كتاب البرمجة" class="book-cover" />
-    <p class="description">اكتشف كتاب البرمجة الخاص بي للمبتدئين، بطريقة سهلة وعملية باللغة العربية. مناسب لكل الأعمار ويبدأ بك من الصفر حتى أول مشروع!</p>
-    <a href="https://wa.me/201091838789" class="cta-button" target="_blank">اشترك الآن عبر واتساب</a>
+  <main class="main-content">
+    <section class="features">
+      <h2>ماذا نقدم؟</h2>
+      <ul>
+        <li>كتاب PDF احترافي لتعلم البرمجة للمبتدئين</li>
+        <li>كورس تعليمي عملي خطوة بخطوة</li>
+        <li>تواصل مباشر معنا للدعم</li>
+        <li>طرق دفع سهلة وآمنة</li>
+      </ul>
+    </section>
+
+    <section class="book-preview">
+      <h2>عرض الكتاب</h2>
+      <img src="images/book-cover.jpg" alt="غلاف كتاب البرمجة" />
+      <p>احصل على نسختك من كتاب البرمجة بسعر 2 دولار فقط!</p>
+      <a href="https://wa.me/201091838789" class="btn">اطلب الآن</a>
+    </section>
+
+    <section class="contact">
+      <h2>طرق التواصل والدفع</h2>
+      <ul>
+        <li>فودافون كاش: 01066047545</li>
+        <li>أورنج كاش: 01285895096</li>
+        <li>وي كاش: 01558516081</li>
+        <li>PayPal: Farajbdallh891@gmail.com</li>
+      </ul>
+      <p>واتساب: <a href="https://wa.me/201091838789">اضغط للتواصل</a></p>
+    </section>
   </main>
 
   <footer>
-    &copy; 2025 فراج عبدالله - Fabrica Course. جميع الحقوق محفوظة.
+    <p>© 2025 FaragDev98. جميع الحقوق محفوظة.</p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
