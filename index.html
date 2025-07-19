@@ -2,94 +2,103 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>FaragDev98 | مطور ويب ومؤلف تقني</title>
-  <link rel="icon" type="image/png" href="images/fabrica.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fabrica Course - فراج عبدالله</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Tajawal', sans-serif;
+      background: linear-gradient(to bottom, #1e1e2f, #3b3b98);
+      color: #fff;
+      text-align: center;
+    }
+
+    header {
+      background-color: #2c2c54;
+      padding: 20px 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: #f1c40f;
+    }
+
+    main {
+      padding: 40px 20px;
+    }
+
+    .book-cover {
+      max-width: 250px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    }
+
+    .description {
+      margin-top: 20px;
+      font-size: 1.2rem;
+      color: #eee;
+    }
+
+    .cta-button {
+      margin-top: 30px;
+      padding: 15px 30px;
+      background-color: #9b59b6;
+      color: #fff;
+      border: none;
+      border-radius: 30px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .cta-button:hover {
+      background-color: #8e44ad;
+    }
+
+    footer {
+      margin-top: 50px;
+      padding: 20px;
+      background-color: #222;
+      font-size: 0.9rem;
+      color: #bbb;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      .description {
+        font-size: 1rem;
+      }
+
+      .cta-button {
+        padding: 12px 20px;
+        font-size: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
 
-  <!-- رأس الموقع -->
-  <header class="site-header">
-    <div class="container header-flex">
-      <div class="logo-box">
-        <img src="images/fabrica.png" alt="FaragDev98 Logo" class="logo" />
-        <span class="site-name">FaragDev98</span>
-      </div>
-      <nav class="main-nav">
-        <ul>
-          <li><a href="index.html" class="active">الرئيسية</a></li>
-          <li><a href="portfolio.html">معرض الأعمال</a></li>
-          <li><a href="articles.html">مقالات</a></li>
-          <li><a href="contact.html">تواصل</a></li>
-        </ul>
-      </nav>
-    </div>
+  <header>
+    <h1>Fabrica Course</h1>
   </header>
 
-  <!-- القسم الترحيبي -->
-  <section class="hero">
-    <div class="container hero-content">
-      <h1>مرحبًا بك في FaragDev98</h1>
-      <p>مطور ويب | مؤلف كتاب البرمجة | مقدم كورسات برمجية</p>
-      <a href="https://wa.me/201091838789" class="cta-btn">اشترك في الكورس الآن</a>
-    </div>
-  </section>
+  <main>
+    <img src="images/book-cover.jpg" alt="غلاف كتاب البرمجة" class="book-cover" />
+    <p class="description">اكتشف كتاب البرمجة الخاص بي للمبتدئين، بطريقة سهلة وعملية باللغة العربية. مناسب لكل الأعمار ويبدأ بك من الصفر حتى أول مشروع!</p>
+    <a href="https://wa.me/201091838789" class="cta-button" target="_blank">اشترك الآن عبر واتساب</a>
+  </main>
 
-  <!-- الميزات -->
-  <section class="features">
-    <div class="container">
-      <h2 class="section-title">لماذا تختار FaragDev98؟</h2>
-      <div class="feature-grid">
-        <div class="feature-box">
-          <i class="fas fa-code fa-2x"></i>
-          <h3>خدمات برمجية</h3>
-          <p>أدوات، سكربتات، وتطبيقات ويب مخصصة. <br> <a href="https://delicate-treacle-136dbb.netlify.app/" target="_blank">زيارة الموقع</a></p>
-        </div>
-        <div class="feature-box">
-          <i class="fas fa-book-open fa-2x"></i>
-          <h3>الكتاب الرقمي</h3>
-          <p>كتاب شامل لتعلم HTML وCSS وJS بطريقة مبسطة.</p>
-        </div>
-        <div class="feature-box">
-          <i class="fas fa-language fa-2x"></i>
-          <h3>تطبيق تعلم الإنجليزية</h3>
-          <p>حمّل التطبيق وابدأ التطوير الآن. <br> <a href="#" class="download-btn">تحميل التطبيق</a></p>
-        </div>
-        <div class="feature-box">
-          <i class="fas fa-brain fa-2x"></i>
-          <h3>لعبة اختبر عقلك</h3>
-          <p>لعبة ممتعة لقياس تركيزك وذكائك. <br> <a href="#" class="download-btn">جرب الآن</a></p>
-        </div>
-        <div class="feature-box">
-          <i class="fas fa-mosque fa-2x"></i>
-          <h3>تطبيق القرآن الكريم</h3>
-          <p>تطبيق بدون إنترنت يحتوي القرآن كاملًا. <br> <em>جارٍ العمل عليه</em></p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- رابط مباشر للكتاب -->
-  <section class="book-promo">
-    <div class="container">
-      <h2>احصل على كتاب البرمجة الآن</h2>
-      <img src="images/book-cover.png" alt="غلاف كتاب HTML" class="book-cover" />
-      <p>فقط بـ <strong>2 دولار</strong> أو ما يعادله بالجنيه المصري.</p>
-      <a href="https://wa.me/201091838789" class="cta-btn">شراء الكتاب</a>
-    </div>
-  </section>
-
-  <!-- التذييل -->
   <footer>
-    <div class="container">
-      <p>جميع الحقوق محفوظة © FaragDev98 - 2025</p>
-      <p>
-        <i class="fab fa-whatsapp"></i> 01091838789 |
-        <i class="fas fa-envelope"></i> <a href="mailto:faragbdallh891@gmail.com">faragbdallh891@gmail.com</a>
-      </p>
-    </div>
+    &copy; 2025 فراج عبدالله - Fabrica Course. جميع الحقوق محفوظة.
   </footer>
 
 </body>
