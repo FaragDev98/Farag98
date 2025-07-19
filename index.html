@@ -2,58 +2,244 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="كورس فابريكا - تعلم البرمجة وشراء كتاب PDF.">
-  <meta name="keywords" content="برمجة, كورسات, كتاب, تعلم, HTML, CSS, JavaScript, Fabrica Course">
-  <meta name="author" content="FaragDev98">
-  <title>كورس فابريكا | FaragDev98</title>
-  <link rel="icon" href="logo.png" type="image/png" />
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>شراء كتاب HTML - FaragDev98</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background: linear-gradient(135deg, #f3e5f5, #e8f5e9);
+      color: #333;
+      text-align: center;
+      animation: fadeIn 1.5s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    header {
+      background: #4a148c;
+      color: white;
+      padding: 15px 0;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 750px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      padding: 30px 25px;
+    }
+
+    .cover {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      color: #4a148c;
+      font-size: 2.3rem;
+      margin-bottom: 10px;
+    }
+
+    p.summary, p.description {
+      font-size: 1.15rem;
+      line-height: 1.9;
+      color: #444;
+      margin-bottom: 25px;
+    }
+
+    .btns {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+
+    a.btn {
+      padding: 14px 25px;
+      background: #7b1fa2;
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(123, 31, 162, 0.3);
+      width: 80%;
+      max-width: 300px;
+    }
+
+    a.btn:hover {
+      background: #4a0072;
+      transform: scale(1.05);
+    }
+
+    .whatsapp {
+      background: #25d366 !important;
+    }
+
+    .whatsapp:hover {
+      background: #1ebe5d !important;
+    }
+
+    .payment-options {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin: 30px auto;
+    }
+
+    .pay-btn {
+      background: #2196f3;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      width: 80%;
+      max-width: 300px;
+      transition: background 0.3s ease;
+    }
+
+    .pay-btn:hover {
+      background: #1565c0;
+    }
+
+    .price {
+      font-size: 1.5rem;
+      color: #2e7d32;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+
+    .instruction {
+      background: #ede7f6;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 30px;
+      line-height: 1.8;
+      color: #4a148c;
+      font-size: 1rem;
+      text-align: right;
+    }
+
+    .instruction a {
+      color: #4a148c;
+      text-decoration: underline;
+    }
+
+    .certificate, .animation {
+      width: 100%;
+      max-height: 400px;
+      border-radius: 10px;
+      margin-top: 30px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+
+    .footer {
+      font-size: 0.9rem;
+      color: #777;
+      margin: 35px 0 10px;
+      direction: ltr;
+    }
+
+    .footer a {
+      color: #6a1b9a;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-  <header class="hero">
-    <div class="container">
-      <img src="logo.png" alt="Fabrica Logo" class="logo" />
-      <h1>أهلاً بك في كورس فابريكا</h1>
-      <p>تعلم البرمجة وابدأ مسيرتك التقنية اليوم!</p>
-      <a href="https://wa.me/201091838789" class="btn">اشترك في الكورس</a>
+
+  <header>FaragDev98</header>
+
+  <div class="container">
+
+    <!-- صورة الغلاف -->
+    <img src="images/html-book-cover.png" alt="غلاف الكتاب" class="cover" />
+
+    <h1>📘 كتاب HTML للمبتدئين</h1>
+
+    <p class="summary">
+      هل تريد أن تبدأ رحلتك في برمجة المواقع؟  
+      هذا الكتاب هو دليلك المثالي لتعلم HTML من الأساس حتى إنشاء صفحات ويب احترافية!
+    </p>
+
+    <p class="description">
+      تعلم HTML من البداية حتى الاحتراف باللغة العربية، بأسلوب مبسط وشامل مع صور توضيحية.
+    </p>
+
+    <div class="price">💰 السعر: 2 دولار (100 جنيه مصري)</div>
+
+    <!-- أزرار الشراء -->
+    <div class="btns">
+      <a href="https://faragdev98.gumroad.com/l/htmlbook" class="btn">شراء من Gumroad</a>
+      <a href="https://payhip.com/b/2cJWp" class="btn">شراء من Payhip</a>
+      <a id="whatsappBtn" href="#" class="btn whatsapp">شراء عبر واتساب</a>
+      <a href="download/تعلم إنجليزي.apk" class="btn" download>📲 تحميل تطبيق تعلم الإنجليزية</a>
     </div>
-  </header>
 
-  <main class="main-content">
-    <section class="features">
-      <h2>ماذا نقدم؟</h2>
-      <ul>
-        <li>كتاب PDF احترافي لتعلم البرمجة للمبتدئين</li>
-        <li>كورس تعليمي عملي خطوة بخطوة</li>
-        <li>تواصل مباشر معنا للدعم</li>
-        <li>طرق دفع سهلة وآمنة</li>
-      </ul>
-    </section>
+    <!-- أزرار الدفع -->
+    <div class="payment-options">
+      <button class="pay-btn" onclick="copyText('01066047545')">📱 فودافون كاش: 01066047545</button>
+      <button class="pay-btn" onclick="copyText('01285895096')">📱 أورنج كاش: 01285895096</button>
+      <button class="pay-btn" onclick="copyText('01558516081')">📱 وي كاش: 01558516081</button>
+      <button class="pay-btn" onclick="copyText('Farajbdallh891@gmail.com')">📧 بايبال: Farajbdallh891@gmail.com</button>
+    </div>
 
-    <section class="book-preview">
-      <h2>عرض الكتاب</h2>
-      <img src="images/book-cover.jpg" alt="غلاف كتاب البرمجة" />
-      <p>احصل على نسختك من كتاب البرمجة بسعر 2 دولار فقط!</p>
-      <a href="https://wa.me/201091838789" class="btn">اطلب الآن</a>
-    </section>
+    <!-- شرح خطوات الشراء -->
+    <div class="instruction">
+      <strong>🔒 خطوات الشراء عبر واتساب:</strong><br>
+      1. انسخ رقم الدفع من الأعلى وأرسل رسالة إلى: <a href="https://wa.me/201066047545" target="_blank" rel="noopener">01066047545</a><br>
+      2. اختر طريقة الدفع المناسبة.<br>
+      3. أرسل صورة الإيصال.<br>
+      4. سيتم إرسال رابط الكتاب خلال دقائق.
+    </div>
 
-    <section class="contact">
-      <h2>طرق التواصل والدفع</h2>
-      <ul>
-        <li>فودافون كاش: 01066047545</li>
-        <li>أورنج كاش: 01285895096</li>
-        <li>وي كاش: 01558516081</li>
-        <li>PayPal: Farajbdallh891@gmail.com</li>
-      </ul>
-      <p>واتساب: <a href="https://wa.me/201091838789">اضغط للتواصل</a></p>
-    </section>
-  </main>
+    <!-- صورة الشهادة -->
+    <img src="images/certificate-coursera.jpg" alt="شهادة إتمام الكورس" class="certificate" />
 
-  <footer>
-    <p>© 2025 FaragDev98. جميع الحقوق محفوظة.</p>
-  </footer>
+    <!-- صورة متحركة -->
+    <img src="https://i.postimg.cc/yN9CQDXH/typing-animation.gif" alt="كاتب على الكمبيوتر" class="animation" />
 
-  <script src="script.js"></script>
+    <div class="footer" dir="rtl">
+      جميع الحقوق محفوظة © 2025 FaragDev98<br>
+      <a href="terms.html">الشروط والأحكام</a> | <a href="privacy.html">سياسة الخصوصية</a>
+    </div>
+  </div>
+
+  <script>
+    function copyText(text) {
+      navigator.clipboard.writeText(text).then(() => {
+        alert("✅ تم نسخ البيانات: " + text);
+      }).catch(() => {
+        alert("⚠️ لم يتم النسخ تلقائيًا، الرجاء نسخه يدويًا: " + text);
+      });
+    }
+
+    // زر واتساب برسالة تلقائية
+    document.getElementById("whatsappBtn").addEventListener("click", function(e) {
+      e.preventDefault();
+      const whatsappURL = "https://wa.me/201066047545?text=لقد%20تم%20الدفع%20وأريد%20الحصول%20على%20الكتاب";
+      window.open(whatsappURL, "_blank");
+    });
+  </script>
+
 </body>
 </html>
