@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>FaragDev98 | معرض الأعمال والكتب</title>
-  <link rel="stylesheet" href="styles.css" />
   <style>
     body {
       font-family: 'Arial', sans-serif;
@@ -15,11 +14,18 @@
     }
     header {
       text-align: center;
-      padding: 2rem;
+      padding: 2rem 1rem;
+      background: rgba(0, 0, 0, 0.1);
     }
     h1 {
       margin: 0;
-      font-size: 2.5rem;
+      font-size: 2.8rem;
+      font-weight: bold;
+    }
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+      opacity: 0.9;
     }
     .portfolio {
       display: grid;
@@ -39,9 +45,16 @@
     .card img {
       width: 100%;
       border-radius: 0.5rem;
+      max-height: 200px;
+      object-fit: cover;
     }
     .card h3 {
       margin: 1rem 0 0.5rem;
+      font-size: 1.3rem;
+    }
+    .card p {
+      font-size: 1rem;
+      margin: 0.5rem 0 1rem;
     }
     .card a {
       display: inline-block;
@@ -69,53 +82,50 @@
 
 <header>
   <h1>معرض أعمال FaragDev98</h1>
-  <p>تعرف على مشاريعي وكتبي الرقمية في مجال البرمجة والتطوير</p>
+  <p>مرحبًا بك في مساحة مشاريعي وتطبيقاتي التعليمية وخدماتي البرمجية</p>
 </header>
 
 <section class="portfolio">
+
   <div class="card">
-    <img src="images/cms.png" alt="نظام إدارة محتوى" />
-    <h3>نظام إدارة محتوى</h3>
-    <p>تصميم نظام CMS بسيط وسهل الاستخدام.</p>
+    <img src="images/cms.png" alt="خدمات الموقع" />
+    <h3>خدمات الموقع</h3>
+    <p>تصميم واجهات، صفحات كتب تعليمية، وعرض المحتوى بطريقة جذابة.</p>
+    <a href="https://delicate-treacle-136dbb.netlify.app/" target="_blank">زيارة الموقع</a>
   </div>
-  
+
   <div class="card">
-    <img src="images/resume-tool.png" alt="أداة إنشاء سيرة ذاتية" />
-    <h3>أداة إنشاء سيرة ذاتية</h3>
-    <p>واجهة تفاعلية تساعدك في إنشاء CV احترافي بسهولة.</p>
+    <img src="images/resume-tool.png" alt="تطبيق الإنجليزية" />
+    <h3>تحميل تطبيق تعلم الإنجليزية</h3>
+    <p>تطبيق مجاني لتعلم اللغة الإنجليزية بسهولة وبدون إنترنت.</p>
+    <a href="https://learnenglise.netlify.app/" target="_blank">تحميل التطبيق</a>
   </div>
-  
+
   <div class="card">
-    <img src="images/quran-app.png" alt="تطبيق القرآن الكريم" />
+    <img src="images/quran-app.png" alt="تطبيق القرآن" />
     <h3>تطبيق القرآن الكريم</h3>
-    <p>تطبيق PWA يعمل بدون إنترنت يحتوي على القرآن الكريم كاملًا.</p>
-    <a href="https://fabrica-courses.netlify.app/">عرض التطبيق</a>
-  </div>
-  
-  <div class="card">
-    <img src="images/fabrica.png" alt="موقع فبريكا" />
-    <h3>موقع Fabrica</h3>
-    <p>موقع الكورسات والمحتوى البرمجي الذي أنشأته لتعليم المبتدئين.</p>
-    <a href="https://fabrica-courses.netlify.app/">زيارة الموقع</a>
+    <p>جارٍ العمل على تطوير التطبيق مع عرض سور وآيات وحديث شريفة.</p>
   </div>
 
   <div class="card">
-    <h3>كتاب HTML</h3>
-    <p>كتاب شامل لتعلم HTML من الصفر حتى الاحتراف، مناسب للمبتدئين.</p>
-    <a href="https://dxbbs.netlify.app" target="_blank">قراءة الكتاب</a>
+    <img src="images/fabrica.png" alt="FaragDev98" />
+    <h3>FaragDev98</h3>
+    <p>الصفحة الرئيسية لجميع مشاريعي، وأعمالي البرمجية والتعليمية.</p>
+    <a href="https://fabrica-courses.netlify.app/" target="_blank">الصفحة الرئيسية</a>
   </div>
 
   <div class="card">
-    <h3>تطبيق تعلم الإنجليزية</h3>
-    <p>تطبيق يساعدك في تطوير لغتك الإنجليزية بطريقة تفاعلية.</p>
-    <a href="https://learnenglise.netlify.app" target="_blank">اكتشف التطبيق</a>
+    <h3>موقع HTML التفاعلي</h3>
+    <p>موقع تعليمي يعرض كتاب HTML للمبتدئين بطريقة بسيطة وممتعة.</p>
+    <a href="https://delicate-treacle-136dbb.netlify.app/" target="_blank">زيارة الكتاب</a>
   </div>
 
   <div class="card">
     <h3>لعبة اختبر عقلك</h3>
-    <p>لعبة ممتعة لاختبار الذكاء والتركيز.</p>
-    <a href="https://gorgeous-speculoos-510e75.netlify.app" target="_blank">جرب الآن</a>
+    <p>تطبيق ممتع لاختبار سرعة البديهة والذكاء العقلي.</p>
+    <a href="https://gorgeous-speculoos-510e75.netlify.app/" target="_blank">تحميل اللعبة</a>
   </div>
+
 </section>
 
 <footer>
