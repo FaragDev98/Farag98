@@ -3,191 +3,103 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FaragDev98 | موقع تعليمي</title>
-  <meta name="description" content="FaragDev98 يقدم كورسات، كتب، مشاريع برمجية، وكل ما تحتاجه لتطوير مهاراتك.">
-  <link rel="icon" href="assets/logo.png" type="image/png" />
+  <title>FaragDev98 - كورسات وكتب برمجية</title>
   <link rel="stylesheet" href="style.css" />
-
+  <link rel="icon" href="icons/logo.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet" />
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, sans-serif;
+      font-family: 'Cairo', sans-serif;
       margin: 0;
-      background: linear-gradient(to bottom, #f0ebff, #fdfcff);
-      color: #222;
-      line-height: 1.6;
+      padding: 0;
+      background: linear-gradient(135deg, #3f51b5, #9c27b0);
+      color: white;
     }
-
     header {
-      background-color: #5b21b6;
-      color: white;
-      padding: 1.5rem 1rem;
-      text-align: center;
-    }
-
-    nav {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      background-color: #4c1d95;
-      padding: 0.5rem;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0.5rem 1rem;
-      font-weight: bold;
-      font-size: 1rem;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    .profile {
       text-align: center;
       padding: 2rem 1rem;
     }
-
-    .profile img {
-      width: 160px;
-      height: 160px;
+    header img {
+      width: 120px;
       border-radius: 50%;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-      margin-bottom: 1rem;
+      border: 4px solid white;
     }
-
-    .profile p {
-      max-width: 600px;
-      margin: 0 auto;
-      font-size: 1.1rem;
-      color: #444;
+    header h1 {
+      font-size: 2rem;
+      margin-top: 1rem;
     }
-
-    .hero {
-      text-align: center;
-      padding: 2rem 1rem;
-      background-color: #ede9fe;
-      border-top: 1px solid #ddd;
-      border-bottom: 1px solid #ddd;
-    }
-
-    .hero h1 {
-      font-size: 2.2rem;
-      color: #4c1d95;
-      margin-bottom: 0.5rem;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      margin-bottom: 1rem;
-    }
-
-    .cta-button {
-      background-color: #5b21b6;
-      color: white;
-      padding: 0.8rem 1.5rem;
-      border: none;
-      border-radius: 8px;
-      font-size: 1rem;
-      cursor: pointer;
-      text-decoration: none;
+    .btn {
       display: inline-block;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-      padding: 2rem;
-    }
-
-    .card {
-      background-color: #fff;
-      padding: 1.5rem;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-      text-align: center;
+      background: white;
+      color: #3f51b5;
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      margin: 1rem;
       text-decoration: none;
-      color: #222;
-      transition: transform 0.2s;
+      font-weight: bold;
+      transition: 0.3s;
     }
-
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    .btn:hover {
+      background: #ffeb3b;
+      color: black;
     }
-
-    .card h3 {
-      color: #4c1d95;
-      margin-bottom: 0.5rem;
-    }
-
-    footer {
-      background-color: #f4f4f4;
+    .section {
+      padding: 2rem;
       text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
+    }
+    .section img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 20px;
+      margin-top: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: rgba(0, 0, 0, 0.2);
       margin-top: 2rem;
     }
-
-    .footer a {
-      margin: 0 10px;
-      color: #4c1d95;
+    footer a {
+      color: #fff;
       text-decoration: none;
-    }
-
-    .footer a:hover {
-      text-decoration: underline;
+      margin: 0 10px;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>FaragDev98</h1>
-    <p>موقع تعليمي شامل لتطوير مهاراتك في البرمجة والتقنية</p>
+    <img src="assets/my-photo.jpg" alt="FaragDev98" />
+    <h1>مرحبًا بك في Fabrica Course</h1>
+    <p>كورسات برمجية وكتاب PDF لتعلم البرمجة من الصفر</p>
+    <a class="btn" href="https://wa.me/201091838789" target="_blank">اشترك في الكورس</a>
+    <a class="btn" href="book.pdf" download>تحميل كتاب البرمجة</a>
   </header>
 
-  <nav>
-    <a href="index.html">الرئيسية</a>
-    <a href="الخدمات.html">الخدمات</a>
-    <a href="portfolio.html">معرض الأعمال</a>
-    <a href="contact.html">تواصل</a>
-  </nav>
+  <div class="section">
+    <h2>مقالات تعليمية</h2>
+    <p>اقرأ مقالات مفيدة في البرمجة وابدأ التعلم الآن</p>
+    <a class="btn" href="articles.html">عرض المقالات</a>
+  </div>
 
-  <section class="profile">
-    <img src="assets/my-photo.jpg" alt="FaragDev98">
-    <p>
-      أنا FaragDev98، مطوّر ومصمم مواقع وتطبيقات ويب. متخصص في بناء مشاريع تعليمية وتطوير أدوات مفيدة للمبتدئين في البرمجة.
-      أقدم كورسات، كتب، أدوات، وتطبيقات مجانية تساعد على التعلم والتطوير الذاتي.
-    </p>
-  </section>
+  <div class="section">
+    <h2>أعمالي</h2>
+    <p>تصفح نماذج أعمالي ومشاريعي البرمجية</p>
+    <a class="btn" href="portfolio.html">معرض الأعمال</a>
+  </div>
 
-  <section class="hero">
-    <h1>ابدأ رحلتك الآن</h1>
-    <p>كورسات، كتاب مجاني، مشاريع وأدوات – كل ما تحتاجه في مكان واحد.</p>
-    <a href="assets/book-cover.jpg" class="cta-button" download>📘 تحميل الكتاب</a>
-  </section>
+  <div class="section">
+    <h2>تواصل معي</h2>
+    <p>هل لديك سؤال أو استفسار؟ تواصل مباشرة</p>
+    <a class="btn" href="contact.html">تواصل الآن</a>
+  </div>
 
-  <section class="cards">
-    <a href="الخدمات.html" class="card">
-      <h3>🔧 الخدمات</h3>
-      <p>أعمال تصميم، برمجة، وتطوير مواقع احترافية.</p>
-    </a>
-    <a href="portfolio.html" class="card">
-      <h3>💼 معرض الأعمال</h3>
-      <p>مشاريع واقعية توضح خبرتي في الويب والتطبيقات.</p>
-    </a>
-  </section>
-
-  <footer class="footer">
-    <div>
-      <a href="terms.html">الشروط</a>
-      <a href="privacy.html">الخصوصية</a>
-    </div>
-    <div>© 2025 - جميع الحقوق محفوظة - FaragDev98</div>
+  <footer>
+    <p>جميع الحقوق محفوظة © FaragDev98</p>
+    <a href="terms.html">الشروط</a> | 
+    <a href="privacy.html">الخصوصية</a>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
