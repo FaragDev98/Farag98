@@ -3,103 +3,162 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FaragDev98 - كورسات وكتب برمجية</title>
+  <title>فراج عبدالله | مطور ومصمم مواقع</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="icons/logo.png" type="image/png" />
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="icon" href="icons/icon.png" type="image/png" />
   <style>
     body {
-      font-family: 'Cairo', sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
-      background: linear-gradient(135deg, #3f51b5, #9c27b0);
-      color: white;
+      background: #f8f8f8;
+      color: #333;
     }
+
     header {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: white;
       text-align: center;
-      padding: 2rem 1rem;
+      padding: 50px 20px;
     }
+
     header img {
       width: 120px;
+      height: 120px;
       border-radius: 50%;
-      border: 4px solid white;
+      border: 4px solid #fff;
+      object-fit: cover;
     }
+
     header h1 {
-      font-size: 2rem;
-      margin-top: 1rem;
+      margin: 20px 0 10px;
+      font-size: 2.2em;
     }
-    .btn {
-      display: inline-block;
+
+    header p {
+      font-size: 1.1em;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      color: #2575fc;
+      margin-bottom: 30px;
+    }
+
+    .skills, .projects, .contact {
+      display: grid;
+      gap: 20px;
+    }
+
+    .skills div, .projects div {
       background: white;
-      color: #3f51b5;
-      padding: 1rem 2rem;
-      border-radius: 50px;
-      margin: 1rem;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-    .btn:hover {
-      background: #ffeb3b;
-      color: black;
-    }
-    .section {
-      padding: 2rem;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
       text-align: center;
     }
-    .section img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 20px;
-      margin-top: 1rem;
+
+    .projects img {
+      width: 100%;
+      border-radius: 8px;
     }
+
     footer {
+      background: #222;
+      color: white;
       text-align: center;
-      padding: 2rem;
-      background: rgba(0, 0, 0, 0.2);
-      margin-top: 2rem;
+      padding: 30px 10px;
+      margin-top: 40px;
     }
-    footer a {
-      color: #fff;
-      text-decoration: none;
+
+    .social a {
       margin: 0 10px;
+      color: white;
+      font-size: 1.3em;
+      text-decoration: none;
+    }
+
+    @media (min-width: 768px) {
+      .skills, .projects {
+        grid-template-columns: repeat(3, 1fr);
+      }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="assets/my-photo.jpg" alt="FaragDev98" />
-    <h1>مرحبًا بك في Fabrica Course</h1>
-    <p>كورسات برمجية وكتاب PDF لتعلم البرمجة من الصفر</p>
-    <a class="btn" href="https://wa.me/201091838789" target="_blank">اشترك في الكورس</a>
-    <a class="btn" href="book.pdf" download>تحميل كتاب البرمجة</a>
+    <img src="assets/my-photo.jpg" alt="صورة فراج عبدالله" />
+    <h1>فراج عبدالله</h1>
+    <p>مطور ومصمم مواقع | Front-End Developer</p>
   </header>
 
-  <div class="section">
-    <h2>مقالات تعليمية</h2>
-    <p>اقرأ مقالات مفيدة في البرمجة وابدأ التعلم الآن</p>
-    <a class="btn" href="articles.html">عرض المقالات</a>
-  </div>
+  <section>
+    <h2>من أنا؟</h2>
+    <p style="text-align: center;">
+      أنا فراج عبدالله، مطور واجهات أمامية متخصص في تصميم وبناء مواقع وتطبيقات ويب حديثة وسريعة.
+      أعمل بشغف على تقديم تجربة مستخدم فريدة وتحويل الأفكار إلى واقع.
+    </p>
+  </section>
 
-  <div class="section">
-    <h2>أعمالي</h2>
-    <p>تصفح نماذج أعمالي ومشاريعي البرمجية</p>
-    <a class="btn" href="portfolio.html">معرض الأعمال</a>
-  </div>
+  <section>
+    <h2>مهاراتي</h2>
+    <div class="skills">
+      <div>HTML5</div>
+      <div>CSS3</div>
+      <div>JavaScript</div>
+      <div>React</div>
+      <div>Tailwind CSS</div>
+      <div>Git & GitHub</div>
+    </div>
+  </section>
 
-  <div class="section">
+  <section>
+    <h2>بعض من أعمالي</h2>
+    <div class="projects">
+      <div>
+        <img src="images/project1.jpg" alt="مشروع 1" />
+        <h3>تطبيق القرآن الكريم</h3>
+        <p>موقع يعمل بدون إنترنت لعرض المصحف الشريف كاملًا مع فهرسة السور.</p>
+      </div>
+      <div>
+        <img src="images/project2.jpg" alt="مشروع 2" />
+        <h3>موقع شخصي بسيط</h3>
+        <p>تصميم شخصي متجاوب لمطور باستخدام HTML وCSS فقط.</p>
+      </div>
+      <div>
+        <img src="images/project3.jpg" alt="مشروع 3" />
+        <h3>معرض أعمال</h3>
+        <p>معرض مخصص لعرض مشاريع سابقة بطريقة منظمة.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
     <h2>تواصل معي</h2>
-    <p>هل لديك سؤال أو استفسار؟ تواصل مباشرة</p>
-    <a class="btn" href="contact.html">تواصل الآن</a>
-  </div>
+    <div class="contact" style="text-align:center;">
+      <p>للتواصل السريع يمكنك مراسلتي عبر:</p>
+      <p>واتساب: <a href="https://wa.me/201091838789" target="_blank">اضغط هنا</a></p>
+      <p>فيسبوك: <a href="https://www.facebook.com/FaragDev98" target="_blank">صفحة المطور</a></p>
+      <p>رقم الهاتف: 01091838789</p>
+      <p>البريد الإلكتروني: <a href="mailto:Farajbdallh891@gmail.com">Farajbdallh891@gmail.com</a></p>
+    </div>
+  </section>
 
   <footer>
-    <p>جميع الحقوق محفوظة © FaragDev98</p>
-    <a href="terms.html">الشروط</a> | 
-    <a href="privacy.html">الخصوصية</a>
+    <p>جميع الحقوق محفوظة &copy; فراج عبدالله 2025</p>
+    <div class="social">
+      <a href="https://wa.me/201091838789" target="_blank">📱</a>
+      <a href="https://facebook.com/FaragDev98" target="_blank">📘</a>
+      <a href="mailto:Farajbdallh891@gmail.com">✉️</a>
+    </div>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
