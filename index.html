@@ -3,89 +3,98 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>فراج عبدالله | مطور ومصمم مواقع</title>
+  <title>فراج عبدالله | مطور واجهات أمامية</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="icons/icon.png" type="image/png" />
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
-      background: #f8f8f8;
+      background: #f5f6fa;
       color: #333;
     }
-
+    /* رأس الموقع */
     header {
-      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      background: linear-gradient(135deg, #3b8d99, #6b6b83, #aa4b6b);
       color: white;
+      padding: 40px 20px 20px;
       text-align: center;
-      padding: 50px 20px;
+      position: relative;
     }
-
     header img {
-      width: 120px;
-      height: 120px;
+      width: 130px;
+      height: 130px;
       border-radius: 50%;
       border: 4px solid #fff;
+      margin-bottom: 15px;
       object-fit: cover;
     }
-
-    header h1 {
-      margin: 20px 0 10px;
-      font-size: 2.2em;
+    nav {
+      margin-top: 20px;
     }
-
-    header p {
-      font-size: 1.1em;
+    nav a {
+      text-decoration: none;
+      margin: 0 15px;
+      color: white;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #ffd700;
     }
 
     section {
-      padding: 40px 20px;
-      max-width: 900px;
+      padding: 50px 20px;
+      max-width: 1000px;
       margin: auto;
     }
-
     section h2 {
       text-align: center;
-      color: #2575fc;
       margin-bottom: 30px;
+      color: #3b8d99;
     }
 
-    .skills, .projects, .contact {
+    .skills, .projects {
       display: grid;
       gap: 20px;
     }
-
     .skills div, .projects div {
       background: white;
       padding: 20px;
       border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
       text-align: center;
     }
-
     .projects img {
       width: 100%;
+      height: 180px;
+      object-fit: cover;
       border-radius: 8px;
     }
 
     footer {
-      background: #222;
+      background: #333;
       color: white;
       text-align: center;
       padding: 30px 10px;
-      margin-top: 40px;
     }
 
     .social a {
       margin: 0 10px;
       color: white;
-      font-size: 1.3em;
+      font-size: 1.5em;
       text-decoration: none;
     }
 
     @media (min-width: 768px) {
-      .skills, .projects {
+      .skills {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .projects {
         grid-template-columns: repeat(3, 1fr);
       }
     }
@@ -94,65 +103,68 @@
 <body>
 
   <header>
-    <img src="assets/my-photo.jpg" alt="صورة فراج عبدالله" />
+    <img src="assets/my-photo.jpg" alt="صورة فراج" />
     <h1>فراج عبدالله</h1>
-    <p>مطور ومصمم مواقع | Front-End Developer</p>
+    <p>مطور واجهات أمامية | Front-End Developer</p>
+    <nav>
+      <a href="#about">من أنا</a>
+      <a href="#skills">مهاراتي</a>
+      <a href="#projects">أعمالي</a>
+      <a href="#contact">تواصل</a>
+    </nav>
   </header>
 
-  <section>
+  <section id="about">
     <h2>من أنا؟</h2>
-    <p style="text-align: center;">
-      أنا فراج عبدالله، مطور واجهات أمامية متخصص في تصميم وبناء مواقع وتطبيقات ويب حديثة وسريعة.
-      أعمل بشغف على تقديم تجربة مستخدم فريدة وتحويل الأفكار إلى واقع.
+    <p style="text-align:center;">
+      أنا فراج عبدالله، مطور واجهات أمامية أعمل على تصميم مواقع احترافية وسريعة، تهدف لتجربة مستخدم مميزة.
     </p>
   </section>
 
-  <section>
+  <section id="skills">
     <h2>مهاراتي</h2>
     <div class="skills">
       <div>HTML5</div>
       <div>CSS3</div>
       <div>JavaScript</div>
-      <div>React</div>
+      <div>React.js</div>
       <div>Tailwind CSS</div>
-      <div>Git & GitHub</div>
+      <div>Git / GitHub</div>
     </div>
   </section>
 
-  <section>
-    <h2>بعض من أعمالي</h2>
+  <section id="projects">
+    <h2>أعمالي السابقة</h2>
     <div class="projects">
       <div>
-        <img src="images/project1.jpg" alt="مشروع 1" />
+        <img src="images/quran-app.png" alt="تطبيق القرآن" />
         <h3>تطبيق القرآن الكريم</h3>
-        <p>موقع يعمل بدون إنترنت لعرض المصحف الشريف كاملًا مع فهرسة السور.</p>
+        <p>عرض المصحف بدون اتصال، مع فهرسة تفاعلية للسور.</p>
       </div>
       <div>
-        <img src="images/project2.jpg" alt="مشروع 2" />
-        <h3>موقع شخصي بسيط</h3>
-        <p>تصميم شخصي متجاوب لمطور باستخدام HTML وCSS فقط.</p>
+        <img src="images/cms.png" alt="نظام إدارة محتوى" />
+        <h3>نظام CMS</h3>
+        <p>لوحة تحكم لإنشاء مقالات وإدارة محتوى مخصص.</p>
       </div>
       <div>
-        <img src="images/project3.jpg" alt="مشروع 3" />
-        <h3>معرض أعمال</h3>
-        <p>معرض مخصص لعرض مشاريع سابقة بطريقة منظمة.</p>
+        <img src="images/resume-tool.png" alt="أداة السيرة الذاتية" />
+        <h3>مولد سيرة ذاتية</h3>
+        <p>مولد CV اونلاين جاهز للطباعة بمجرد ملء البيانات.</p>
       </div>
     </div>
   </section>
 
-  <section>
+  <section id="contact">
     <h2>تواصل معي</h2>
-    <div class="contact" style="text-align:center;">
-      <p>للتواصل السريع يمكنك مراسلتي عبر:</p>
+    <div style="text-align:center;">
       <p>واتساب: <a href="https://wa.me/201091838789" target="_blank">اضغط هنا</a></p>
-      <p>فيسبوك: <a href="https://www.facebook.com/FaragDev98" target="_blank">صفحة المطور</a></p>
-      <p>رقم الهاتف: 01091838789</p>
-      <p>البريد الإلكتروني: <a href="mailto:Farajbdallh891@gmail.com">Farajbdallh891@gmail.com</a></p>
+      <p>فيسبوك: <a href="https://facebook.com/FaragDev98" target="_blank">صفحة المطور</a></p>
+      <p>بريد إلكتروني: <a href="mailto:Farajbdallh891@gmail.com">Farajbdallh891@gmail.com</a></p>
     </div>
   </section>
 
   <footer>
-    <p>جميع الحقوق محفوظة &copy; فراج عبدالله 2025</p>
+    <p>© فراج عبدالله 2025 - جميع الحقوق محفوظة</p>
     <div class="social">
       <a href="https://wa.me/201091838789" target="_blank">📱</a>
       <a href="https://facebook.com/FaragDev98" target="_blank">📘</a>
