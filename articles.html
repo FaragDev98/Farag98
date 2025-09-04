@@ -1,74 +1,0 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-  <meta charset="UTF-8" />
-  <title>مقالات فراج عبدالله</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-
-  <header>
-    <h1>مقالات تعليمية في البرمجة</h1>
-  </header>
-
-  <section class="articles-list">
-    <article>
-      <h2>🚀 مقدمة للمبتدئين في البرمجة</h2>
-      <p>مقال يوضح أساسيات البرمجة من الصفر بلغة بسيطة.</p>
-      <a href="article1.html">قراءة المزيد</a>
-    </article>
-
-    <article>
-      <h2>💡 كيف تبدأ أول مشروع برمجي لك؟</h2>
-      <p>نصائح وأفكار لإنشاء مشروعك الأول حتى لو لم تكن خبيرًا.</p>
-      <a href="article2.html">قراءة المزيد</a>
-    </article>
-  </section>
-
-  <footer>
-    <a href="index.html">العودة للصفحة الرئيسية</a>
-  </footer>
-<!-- المربع الأول - كتاب HTML -->
-<div style="perspective: 1000px; display: flex; justify-content: center; margin: 40px;">
-  <div class="card-3d" style="background: linear-gradient(135deg, #ffb347, #ffcc33); color: #000; padding: 30px; border-radius: 18px; width: 90%; max-width: 600px; text-align: center; box-shadow: 0 15px 25px rgba(0,0,0,0.3); transform: rotateY(8deg) rotateX(4deg); transition: transform 0.4s ease;">
-    <h2 style="color: #b71c1c; font-size: 26px;">📘 كتاب HTML للمبتدئين</h2>
-    <img src="images/html-book-cover.png" alt="غلاف الكتاب" style="width: 200px; border-radius: 12px; margin: 20px 0; box-shadow: 0 6px 15px rgba(0,0,0,0.3);">
-    <p style="font-size: 18px; line-height: 1.8; color: #222;">
-      هل تبحث عن بداية قوية في عالم البرمجة؟ هذا الكتاب هو دليلك الشامل لتعلم HTML بأسلوب بسيط وعملي، مع تطبيقات حقيقية وشرح باللغة العربية.
-    </p>
-    <a href="https://faragdev98.gumroad.com/l/htmlbook" style="display: inline-block; margin-top: 15px; padding: 10px 16px; background: #b71c1c; color: white; border-radius: 8px; text-decoration: none;">شراء الآن</a>
-  </div>
-</div>
-
-<!-- المربع الثاني - تطبيق الإنجليزية -->
-<div style="perspective: 1000px; display: flex; justify-content: center; margin: 40px;">
-  <div class="card-3d" style="background: linear-gradient(135deg, #ff9966, #ff5e62); color: #000; padding: 30px; border-radius: 18px; width: 90%; max-width: 600px; text-align: center; box-shadow: 0 15px 25px rgba(0,0,0,0.3); transform: rotateY(8deg) rotateX(4deg); transition: transform 0.4s ease;">
-    <img src="images/cms.png" alt="صورة تطبيق تعلم الإنجليزية" style="width: 180px; height: 180px; object-fit: cover; border-radius: 12px; margin-bottom: 20px; box-shadow: 0 6px 15px rgba(0,0,0,0.3);" />
-    <h2 style="color: #222; margin-bottom: 20px; font-size: 26px;">
-        تطبيق تعلم اللغة الإنجليزية
-    </h2>
-    <p style="color: #333; font-size: 18px; line-height: 1.9;">
-      تطبيق شامل يساعدك على إتقان اللغة الإنجليزية من البداية حتى الاحتراف،
-      يضم محتوى صوتي تفاعلي، تمارين ممتعة، شرح مبسط لقواعد اللغة، والمفردات اليومية.
-    </p>
-    <a href="download/تعلم إنجليزي.apk" download style="display: inline-block; background: #d84315; color: white; padding: 14px 30px; margin-top: 20px; border-radius: 14px; font-size: 18px; text-decoration: none;">
-      📥 نزّل التطبيق مجاني 
-    </a>
-  </div>
-</div>
-
-<!-- JavaScript لتحريك المربعات -->
-<script>
-  document.querySelectorAll(".card-3d").forEach(card => {
-    card.parentElement.addEventListener("mousemove", (e) => {
-      let x = (e.clientX / window.innerWidth - 0.5) * 20;
-      let y = (e.clientY / window.innerHeight - 0.5) * 20;
-      card.style.transform = `rotateY(${x}deg) rotateX(${-y}deg)`;
-    });
-    card.parentElement.addEventListener("mouseleave", () => {
-      card.style.transform = `rotateY(8deg) rotateX(4deg)`;
-    });
-  });
-</script>
-</body>
-</html>
