@@ -1,211 +1,64 @@
-/* إعداد عام */
 body {
   margin: 0;
-  font-family: 'Arial', sans-serif;
-  background-color: #fefefe;
-  color: #222;
-  direction: rtl;
+  font-family: "Segoe UI", sans-serif;
+  background: url('images/html-book-cover.png') no-repeat center center fixed;
+  background-size: cover; /* تخلي الصورة تغطي الشاشة */
+  color: white; /* تخلي النص أبيض عشان يبان */
+}button,
+.buttons-container a {
+  background: rgba(255, 255, 255, 0.1); /* خلفية شفافة */
+  border: 2px solid #fff;
+  color: #fff;
+  backdrop-filter: blur(5px); /* يعطيها تأثير زجاج */
+  transition: 0.3s;
 }
 
-/* الشعار */
-.site-icon {
-  height: 40px;
-  margin-left: 10px;
+button:hover,
+.buttons-container a:hover {
+  background: rgba(255, 255, 255, 0.3); /* تبقى أغمق عند المرور */
+  color: #000;
+}
+/* خلفية الموقع */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: url("images/html-book-cover.png") no-repeat center center fixed;
+  background-size: cover;
 }
 
-/* شريط التنقل */
-.navbar {
-  background: linear-gradient(90deg, #3204a3, #520095);
+/* شريط الهيدر */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
   padding: 15px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
 }
 
-.nav-container {
+/* تنسيق الأزرار */
+.nav-btn {
+  background: #4da6ff;   /* أزرق فاتح */
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  max-width: 1100px;
-  margin: auto;
+  gap: 6px;
 }
 
-.logo {
-  color: #fff;
-  font-size: 24px;
+/* مؤثرات hover */
+.nav-btn:hover {
+  background: #3399ff;
+  transform: scale(1.05);
 }
 
-.logo span {
-  color: #ffdc00; /* أصفر */
-}
-
-.nav-links a {
-  color: #fff;
+/* الروابط داخل الأزرار */
+.nav-btn a {
   text-decoration: none;
-  margin-left: 20px;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-  color: #ffdc00;
-}
-
-.whatsapp-btn {
-  background-color: #25D366;
-  padding: 8px 16px;
-  border-radius: 6px;
   color: white;
-  font-weight: bold;
-}
-
-/* المقدمة */
-.header {
-  text-align: center;
-  padding: 40px 20px;
-  background-color: #f4f4f4;
-}
-
-.header h1 {
-  font-size: 32px;
-  color: #333;
-}
-
-.header p {
-  font-size: 18px;
-  color: #666;
-}
-
-/* القسم الشخصي */
-.hero {
-  text-align: center;
-  padding: 30px 20px;
-}
-
-.profile-img {
-  width: 130px;
-  border-radius: 50%;
-  margin-bottom: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
-
-/* الشهادات */
-.certificates {
-  padding: 40px 20px;
-  background-color: #f9f9f9;
-  text-align: center;
-}
-
-.certificates h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.cert-grid {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.cert-item {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  width: 280px;
-  padding: 15px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.cert-item img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 10px;
-}
-
-.cert-item p {
-  font-size: 16px;
-}
-
-/* الكتاب */
-.book {
-  text-align: center;
-  padding: 30px 20px;
-}
-
-.book .price {
-  font-size: 20px;
-  color: #444;
-}
-
-.btn-whatsapp {
-  display: inline-block;
-  margin-top: 10px;
-  background-color: #25D366;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 6px;
-  text-decoration: none;
-}
-
-/* الأقسام */
-.sections {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 30px 20px;
-}
-
-.section-box {
-  background: #fff;
-  border: 1px solid #ddd;
-  padding: 20px;
-  width: 300px;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  text-align: center;
-}
-
-.section-box .btn {
-  margin-top: 10px;
-  display: inline-block;
-  padding: 8px 16px;
-  background-color: #3204a3;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-/* غلاف الكتاب */
-.book-cover-display {
-  padding: 30px 20px;
-}
-
-.book-cover-display img {
-  max-width: 300px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-}
-
-/* الفوتر */
-.footer {
-  background-color: #111;
-  color: #eee;
-  text-align: center;
-  padding: 20px;
-  margin-top: 40px;
-  font-size: 14px;
-}
-
-.footer a {
-  color: #ffdc00;
-  text-decoration: none;
-  margin: 0 5px;
-}
-
-.footer a:hover {
-  text-decoration: underline;
-}
+  }
