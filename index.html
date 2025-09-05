@@ -1,217 +1,17 @@
-<!DOCTYPE html>
+DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>فراج عبدالله | مطور واجهات أمامية</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="icons/icon.png" type="image/png" />
+  <meta charset="UTF-8">
+  <title>موقعي</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="style.css">
   <style>
-    * {
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f5f6fa;
-      color: #333;
-    }
-    /* رأس الموقع */
-    header {
-      background: linear-gradient(135deg, #3b8d99, #6b6b83, #aa4b6b);
-      color: white;
-      padding: 40px 20px 20px;
-      text-align: center;
-      position: relative;
-    }
-    header img {
-      width: 130px;
-      height: 130px;
-      border-radius: 50%;
-      border: 4px solid #fff;
-      margin-bottom: 15px;
-      object-fit: cover;
-    }
-    nav {
-      margin-top: 20px;
-    }
-    nav a {
-      text-decoration: none;
-      margin: 0 15px;
-      color: white;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-    nav a:hover {
-      color: #ffd700;
-    }
-
-    section {
-      padding: 50px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    section h2 {
-      text-align: center;
-      margin-bottom: 30px;
-      color: #3b8d99;
-    }
-
-    .skills, .projects {
-      display: grid;
-      gap: 20px;
-    }
-    .skills div, .projects div {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-      text-align: center;
-    }
-    .projects img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 8px;
-    }
-
-    footer {
-      background: #333;
-      color: white;
-      text-align: center;
-      padding: 30px 10px;
-    }
-
-    .social a {
-      margin: 0 10px;
-      color: white;
-      font-size: 1.5em;
-      text-decoration: none;
-    }
-
-    @media (min-width: 768px) {
-      .skills {
-        grid-template-columns: repeat(3, 1fr);
-      }
-      .projects {
-        grid-template-columns: repeat(3, 1fr);
-      }
-    }
-  </style>
 </head>
-<body>
 
-  <header>
-    <img src="assets/my-photo.jpg" alt="صورة فراج" />
-    <h1>فراج عبدالله</h1>
-    <p>مطور واجهات أمامية | Front-End Developer</p>
-    <nav>
-      <a href="#about">من أنا</a>
-      <a href="#skills">مهاراتي</a>
-      <a href="#projects">أعمالي</a>
-      <a href="#contact">تواصل</a>
-    </nav>
-  </header>
+  
+  <body>
 
-  <section id="about">
-    <h2>من أنا؟</h2>
-    <p style="text-align:center;">
-      أنا فراج عبدالله، مطور واجهات أمامية أعمل على تصميم مواقع احترافية وسريعة، تهدف لتجربة مستخدم مميزة.
-    </p>
-  </section>
-
-  <section id="skills">
-    <h2>مهاراتي</h2>
-    <div class="skills">
-      <div>HTML5</div>
-      <div>CSS3</div>
-      <div>JavaScript</div>
-      <div>React.js</div>
-      <div>Tailwind CSS</div>
-      <div>Git / GitHub</div>
-    </div>
-  </section>
-
-  <section id="projects">
-    <h2>أعمالي السابقة</h2>
-    <div class="projects">
-      <div>
-        <img src="images/quran-app.png" alt="تطبيق القرآن" />
-        <h3>تطبيق القرآن الكريم</h3>
-        <p>عرض المصحف بدون اتصال، مع فهرسة تفاعلية للسور.</p>
-      </div>
-      <div>
-        <img src="images/cms.png" alt="نظام إدارة محتوى" />
-        <h3>نظام CMS</h3>
-        <p>لوحة تحكم لإنشاء مقالات وإدارة محتوى مخصص.</p>
-      </div>
-      <div>
-        <img src="images/resume-tool.png" alt="أداة السيرة الذاتية" />
-        <h3>مولد سيرة ذاتية</h3>
-        <p>مولد CV اونلاين جاهز للطباعة بمجرد ملء البيانات.</p>
-      </div>
-    </div>
-  </section>
-<!-- المربع الأول - كتاب HTML -->
-<div style="perspective: 1000px; display: flex; justify-content: center; margin: 40px;">
-  <div class="card-3d" style="background: linear-gradient(135deg, #ffb347, #ffcc33); color: #000; padding: 30px; border-radius: 18px; width: 90%; max-width: 600px; text-align: center; box-shadow: 0 15px 25px rgba(0,0,0,0.3); transform: rotateY(8deg) rotateX(4deg); transition: transform 0.4s ease;">
-    <h2 style="color: #b71c1c; font-size: 26px;">📘 كتاب HTML للمبتدئين</h2>
-    <img src="images/html-book-cover.png" alt="غلاف الكتاب" style="width: 200px; border-radius: 12px; margin: 20px 0; box-shadow: 0 6px 15px rgba(0,0,0,0.3);">
-    <p style="font-size: 18px; line-height: 1.8; color: #222;">
-      هل تبحث عن بداية قوية في عالم البرمجة؟ هذا الكتاب هو دليلك الشامل لتعلم HTML بأسلوب بسيط وعملي، مع تطبيقات حقيقية وشرح باللغة العربية.
-    </p>
-    <a href="https://faragdev98.gumroad.com/l/htmlbook" style="display: inline-block; margin-top: 15px; padding: 10px 16px; background: #b71c1c; color: white; border-radius: 8px; text-decoration: none;">شراء الآن</a>
-  </div>
-</div>
-
-<!-- المربع الثاني - تطبيق الإنجليزية -->
-<div style="perspective: 1000px; display: flex; justify-content: center; margin: 40px;">
-  <div class="card-3d" style="background: linear-gradient(135deg, #ff9966, #ff5e62); color: #000; padding: 30px; border-radius: 18px; width: 90%; max-width: 600px; text-align: center; box-shadow: 0 15px 25px rgba(0,0,0,0.3); transform: rotateY(8deg) rotateX(4deg); transition: transform 0.4s ease;">
-    <img src="images/cms.png" alt="صورة تطبيق تعلم الإنجليزية" style="width: 180px; height: 180px; object-fit: cover; border-radius: 12px; margin-bottom: 20px; box-shadow: 0 6px 15px rgba(0,0,0,0.3);" />
-    <h2 style="color: #222; margin-bottom: 20px; font-size: 26px;">
-        تطبيق تعلم اللغة الإنجليزية
-    </h2>
-    <p style="color: #333; font-size: 18px; line-height: 1.9;">
-      تطبيق شامل يساعدك على إتقان اللغة الإنجليزية من البداية حتى الاحتراف،
-      يضم محتوى صوتي تفاعلي، تمارين ممتعة، شرح مبسط لقواعد اللغة، والمفردات اليومية.
-    </p>
-    <a href="download/تعلم إنجليزي.apk" download style="display: inline-block; background: #d84315; color: white; padding: 14px 30px; margin-top: 20px; border-radius: 14px; font-size: 18px; text-decoration: none;">
-      📥 نزّل التطبيق مجاني 
-    </a>
-  </div>
-</div>
-
-<!-- JavaScript لتحريك المربعات -->
-<script>
-  document.querySelectorAll(".card-3d").forEach(card => {
-    card.parentElement.addEventListener("mousemove", (e) => {
-      let x = (e.clientX / window.innerWidth - 0.5) * 20;
-      let y = (e.clientY / window.innerHeight - 0.5) * 20;
-      card.style.transform = `rotateY(${x}deg) rotateX(${-y}deg)`;
-    });
-    card.parentElement.addEventListener("mouseleave", () => {
-      card.style.transform = `rotateY(8deg) rotateX(4deg)`;
-    });
-  });
-</script>
-  <section id="contact">
-    <h2>تواصل معي</h2>
-    <div style="text-align:center;">
-      <p>واتساب: <a href="https://wa.me/201091838789" target="_blank">اضغط هنا</a></p>
-      <p>فيسبوك: <a href="https://facebook.com/FaragDev98" target="_blank">صفحة المطور</a></p>
-      <p>بريد إلكتروني: <a href="mailto:Farajbdallh891@gmail.com">Farajbdallh891@gmail.com</a></p>
-    </div>
-  </section>
-
-  <footer>
-    <p>© فراج عبدالله 2025 - جميع الحقوق محفوظة</p>
-    <div class="social">
-      <a href="https://wa.me/201091838789" target="_blank">📱</a>
-      <a href="https://facebook.com/FaragDev98" target="_blank">📘</a>
-      <a href="mailto:Farajbdallh891@gmail.com">✉️</a>
-    </div>
-  </footer>
-
-</body>
-</html>
+      @Farag-Dev-98
+    
+   </body>
+  </html>
