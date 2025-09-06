@@ -5,69 +5,74 @@
   <title>FaragDev98 | موقعي الشخصي</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
   <!-- ======= رأس الصفحة ======= -->
   <header class="glass-header">
-    <div class="logo-space" title="شعار AI"></div>
-    <button id="username" class="glass-btn" title="زر الاسم">FaragDev98</button>
+    <div class="logo-title">
+      <i class="fa-solid fa-code"></i>
+      <button id="username" class="glass-btn">FaragDev</button>
+    </div>
+    <nav class="nav-buttons">
+      <a href="developer.html" class="glass-btn dev">مطور</a>
+      <a href="articles.html" class="glass-btn article">مقال</a>
+      <a href="contact.html" class="glass-btn contact">تواصل</a>
+    </nav>
   </header>
 
-  <!-- ======= مقدمة تعريفية ======= -->
-  <section id="about" class="glass-section">
-    <h1>مرحبًا، أنا فراج عبدالله</h1>
-    <p>مطور ومصمم مواقع وتطبيقات، شغوف بابتكار واجهات مستخدم جذابة وتجربة مستخدم سلسة. أحب التعلم المستمر وتجربة التقنيات الحديثة.</p>
-    
-    <!-- مكان فيديو تعريفي -->
+  <!-- ======= فيديو تعريفي ======= -->
+  <section class="glass-card">
+    <h2>فيديو تعريفي</h2>
     <div class="intro-video">
       <video controls poster="images/video-thumbnail.png">
         <source src="videos/intro.mp4" type="video/mp4">
         متصفحك لا يدعم عرض الفيديو
       </video>
     </div>
+  </section>
 
-    <div class="about-images">
-      <img src="images/profile1.png" alt="صورة شخصية 1">
-      <img src="images/profile2.png" alt="صورة شخصية 2">
+  <!-- ======= نبذة تعريفية ======= -->
+  <section class="glass-card">
+    <h2>نبذة عني</h2>
+    <p>أنا <strong>فراج عبدالله</strong>، مطور ويب شغوف بابتكار حلول برمجية، متخصص في بناء مواقع وتطبيقات متجاوبة. 
+    أتمتع بخبرة في HTML, CSS, JavaScript ومهتم بتجربة المستخدم والتصميم العصري.</p>
+  </section>
+
+  <!-- ======= الشهادة ======= -->
+  <section class="glass-card">
+    <h2>شهادتي</h2>
+    <img src="images/certificate.png" alt="شهادة" class="certificate">
+  </section>
+
+  <!-- ======= الخدمات ======= -->
+  <section class="glass-card">
+    <h2>الخدمات</h2>
+    <div class="service">
+      <img src="images/service1.png" alt="تطوير البرمجيات">
+      <h3>تطوير البرمجيات</h3>
+      <p>حلول برمجية مبتكرة باستخدام أحدث التقنيات لتطوير أنظمة فعالة وذكية.</p>
+    </div>
+    <div class="service">
+      <img src="images/service2.png" alt="تصميم المواقع">
+      <h3>تصميم المواقع</h3>
+      <p>تصميم مواقع عصرية، جذابة ومتجاوبة تعمل بسلاسة على جميع الأجهزة.</p>
     </div>
   </section>
 
-  <!-- ======= معرض الأعمال ======= -->
-  <section id="portfolio">
-    <h2>معرض أعمالي</h2>
-    <div class="projects">
-      <div class="project-card glass-card">
-        <img src="images/project1.png" alt="مشروع القرآن الكريم">
-        <h3>مشروع القرآن الكريم</h3>
-        <a href="https://fabrica-courses.netlify.app/" target="_blank" class="glass-btn">زيارة المشروع</a>
-      </div>
-      <div class="project-card glass-card">
-        <img src="images/project2.png" alt="مشروع آخر">
-        <h3>مشروع نموذج 2</h3>
-        <p>قيد التطوير</p>
-      </div>
-      <div class="project-card glass-card">
-        <img src="images/project3.png" alt="مشروع آخر">
-        <h3>مشروع نموذج 3</h3>
-        <p>قيد التطوير</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======= تواصل معي ======= -->
-  <section id="contact" class="glass-section">
+  <!-- ======= أيقونات التواصل ======= -->
+  <footer class="glass-card social-footer">
     <h2>تواصل معي</h2>
-    <ul class="contact-list">
-      <li><a href="https://wa.me/01091838789" target="_blank" class="glass-btn">واتساب</a></li>
-      <li><a href="https://facebook.com/" target="_blank" class="glass-btn">فيسبوك</a></li>
-      <li><a href="mailto:example@gmail.com" class="glass-btn">البريد الإلكتروني</a></li>
-    </ul>
-  </section>
-
-  <!-- ======= تذييل الصفحة ======= -->
-  <footer class="glass-footer">
-    <p>&copy; 2025 FaragDev98 | جميع الحقوق محفوظة</p>
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+      <a href="https://github.com/FaragDev98" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="https://wa.me/01091838789" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+    <p>&copy; 2025 FaragDev | جميع الحقوق محفوظة</p>
   </footer>
 
 </body>
