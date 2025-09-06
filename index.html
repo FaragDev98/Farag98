@@ -9,17 +9,25 @@
 <body>
 
   <!-- ======= رأس الصفحة ======= -->
-  <header>
+  <header class="glass-header">
     <div class="logo-space" title="شعار AI"></div>
-    <button id="username" title="زر الاسم">FaragDev98</button>
+    <button id="username" class="glass-btn" title="زر الاسم">FaragDev98</button>
   </header>
 
   <!-- ======= مقدمة تعريفية ======= -->
-  <section id="about">
+  <section id="about" class="glass-section">
     <h1>مرحبًا، أنا فراج عبدالله</h1>
     <p>مطور ومصمم مواقع وتطبيقات، شغوف بابتكار واجهات مستخدم جذابة وتجربة مستخدم سلسة. أحب التعلم المستمر وتجربة التقنيات الحديثة.</p>
+    
+    <!-- مكان فيديو تعريفي -->
+    <div class="intro-video">
+      <video controls poster="images/video-thumbnail.png">
+        <source src="videos/intro.mp4" type="video/mp4">
+        متصفحك لا يدعم عرض الفيديو
+      </video>
+    </div>
+
     <div class="about-images">
-      <!-- صور تعريفية شخصية أو تصميمية -->
       <img src="images/profile1.png" alt="صورة شخصية 1">
       <img src="images/profile2.png" alt="صورة شخصية 2">
     </div>
@@ -29,17 +37,17 @@
   <section id="portfolio">
     <h2>معرض أعمالي</h2>
     <div class="projects">
-      <div class="project-card">
+      <div class="project-card glass-card">
         <img src="images/project1.png" alt="مشروع القرآن الكريم">
         <h3>مشروع القرآن الكريم</h3>
-        <a href="https://fabrica-courses.netlify.app/" target="_blank">زيارة المشروع</a>
+        <a href="https://fabrica-courses.netlify.app/" target="_blank" class="glass-btn">زيارة المشروع</a>
       </div>
-      <div class="project-card">
+      <div class="project-card glass-card">
         <img src="images/project2.png" alt="مشروع آخر">
         <h3>مشروع نموذج 2</h3>
         <p>قيد التطوير</p>
       </div>
-      <div class="project-card">
+      <div class="project-card glass-card">
         <img src="images/project3.png" alt="مشروع آخر">
         <h3>مشروع نموذج 3</h3>
         <p>قيد التطوير</p>
@@ -48,17 +56,17 @@
   </section>
 
   <!-- ======= تواصل معي ======= -->
-  <section id="contact">
+  <section id="contact" class="glass-section">
     <h2>تواصل معي</h2>
     <ul class="contact-list">
-      <li>واتساب: <a href="https://wa.me/01091838789" target="_blank">01091838789</a></li>
-      <li>فيسبوك: <a href="https://facebook.com/" target="_blank">صفحة الفيسبوك</a></li>
-      <li>البريد الإلكتروني: <a href="mailto:example@gmail.com">example@gmail.com</a></li>
+      <li><a href="https://wa.me/01091838789" target="_blank" class="glass-btn">واتساب</a></li>
+      <li><a href="https://facebook.com/" target="_blank" class="glass-btn">فيسبوك</a></li>
+      <li><a href="mailto:example@gmail.com" class="glass-btn">البريد الإلكتروني</a></li>
     </ul>
   </section>
 
   <!-- ======= تذييل الصفحة ======= -->
-  <footer>
+  <footer class="glass-footer">
     <p>&copy; 2025 FaragDev98 | جميع الحقوق محفوظة</p>
   </footer>
 
