@@ -7,8 +7,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
-      color: #f1f1f1;
-      text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+      color: #000;
       font-family: "Segoe UI", sans-serif;
       background: url('images/html-book-cover.png') no-repeat center center fixed;
       background-size: cover;
@@ -16,28 +15,63 @@
       padding: 0;
     }
 
+    /* رأس الصفحة */
+    header.glass-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      padding: 20px;
+      background: rgba(173, 216, 230, 0.35);
+      border-radius: 15px;
+      backdrop-filter: blur(12px);
+      max-width: 800px;
+      margin: 20px auto;
+    }
+    header .logo-title i {
+      font-size: 28px;
+      color: #000;
+    }
+    header #username {
+      background: transparent;
+      border: none;
+      font-size: 22px;
+      font-weight: bold;
+      cursor: pointer;
+      color: #000;
+    }
+
     /* المربعات الزجاجية */
     .glass-card {
-      background: rgba(173, 216, 230, 0.4); /* أزرق فاتح شفاف */
+      background: rgba(173, 216, 230, 0.25); /* أكثر شفافية */
       border-radius: 20px;
-      padding: 25px;
+      padding: 30px;
       margin: 20px auto;
-      backdrop-filter: blur(10px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
       max-width: 800px;
     }
 
     /* العناوين */
     h2, h3 {
       text-align: center;
+      font-weight: bold;
       color: #000;
+    }
+
+    /* النصوص */
+    p {
+      font-size: 18px;
+      line-height: 1.8;
+      color: #000;
+      text-align: center;
     }
 
     /* الأزرار */
     .glass-btn {
       display: inline-block;
       margin: 10px;
-      padding: 15px 25px;
+      padding: 16px 28px;
       border-radius: 30px;
       font-size: 18px;
       font-weight: bold;
@@ -46,8 +80,6 @@
       color: #fff;
       text-align: center;
     }
-
-    /* ألوان الأزرار */
     .whatsapp { background: #25D366; }
     .website { background: #4da6ff; }
     .youtube { background: #FF0000; }
@@ -59,57 +91,59 @@
       opacity: 0.9;
     }
 
-    /* النصوص */
-    p {
-      font-size: 17px;
-      line-height: 1.6;
-      color: #000;
-      text-align: center;
-    }
-
     /* الصورة الشخصية */
     .about-me img {
-      width: 250px;
-      border-radius: 20px;
+      width: 300px;
+      border-radius: 25px;
       display: block;
-      margin: 20px auto 0 auto;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+      margin: 25px auto 0 auto;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.4);
     }
 
     /* مربع أيقونات التواصل */
     .social-footer {
       text-align: center;
-      padding: 20px 10px;
+      padding: 25px 10px;
     }
     .social-icons a {
-      font-size: 32px;
+      font-size: 34px;
       margin: 0 15px;
       color: #000;
       transition: 0.3s;
     }
     .social-icons a:hover {
       color: #ffd700;
-      transform: scale(1.2);
+      transform: scale(1.25);
     }
 
     /* استجابة الموبايل */
     @media screen and (max-width: 600px){
       .glass-btn {
-        padding: 12px 18px;
+        padding: 14px 20px;
         font-size: 16px;
       }
       .about-me img {
-        width: 180px;
+        width: 220px;
       }
       .glass-card {
         padding: 20px;
         margin: 15px;
       }
+      header.glass-header {
+        flex-direction: column;
+      }
     }
-
   </style>
 </head>
 <body>
+
+  <!-- رأس الصفحة -->
+  <header class="glass-header">
+    <div class="logo-title">
+      <i class="fa-solid fa-code"></i>
+      <button id="username">FaragDev</button>
+    </div>
+  </header>
 
   <!-- محتوى التواصل -->
   <div class="contact-content glass-card">
@@ -136,10 +170,10 @@
       لا يوجد وسيط أو روبوت — كل شيء يتم بإشراف مباشر.
     </p>
     <!-- صورة شخصية -->
-    <img src="images/instagram.png" alt="صورة فراج عبدالله">
+    <img src="images/profile.png" alt="صورة فراج عبدالله">
   </div>
 
-  <!-- التذييل مع الأيقونات -->
+  <!-- التذييل مع أيقونات التواصل -->
   <footer class="glass-card social-footer">
     <h3>🌐 تابعني على</h3>
     <div class="social-icons">
