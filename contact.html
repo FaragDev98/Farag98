@@ -5,6 +5,68 @@
   <title>موقعي</title>
   <!-- ربط ملف CSS -->
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    /* النصوص أوضح */
+    body {
+      color: #f1f1f1;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    /* مربعات زجاجية */
+    .glass-card {
+      background: rgba(0,0,0,0.5);
+      border-radius: 15px;
+      padding: 20px;
+      margin: 20px;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    }
+
+    /* الأزرار */
+    .glass-btn {
+      display: inline-block;
+      margin: 8px;
+      padding: 12px 20px;
+      border-radius: 25px;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s;
+      color: #fff;
+    }
+
+    /* ألوان خاصة لكل زر */
+    .whatsapp { background: #25D366; }
+    .website { background: #4da6ff; }
+    .youtube { background: #FF0000; }
+    .facebook { background: #1877F2; }
+    .instagram { background: #E4405F; }
+
+    .glass-btn:hover {
+      transform: scale(1.07);
+      opacity: 0.85;
+    }
+
+    /* مربع الأيقونات */
+    .social-footer {
+      text-align: center;
+    }
+    .social-icons {
+      margin: 15px 0;
+    }
+    .social-icons a {
+      font-size: 28px;
+      margin: 0 12px;
+      color: #fff;
+      transition: 0.3s;
+    }
+    .social-icons a:hover {
+      color: #ffd700;
+      transform: scale(1.2);
+    }
+  </style>
 </head>
 <body>
 
@@ -36,9 +98,18 @@
     <img src="images/instagram.png" alt="صورة فراج عبدالله" style="width:150px; border-radius:15px; margin-top:10px;">
   </div>
 
-  <!-- التذييل -->
+  <!-- التذييل مع الأيقونات -->
   <footer class="glass-card social-footer">
-    <script src="footer.js"></script>
+    <h3>🌐 تابعني على</h3>
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://youtube.com/@Fabrica-courses" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+      <a href="https://github.com/FaragDev98" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="https://wa.me/201066047545" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+    <p>&copy; 2025 FaragDev | جميع الحقوق محفوظة</p>
   </footer>
 
 </body>
