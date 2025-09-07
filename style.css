@@ -116,8 +116,7 @@ body {
   color: #ffd6ff; /* لون وردي فاتح */
   transform: scale(1.2);
                    }
- <style>
-    body {
+    
       color: #000;
       font-family: "Segoe UI", sans-serif;
       background: url('images/html-bookcover.png') no-repeat center center fixed;
@@ -241,5 +240,5 @@ body {
       header.glass-header {
         flex-direction: column;
       }
-    }
-  </style>
+    
+  
