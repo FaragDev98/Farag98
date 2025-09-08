@@ -37,19 +37,3 @@ fullscreenBtn.addEventListener("click", () => {
     video.msRequestFullscreen();
   }
 });
-
-// ===== تفاعل ظهور الأقسام تدريجيًا عند تحميل الصفحة =====
-window.addEventListener("DOMContentLoaded", () => {
-  const sections = document.querySelectorAll("section");
-  sections.forEach((section, index) => {
-    section.style.opacity = 0;       // اختفي أولًا
-    section.style.transition = "opacity 1s ease, transform 1s ease";
-    section.style.transform = "translateY(20px)";
-    
-    // ظهور تدريجي مع تأخير
-    setTimeout(() => {
-      section.style.opacity = 1;
-      section.style.transform = "translateY(0)";
-    }, 300 * index); // كل قسم يظهر بعد 300ms من السابق
-  });
-});
