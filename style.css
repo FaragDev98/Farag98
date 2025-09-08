@@ -169,11 +169,6 @@ body {
   border-radius: 8px;
   transition: background 0.3s;
 }
-
-.works a:hover {
-  background: #0652dd;
-}
-
 /* ===== صفحة التواصل ===== */
 .contact-section {
   max-width: 700px;
@@ -247,5 +242,8 @@ body {
 .contact-icons a:hover {
   color: #ffd6ff;
   transform: scale(1.2);
+  }
+.works a:hover {
+  background: #0652dd;
 }
 
