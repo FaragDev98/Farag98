@@ -142,14 +142,15 @@ body {
   transform: translateY(0);
 }
 .works {
-  background: white;
+  background: rgba(255, 255, 255, 0.1); /* خلفية شفافة */
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
   text-align: center;
   width: 90%;
   max-width: 400px;
-  transition: transform 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
+  backdrop-filter: blur(8px); /* تأثير زجاجي */
 }
 .works:hover {
   transform: translateY(-5px);
