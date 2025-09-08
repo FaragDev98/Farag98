@@ -5,7 +5,7 @@ const muteBtn = document.getElementById("mute");
 const volumeSlider = document.getElementById("volume");
 const fullscreenBtn = document.getElementById("fullscreen");
 
-// تشغيل/إيقاف
+// تشغيل/إيقاف الفيديو
 playPauseBtn.addEventListener("click", () => {
   if (video.paused || video.ended) {
     video.play();
@@ -38,5 +38,18 @@ fullscreenBtn.addEventListener("click", () => {
   }
 });
 
-// ===== هنا هتحط باقي تفاعلات الموقع =====
-// مثلاً أنيميشن عند التمرير، أو أزرار تنقل، أو رسائل تنبيهية...
+// ===== تفاعل ظهور الأقسام تدريجيًا عند تحميل الصفحة =====
+window.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll("section");
+  sections.forEach((section, index) => {
+    section.style.opacity = 0;       // اختفي أولًا
+    section.style.transition = "opacity 1s ease, transform 1s ease";
+    section.style.transform = "translateY(20px)";
+    
+    // ظهور تدريجي مع تأخير
+    setTimeout(() => {
+      section.style.opacity = 1;
+      section.style.transform = "translateY(0)";
+    }, 300 * index); // كل قسم يظهر بعد 300ms من السابق
+  });
+});
