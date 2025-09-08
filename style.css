@@ -20,7 +20,42 @@ body {
   backdrop-filter: blur(8px);
   box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
 }
+.video-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 40px auto;
+}
+/* ====الفديو ===== */
+.video-section video {
+  width: 80%;
+  max-width: 700px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
 
+.controls {
+  margin-top: 12px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.controls button,
+.controls input[type="range"] {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.controls input[type="range"] {
+  width: 120px;
+}
 /* ===== عنوان اللوجو ===== */
 .logo-title {
   display: flex;
@@ -97,70 +132,6 @@ body {
 
 .glass-card:hover {
   transform: scale(1.02);
-}
-
-/* ===== فديو  ===== */
-.video-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin: 30px auto;
-}
-
-.video-section video {
-  width: 80%;
-  max-width: 700px;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-}
-
-.controls {
-  margin-top: 10px;
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-}
-
-.controls button,
-.controls input[type="range"] {
-  padding: 6px 12px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 18px;
-}
-
-.controls input[type="range"] {
-  width: 120px;
-}
-
-
-
-
-
-/* ===== الشهادة ===== */
-.certificate {
-  width: 250px;
-  border-radius: 12px;
-  display: block;
-  margin: 15px auto;
-}
-
-/* ===== الخدمات ===== */
-.service {
-  display: inline-block;
-  width: 45%;
-  margin: 15px 2%;
-  text-align: center;
-}
-
-.service img {
-  width: 80px;
-  border-radius: 15px;
-  margin-bottom: 10px;
 }
 
 /* ===== الفوتر ===== */
