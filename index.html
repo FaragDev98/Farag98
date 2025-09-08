@@ -1,89 +1,81 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>موقعي الشخصي</title>
+  <title>FaragDev98 | موقعي الشخصي</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-  <!-- ===== الهيدر ===== -->
+  <!-- ======= رأس الصفحة ======= -->
   <header class="glass-header">
-    <div class="logo-title">
-      <img src="images/1000016680.jpg" alt="شعار AI" style="width:40px; height:40px; border-radius:50%;">
-      <span>Fabrica Course</span>
-    </div>
-    <nav>
-      <a href="#about" class="glass-btn">نبذة عني</a>
-      <a href="#video" class="glass-btn">الفيديو</a>
-      <a href="#portfolio" class="glass-btn">المشاريع</a>
-      <a href="#contact" class="glass-btn">تواصل</a>
+  <img src="icons/1000016680.jpg" alt="شعار AI" style="width:40px; height:40px; border-radius:50%;">
+    <nav class="nav-buttons">
+      <a href="index.html" class="glass-btn dev">FaragDev</a>
+      <a href="portfolio.html" class="glass-btn dev">معرض مطور</a>
+      <a href="contact.html" class="glass-btn contact">تواصل</a>
     </nav>
   </header>
-
-  <!-- ===== قسم النبذة ===== -->
-  <section id="about" class="about-section">
-    <h2>نبذة عني</h2>
-    <p>أنا <strong>فراج عبدالله</strong>، مطور ويب بخبرة خمس سنوات، أقدم حلول تطوير مبتكرة ومشاريع شخصية تعليمية.</p>
-    <img src="images/certificate.jpg" alt="شهادة" class="certificate-img">
-  </section>
-
-  <!-- ===== قسم الفيديو ===== -->
-  <section id="video" class="video-section">
-    <h2>شاهد فيديو تعليمي</h2>
-    <video controls>
-      <source src="videos/sample.mp4" type="video/mp4">
-      المتصفح لا يدعم تشغيل الفيديو
+ <!-- ======= فيديو تعريفي ======= -->
+  <section class="video-section">
+    <video id="myVideo" poster="images/video-thumbnail.png">
+      <source src="videos/intro.mp4" type="video/mp4">
+      متصفحك لا يدعم عرض الفيديو
     </video>
-  </section>
 
-  <!-- ===== قسم المشاريع / المعرض ===== -->
-  <section id="portfolio" class="portfolio">
-    <h2>مشاريعي</h2>
+    <div class="controls">
+      <button id="playPause">▶️</button>
+      <button id="mute">🔊</button>
+      <input type="range" id="volume" min="0" max="1" step="0.1" value="1">
+      <button id="fullscreen">⛶</button>
+    </div>
+
+  
+<!-- ربط ملف الجافاسكريبت -->
+<script src="js/script.js"></script>
+  
+
+ <!-- ======= نبذة تعريفية ======= -->
+<section class="about-section">
+  <h2>نبذة عني</h2>
+  <p>
+    أنا <strong>فراج عبدالله</strong>، مطور ويب شغوف بابتكار حلول برمجية متقدمة، 
+    أتمتع برحلة تعلم طويلة وخبرة عملية تزيد عن <strong>5 سنوات</strong> في مجال تطوير المواقع والتطبيقات.  
+    <br><br>
+    أقدم <strong>حلول تطوير متكاملة</strong> تشمل تصميم واجهات عصرية، تحسين تجربة المستخدم، 
+    وإنشاء أنظمة برمجية متجاوبة وفعالة تلبي احتياجات العملاء.  
+    <br><br>
+    حصلت على عدة <strong>كورسات تدريبية</strong> عبر منصات تعليمية مرموقة مثل Coursera، 
+    مما ساعدني على صقل مهاراتي وتوسيع خبرتي العملية.  
+    <br><br>
+    الأدوات والتقنيات التي أستخدمها:  
+    <strong>HTML</strong>، <strong>CSS</strong>، <strong>JavaScript</strong>، <strong>PHP</strong>، <strong>Python</strong>.
+  </p>
+
+  <h2>شهادتي</h2>
+  <img src="images/certificate-coursera.jpg" alt="شهادة إتمام الكورس" class="certificate-img" />
+</section>
+
+  <!-- ======= الخدمات ======= -->
+
     
-    <div class="works">
-      <img src="images/quran_project.jpg" alt="مشروع القرآن الكريم">
-      <h3>القرآن الكريم</h3>
-      <p>تطبيق ويب للقرآن الكريم مع تصميم متجاوب وفهرس للسور.</p>
-      <a href="https://fabrica-courses.netlify.app/" target="_blank">زيارة المشروع</a>
-    </div>
+       <img src="images/instagram.png" alt="صورة شخصية" style="width: 320px; border-radius: 14px; box-shadow: 0 6px 15px rgba(33,150,243,0.6);" />
+   
+  
 
-    <!-- مشروع نموذجي مؤقت -->
-    <div class="works">
-      <img src="images/project_placeholder.jpg" alt="مشروع مؤقت">
-      <h3>مشروع قادم</h3>
-      <p>وصف مشروع تجريبي سيتم تطويره لاحقاً.</p>
-      <a href="#">قريباً</a>
+  
+       <div class="social-icons">
+          <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+         <a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://github.com/FaragDev98" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="https://wa.me/01091838789" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+     <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
     </div>
-    
-  </section>
-
-  <!-- ===== قسم التواصل ===== -->
-  <section id="contact" class="contact-section">
-    <h2>تواصل معي</h2>
-    <form class="contact-form">
-      <input type="text" placeholder="الاسم" required>
-      <input type="email" placeholder="البريد الإلكتروني" required>
-      <textarea rows="5" placeholder="رسالتك" required></textarea>
-      <button type="submit">إرسال</button>
-    </form>
-    <div class="contact-icons">
-      <a href="https://wa.me/01091838789" target="_blank">واتساب</a>
-      <a href="https://www.facebook.com/" target="_blank">فيسبوك</a>
-      <a href="tel:01091838789">الهاتف</a>
-    </div>
-  </section>
-
-  <!-- ===== الفوتر ===== -->
-  <footer class="social-footer">
-    <p>© 2025 Fabrica Course</p>
-    <div class="social-icons">
-      <a href="https://www.facebook.com/" target="_blank">فيسبوك</a>
-      <a href="https://www.instagram.com/" target="_blank">إنستغرام</a>
-      <a href="https://twitter.com/" target="_blank">تويتر</a>
-    </div>
-  </footer>
-
+     2025 FaragDev | جميع الحقوق محفوظة</p>
+  
+<script src="script.js"></script>
 </body>
 </html>
