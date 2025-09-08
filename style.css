@@ -21,17 +21,25 @@ body {
   box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
 }
 
-/* ===== أزرار الهيدر ===== */
-.glass-header .glass-btn {
-  margin: 0 5px; /* جنب بعض */
-  background: #6c5ce7; /* لون أول زر */
+/* ===== أزرار زجاجية ===== */
+.glass-btn {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+  backdrop-filter: blur(6px);
+  margin: 0 5px;
 }
-.glass-header .glass-btn:nth-child(2) { background: #00b894; } /* أخضر */
-.glass-header .glass-btn:nth-child(3) { background: #e17055; } /* برتقالي */
-.glass-header .glass-btn:nth-child(4) { background: #fd79a8; } /* وردي */
-.glass-header .glass-btn:hover {
+.glass-btn:hover {
+  background: rgba(255, 255, 255, 0.35);
+  color: #222;
   transform: translateY(-3px);
-  opacity: 0.9;
 }
 
 /* ===== عنوان اللوجو ===== */
@@ -59,7 +67,7 @@ body {
 
 /* ===== قسم النبذة ===== */
 .about-section {
-  background: rgba(0, 128, 0, 0.2); /* أخضر شفاف */
+  background: rgba(0, 128, 0, 0.2);
   border-radius: 15px;
   padding: 25px;
   margin: 25px;
@@ -78,7 +86,7 @@ body {
 }
 .about-section h2 {
   font-size: 28px;
-  color: #00ff99; /* أخضر فاتح واضح */
+  color: #00ff99;
   margin-bottom: 15px;
 }
 .about-section p {
@@ -195,7 +203,7 @@ body {
 .contact-section h2 {
   font-size: 26px;
   margin-bottom: 20px;
-  color: #ffd6ff; /* بنفسجي فاتح */
+  color: #ffd6ff;
 }
 .contact-form {
   display: flex;
@@ -218,7 +226,7 @@ body {
   color: #ddd;
 }
 .contact-form button {
-  background: #6c5ce7; /* بنفسجي */
+  background: #6c5ce7;
   color: white;
   padding: 12px;
   border: none;
@@ -229,7 +237,7 @@ body {
   transition: 0.3s;
 }
 .contact-form button:hover {
-  background: #a29bfe; /* بنفسجي فاتح */
+  background: #a29bfe;
   transform: translateY(-3px);
 }
 /* أيقونات التواصل */
@@ -245,90 +253,6 @@ body {
 .contact-icons a:hover {
   color: #ffd6ff;
   transform: scale(1.2);
-  }
-
-فراج 
-
-/* ===== الهيدر الزجاجي ===== */
-.glass-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px 25px;
-  background: rgba(255, 255, 255, 0.08);
-  border-radius: 20px;
-  margin: 15px;
-  backdrop-filter: blur(8px);
-  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
-}
-
-/* ===== أزرار زجاجية ===== */
-.glass-btn {
-  background: rgba(255, 255, 255, 0.15);
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  color: #fff;
-  padding: 8px 18px;
-  border-radius: 25px;
-  font-size: 14px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: 0.3s ease-in-out;
-  text-decoration: none;
-  backdrop-filter: blur(6px);
-}
-
-/* ===== قسم النبذة ===== */
-.about-section {
-  background: rgba(0, 128, 0, 0.2); /* أخضر شفاف */
-  border-radius: 15px;
-  padding: 25px;
-  margin: 25px;
-  max-width: 450px;          /* يخليه مستطيل */
-  float: right;              /* يخليه في يمين الشاشة */
-  text-align: right;
-  backdrop-filter: blur(6px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
-}
-
-.about-section h2 {
-  font-size: 28px;
-  color: #00ff99; /* أخضر فاتح واضح */
-  margin-bottom: 15px;
-}
-
-.about-section p {
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 2;
-  color: #f1f1f1;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.about-section .certificate-img {
-  width: 320px;
-  border-radius: 14px;
-  margin-top: 15px;
-  box-shadow: 0 8px 20px rgba(0, 128, 0, 0.6);
-}
-.glass-btn:hover {
-  background: rgba(255, 255, 255, 0.35);
-  color: #222;
-  transform: translateY(-3px);
-}
-
-/* ===== الكروت الزجاجية ===== */
-.glass-card {
-  background: rgba(255, 255, 255, 0.12);
-  border-radius: 20px;
-  padding: 20px;
-  margin: 25px;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
-  transition: 0.3s;
-}
-
-.glass-card:hover {
-  transform: scale(1.02);
 }
 
 /* ===== الفوتر ===== */
@@ -340,145 +264,13 @@ body {
   border-radius: 20px;
   backdrop-filter: blur(6px);
 }
-
 .social-icons a {
   color: white;
   font-size: 20px;
   margin: 0 10px;
   transition: 0.3s;
 }
-
 .social-icons a:hover {
-  color: #ffd6ff; /* لون وردي فاتح */
-  transform: scale(1.2);
-                   }
-     
-/* قسم المشاريع */
-.portfolio {
-  display: flex;
-  flex-direction: column;   /* يخليهم تحت بعض */
-  align-items: center;      /* يوسطنهم في النص */
-  gap: 25px;                /* مسافة بين كل كارت */
-  padding: 40px 15px;
-}
-
-/* كارت المشروع */
-.works {
-  background: white;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  text-align: center;
-  width: 90%;       /* يخلي الكارت متجاوب */
-  max-width: 400px; /* مايزيدش عن 400px في الكمبيوتر */
-  transition: transform 0.3s;
-}
-
-.works:hover {
-  transform: translateY(-5px);
-}
-
-.works img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.works h3 {
-  margin: 15px 0 5px;
-  font-size: 20px;
-}
-
-.works p {
-  font-size: 14px;
-  color: #555;
-  padding: 0 10px;
-}
-
-.works a {
-  display: inline-block;
-  margin: 15px 0;
-  padding: 10px 20px;
-  background: #0984e3;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  transition: background 0.3s;
-}
-/* ===== صفحة التواصل ===== */
-.contact-section {
-  max-width: 700px;
-  margin: 40px auto;
-  padding: 25px;
-  background: rgba(255, 255, 255, 0.12);
-  border-radius: 20px;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
-  text-align: center;
-}
-
-.contact-section h2 {
-  font-size: 26px;
-  margin-bottom: 20px;
-  color: #ffd6ff; /* بنفسجي فاتح */
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  padding: 12px 15px;
-  border: none;
-  border-radius: 12px;
-  outline: none;
-  font-size: 15px;
-  background: rgba(255, 255, 255, 0.15);
-  color: white;
-  backdrop-filter: blur(6px);
-}
-
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
-  color: #ddd;
-}
-
-.contact-form button {
-  background: #6c5ce7; /* بنفسجي */
-  color: white;
-  padding: 12px;
-  border: none;
-  border-radius: 12px;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.contact-form button:hover {
-  background: #a29bfe; /* بنفسجي فاتح */
-  transform: translateY(-3px);
-}
-
-/* أيقونات التواصل */
-.contact-icons {
-  margin-top: 25px;
-}
-
-.contact-icons a {
-  margin: 0 10px;
-  font-size: 22px;
-  color: white;
-  transition: 0.3s;
-}
-
-.contact-icons a:hover {
   color: #ffd6ff;
   transform: scale(1.2);
-  }
-.works a:hover {
-  background: #0652dd;
-  }
+}
