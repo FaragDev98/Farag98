@@ -173,3 +173,165 @@ body {
 .works a:hover {
   background: #0652dd;
 }
+/* إعدادات عامة */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cairo", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #3a0ca3, #7209b7, #4361ee);
+  color: #fff;
+  line-height: 1.8;
+  padding: 0;
+  margin: 0;
+}
+
+/* تأثير الزجاج */
+.glass-card,
+.glass-header,
+.glass-btn,
+.social-footer {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  transition: 0.3s ease;
+}
+
+/* ======= رأس الصفحة ======= */
+header.glass-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  margin: 10px;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.logo-title img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* الأزرار */
+.nav-buttons a,
+.glass-btn {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px 18px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.15);
+  transition: 0.3s ease;
+}
+
+.nav-buttons a:hover,
+.glass-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
+}
+
+.nav-buttons .active {
+  background: #7209b7;
+}
+
+/* ======= قسم التواصل ======= */
+.contact-content {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-content h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #ffe6ff;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.contact-links a {
+  min-width: 140px;
+  text-align: center;
+}
+
+/* عني */
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  gap: 15px;
+}
+
+.about-me .profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  object-fit: cover;
+}
+
+/* ======= التذييل ======= */
+footer.social-footer {
+  text-align: center;
+  margin: 30px 10px 10px;
+  padding: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ffbe0b;
+  transform: scale(1.2);
+}
+
+/* ======= تجاوب مع الهاتف ======= */
+@media (max-width: 768px) {
+  header.glass-header {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .about-me {
+    text-align: center;
+  }
+
+  .contact-links {
+    flex-direction: column;
+    align-items: center;
+  }
+  }
