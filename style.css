@@ -174,5 +174,78 @@ body {
   background: #0652dd;
 }
 
+/* ===== صفحة التواصل ===== */
+.contact-section {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
 
+.contact-section h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #ffd6ff; /* بنفسجي فاتح */
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 15px;
+  border: none;
+  border-radius: 12px;
+  outline: none;
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  backdrop-filter: blur(6px);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #ddd;
+}
+
+.contact-form button {
+  background: #6c5ce7; /* بنفسجي */
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: #a29bfe; /* بنفسجي فاتح */
+  transform: translateY(-3px);
+}
+
+/* أيقونات التواصل */
+.contact-icons {
+  margin-top: 25px;
+}
+
+.contact-icons a {
+  margin: 0 10px;
+  font-size: 22px;
+  color: white;
+  transition: 0.3s;
+}
+
+.contact-icons a:hover {
+  color: #ffd6ff;
+  transform: scale(1.2);
+}
 
