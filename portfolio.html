@@ -4,14 +4,18 @@
   <meta charset="UTF-8">
   <title>FaragDev98 | موقعي الشخصي</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  
+  <!-- ملف CSS الرئيسي -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- أيقونات Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
   <!-- ======= رأس الصفحة ======= -->
   <header class="glass-header">
-  <img src="icons/1000016680.jpg" alt="شعار AI" style="width:40px; height:40px; border-radius:50%;">
+    <img src="icons/1000016680.jpg" alt="شعار AI" style="width:40px; height:40px; border-radius:50%;">
     <nav class="nav-buttons">
       <a href="index.html" class="glass-btn dev">FaragDev</a>
       <a href="portfolio.html" class="glass-btn dev">معرض مطور</a>
@@ -19,47 +23,46 @@
     </nav>
   </header>
 
+  <!-- ======= قسم المشاريع (فيديوهات) ======= -->
+  <section class="portfolio">
 
-  <!-- ======= فيديو تعريفي ======= -->
-  <section class="video-section">
-    <video id="myVideo" poster="images/video-thumbnail.png">
-      <source src="videos/intro.mp4" type="video/mp4">
-      متصفحك لا يدعم عرض الفيديو
-    </video>
-
-    <div class="controls">
-      <button id="playPause">▶️</button>
-      <button id="mute">🔊</button>
-      <input type="range" id="volume" min="0" max="1" step="0.1" value="1">
-      <button id="fullscreen">⛶</button>
+    <div class="works glass-card">
+      <video src="videos/fabrica.mp4" muted loop></video>
+      <h3>🌐 موقع فبريكا</h3>
+      <p>موقع تعليمي مع كورسات وخدمات برمجية.</p>
+      <a href="https://fabrica-courses.netlify.app/" target="_blank">عرض الموقع</a>
     </div>
- 
-<!-- ربط ملف الجافاسكريبت -->
-<script src="js/script.js"></script>
-<!-- ======= قسم المشاريع ======= -->
-<section class="portfolio">
 
-  <div class="works">
-    <img src="images/fabrica.png" alt="موقع فبريكا">
-    <h3>🌐 موقع فبريكا</h3>
-    <p>موقع تعليمي مع كورسات وخدمات برمجية.</p>
-    <a href="https://fabrica-courses.netlify.app/" target="_blank">عرض الموقع</a>
-  </div>
+    <div class="works glass-card">
+      <video src="videos/project2.mp4" muted loop></video>
+      <h3>⚡ مشروع تجريبي</h3>
+      <p>وصف مختصر للمشروع التجريبي.</p>
+      <a href="#" target="_blank">عرض الموقع</a>
+    </div>
 
-  <div class="works">
-    <img src="images/project2.jpg" alt="مشروع تجريبي">
-    <h3>⚡ مشروع تجريبي</h3>
-    <p>وصف مختصر للمشروع التجريبي.</p>
-    <a href="#" target="_blank">عرض الموقع</a>
-  </div>
+    <div class="works glass-card">
+      <video src="videos/project3.mp4" muted loop></video>
+      <h3>💻 مشروع ويب</h3>
+      <p>تصميم واجهة ويب حديثة ومتجاوبة.</p>
+      <a href="#" target="_blank">عرض الموقع</a>
+    </div>
 
-  <div class="works">
-    <img src="images/project3.jpg" alt="مشروع ويب">
-    <h3>💻 مشروع ويب</h3>
-    <p>تصميم واجهة ويب حديثة ومتجاوبة.</p>
-    <a href="#" target="_blank">عرض الموقع</a>
-  </div>
+  </section>
 
-</section>
+  <!-- ربط ملف JavaScript -->
+  <script src="js/script.js"></script>
+
+  <script>
+    // تشغيل/إيقاف الفيديو داخل المربعات
+    document.querySelectorAll(".works video").forEach(video => {
+      video.addEventListener("click", () => {
+        if (video.paused) {
+          video.play();
+        } else {
+          video.pause();
+        }
+      });
+    });
+  </script>
 </body>
 </html>
