@@ -20,42 +20,20 @@ body {
   backdrop-filter: blur(8px);
   box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
 }
-.video-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin: 40px auto;
+
+/* ===== أزرار الهيدر ===== */
+.glass-header .glass-btn {
+  margin: 0 5px; /* جنب بعض */
+  background: #6c5ce7; /* لون أول زر */
 }
-/* ====الفديو ===== */
-.video-section video {
-  width: 80%;
-  max-width: 700px;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+.glass-header .glass-btn:nth-child(2) { background: #00b894; } /* أخضر */
+.glass-header .glass-btn:nth-child(3) { background: #e17055; } /* برتقالي */
+.glass-header .glass-btn:nth-child(4) { background: #fd79a8; } /* وردي */
+.glass-header .glass-btn:hover {
+  transform: translateY(-3px);
+  opacity: 0.9;
 }
 
-.controls {
-  margin-top: 12px;
-  display: flex;
-  gap: 12px;
-  align-items: center;
-  justify-content: center;
-}
-
-.controls button,
-.controls input[type="range"] {
-  padding: 6px 12px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 18px;
-}
-
-.controls input[type="range"] {
-  width: 120px;
-}
 /* ===== عنوان اللوجو ===== */
 .logo-title {
   display: flex;
@@ -63,60 +41,6 @@ body {
   gap: 10px;
   font-size: 20px;
   font-weight: bold;
-}
-
-/* ===== أزرار زجاجية ===== */
-.glass-btn {
-  background: rgba(255, 255, 255, 0.15);
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  color: #fff;
-  padding: 8px 18px;
-  border-radius: 25px;
-  font-size: 14px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: 0.3s ease-in-out;
-  text-decoration: none;
-  backdrop-filter: blur(6px);
-}
-
-/* ===== قسم النبذة ===== */
-.about-section {
-  background: rgba(0, 128, 0, 0.2); /* أخضر شفاف */
-  border-radius: 15px;
-  padding: 25px;
-  margin: 25px;
-  max-width: 450px;          /* يخليه مستطيل */
-  float: right;              /* يخليه في يمين الشاشة */
-  text-align: right;
-  backdrop-filter: blur(6px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
-}
-
-.about-section h2 {
-  font-size: 28px;
-  color: #00ff99; /* أخضر فاتح واضح */
-  margin-bottom: 15px;
-}
-
-.about-section p {
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 2;
-  color: #f1f1f1;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.about-section .certificate-img {
-  width: 320px;
-  border-radius: 14px;
-  margin-top: 15px;
-  box-shadow: 0 8px 20px rgba(0, 128, 0, 0.6);
-}
-.glass-btn:hover {
-  background: rgba(255, 255, 255, 0.35);
-  color: #222;
-  transform: translateY(-3px);
 }
 
 /* ===== الكروت الزجاجية ===== */
@@ -129,75 +53,113 @@ body {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
   transition: 0.3s;
 }
-
 .glass-card:hover {
   transform: scale(1.02);
 }
 
-/* ===== الفوتر ===== */
-.social-footer {
-  text-align: center;
-  padding: 20px;
+/* ===== قسم النبذة ===== */
+.about-section {
+  background: rgba(0, 128, 0, 0.2); /* أخضر شفاف */
+  border-radius: 15px;
+  padding: 25px;
   margin: 25px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
+  max-width: 450px;
+  float: right;
+  text-align: right;
   backdrop-filter: blur(6px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
 }
-
-.social-icons a {
-  color: white;
+.about-section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.about-section h2 {
+  font-size: 28px;
+  color: #00ff99; /* أخضر فاتح واضح */
+  margin-bottom: 15px;
+}
+.about-section p {
   font-size: 20px;
-  margin: 0 10px;
-  transition: 0.3s;
+  font-weight: bold;
+  line-height: 2;
+  color: #f1f1f1;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.about-section .certificate-img {
+  width: 320px;
+  border-radius: 14px;
+  margin-top: 15px;
+  box-shadow: 0 8px 20px rgba(0, 128, 0, 0.6);
 }
 
-.social-icons a:hover {
-  color: #ffd6ff; /* لون وردي فاتح */
-  transform: scale(1.2);
-                   }
-     
-/* قسم المشاريع */
+/* ===== قسم الفيديو ===== */
+.video-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 40px auto;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.video-section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.video-section video {
+  width: 80%;
+  max-width: 700px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* ===== قسم المشاريع ===== */
 .portfolio {
   display: flex;
-  flex-direction: column;   /* يخليهم تحت بعض */
-  align-items: center;      /* يوسطنهم في النص */
-  gap: 25px;                /* مسافة بين كل كارت */
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
   padding: 40px 15px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
 }
-
-/* كارت المشروع */
+.portfolio.show {
+  opacity: 1;
+  transform: translateY(0);
+}
 .works {
   background: white;
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   text-align: center;
-  width: 90%;       /* يخلي الكارت متجاوب */
-  max-width: 400px; /* مايزيدش عن 400px في الكمبيوتر */
+  width: 90%;
+  max-width: 400px;
   transition: transform 0.3s;
 }
-
 .works:hover {
   transform: translateY(-5px);
 }
-
 .works img {
   width: 100%;
   height: 200px;
   object-fit: cover;
 }
-
 .works h3 {
   margin: 15px 0 5px;
   font-size: 20px;
 }
-
 .works p {
   font-size: 14px;
   color: #555;
   padding: 0 10px;
 }
-
 .works a {
   display: inline-block;
   margin: 15px 0;
@@ -208,6 +170,10 @@ body {
   border-radius: 8px;
   transition: background 0.3s;
 }
+.works a:hover {
+  background: #0652dd;
+}
+
 /* ===== صفحة التواصل ===== */
 .contact-section {
   max-width: 700px;
@@ -218,20 +184,24 @@ body {
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
   text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
 }
-
+.contact-section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
 .contact-section h2 {
   font-size: 26px;
   margin-bottom: 20px;
   color: #ffd6ff; /* بنفسجي فاتح */
 }
-
 .contact-form {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-
 .contact-form input,
 .contact-form textarea {
   padding: 12px 15px;
@@ -243,12 +213,10 @@ body {
   color: white;
   backdrop-filter: blur(6px);
 }
-
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
   color: #ddd;
 }
-
 .contact-form button {
   background: #6c5ce7; /* بنفسجي */
   color: white;
@@ -260,29 +228,21 @@ body {
   cursor: pointer;
   transition: 0.3s;
 }
-
 .contact-form button:hover {
   background: #a29bfe; /* بنفسجي فاتح */
   transform: translateY(-3px);
 }
-
 /* أيقونات التواصل */
 .contact-icons {
   margin-top: 25px;
 }
-
 .contact-icons a {
   margin: 0 10px;
   font-size: 22px;
   color: white;
   transition: 0.3s;
 }
-
 .contact-icons a:hover {
   color: #ffd6ff;
   transform: scale(1.2);
   }
-.works a:hover {
-  background: #0652dd;
-}
-
