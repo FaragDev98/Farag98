@@ -99,11 +99,61 @@ body {
   transform: scale(1.02);
 }
 
-/* ===== الفيديو ===== */
-.intro-video video {
-  width: 100%;
+/* ===== قسم الفيديو ===== */
+.video-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.video-player {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
   border-radius: 15px;
-  margin-top: 12px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+.video-player video {
+  width: 600px;      /* حجم ثابت للفيديو */
+  max-width: 100%;   /* متجاوب على الموبايل */
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* أزرار التحكم */
+.controls {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.controls button,
+.controls input[type="range"] {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.controls button {
+  background: #6c5ce7;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.controls button:hover {
+  background: #a29bfe;
+}
+
+.controls input[type="range"] {
+  width: 100px;
 }
 
 /* ===== الشهادة ===== */
