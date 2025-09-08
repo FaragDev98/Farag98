@@ -137,10 +137,12 @@ body {
   transform: translateY(20px);
   transition: opacity 1s ease, transform 1s ease;
 }
+
 .portfolio.show {
   opacity: 1;
   transform: translateY(0);
 }
+
 .works {
   background: rgba(255, 255, 255, 0.1); /* خلفية شفافة */
   border-radius: 15px;
@@ -152,35 +154,43 @@ body {
   transition: transform 0.3s, box-shadow 0.3s;
   backdrop-filter: blur(8px); /* تأثير زجاجي */
 }
+
 .works:hover {
   transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgba(0,0,0,0.3);
 }
+
 .works img {
   width: 100%;
   height: 200px;
   object-fit: cover;
 }
+
 .works h3 {
   margin: 15px 0 5px;
   font-size: 20px;
+  color: #fff; /* خط أبيض يبان على الخلفية */
 }
+
 .works p {
   font-size: 14px;
-  color: #555;
+  color: #ddd; /* لون رمادي فاتح */
   padding: 0 10px;
 }
+
 .works a {
   display: inline-block;
   margin: 15px 0;
   padding: 10px 20px;
-  background: #0984e3;
+  background: #6c5ce7; /* بنفسجي ناعم */
   color: white;
   text-decoration: none;
   border-radius: 8px;
   transition: background 0.3s;
 }
+
 .works a:hover {
-  background: #0652dd;
+  background: #a29bfe;
 }
 
 /* ===== صفحة التواصل ===== */
