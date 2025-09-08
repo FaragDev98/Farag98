@@ -1,21 +1,22 @@
-// نختار عناصر الفيديو والأزرار
+// ===== مشغل الفيديو =====
 const video = document.getElementById("myVideo");
 const playPauseBtn = document.getElementById("playPause");
 const muteBtn = document.getElementById("mute");
 const volumeSlider = document.getElementById("volume");
+const fullscreenBtn = document.getElementById("fullscreen");
 
-// تشغيل/إيقاف الفيديو
+// تشغيل/إيقاف
 playPauseBtn.addEventListener("click", () => {
   if (video.paused || video.ended) {
     video.play();
-    playPauseBtn.textContent = "⏸️"; // زر الإيقاف
+    playPauseBtn.textContent = "⏸️";
   } else {
     video.pause();
-    playPauseBtn.textContent = "▶️"; // زر التشغيل
+    playPauseBtn.textContent = "▶️";
   }
 });
 
-// كتم/إلغاء الكتم
+// كتم/تشغيل الصوت
 muteBtn.addEventListener("click", () => {
   video.muted = !video.muted;
   muteBtn.textContent = video.muted ? "🔇" : "🔊";
@@ -25,3 +26,17 @@ muteBtn.addEventListener("click", () => {
 volumeSlider.addEventListener("input", () => {
   video.volume = volumeSlider.value;
 });
+
+// ملء الشاشة
+fullscreenBtn.addEventListener("click", () => {
+  if (video.requestFullscreen) {
+    video.requestFullscreen();
+  } else if (video.webkitRequestFullscreen) {
+    video.webkitRequestFullscreen();
+  } else if (video.msRequestFullscreen) {
+    video.msRequestFullscreen();
+  }
+});
+
+// ===== هنا هتحط باقي تفاعلات الموقع =====
+// مثلاً أنيميشن عند التمرير، أو أزرار تنقل، أو رسائل تنبيهية...
