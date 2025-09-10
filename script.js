@@ -1,45 +1,6 @@
-// ===== مشغل الفيديو =====
-const video = document.getElementById("myVideo");
-const playPauseBtn = document.getElementById("playPause");
-const muteBtn = document.getElementById("mute");
-const volumeSlider = document.getElementById("volume");
-const fullscreenBtn = document.getElementById("fullscreen");
-
-// تشغيل/إيقاف الفيديو
-playPauseBtn.addEventListener("click", () => {
-  if (video.paused || video.ended) {
-    video.play();
-    playPauseBtn.textContent = "⏸️";
-  } else {
-    video.pause();
-    playPauseBtn.textContent = "▶️";
-  }
-});
-
-// كتم/تشغيل الصوت
-muteBtn.addEventListener("click", () => {
-  video.muted = !video.muted;
-  muteBtn.textContent = video.muted ? "🔇" : "🔊";
-});
-
-// التحكم في مستوى الصوت
-volumeSlider.addEventListener("input", () => {
-  video.volume = volumeSlider.value;
-});
-
-// ملء الشاشة
-fullscreenBtn.addEventListener("click", () => {
-  if (video.requestFullscreen) {
-    video.requestFullscreen();
-  } else if (video.webkitRequestFullscreen) {
-    video.webkitRequestFullscreen();
-  } else if (video.msRequestFullscreen) {
-    video.msRequestFullscreen();
-  }
-});
 // ===== التأكد من تحميل الصفحة بالكامل =====
 document.addEventListener("DOMContentLoaded", () => {
-  // عناصر الفيديو
+  // عناصر الفيديو (ممكن تكون مش موجودة في كل الصفحات)
   const video = document.getElementById("myVideo");
   const playPauseBtn = document.getElementById("playPause");
   const muteBtn = document.getElementById("mute");
@@ -47,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const fullscreenBtn = document.getElementById("fullscreen");
 
   // ===== تشغيل/إيقاف الفيديو =====
-  if (playPauseBtn) {
+  if (video && playPauseBtn) {
     playPauseBtn.addEventListener("click", () => {
       if (video.paused || video.ended) {
         video.play();
@@ -60,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // ===== كتم/تشغيل الصوت =====
-  if (muteBtn) {
+  if (video && muteBtn) {
     muteBtn.addEventListener("click", () => {
       video.muted = !video.muted;
       muteBtn.textContent = video.muted ? "🔇" : "🔊";
@@ -68,14 +29,14 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // ===== التحكم في مستوى الصوت =====
-  if (volumeSlider) {
+  if (video && volumeSlider) {
     volumeSlider.addEventListener("input", () => {
       video.volume = volumeSlider.value;
     });
   }
 
   // ===== ملء الشاشة =====
-  if (fullscreenBtn) {
+  if (video && fullscreenBtn) {
     fullscreenBtn.addEventListener("click", () => {
       if (video.requestFullscreen) {
         video.requestFullscreen();
