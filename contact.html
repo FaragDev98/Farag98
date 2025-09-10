@@ -22,19 +22,31 @@
   <!-- ===== قسم التواصل ===== -->
   <section id="contact" class="contact-section show">
     <h2>تواصل معي</h2>
-    <form class="contact-form">
-      <input type="text" placeholder="اسمك" required>
-      <input type="email" placeholder="بريدك الإلكتروني" required>
-      <textarea placeholder="رسالتك" rows="5" required></textarea>
+    <p>أرسل لي رسالة مباشرة وسأرد عليك بأسرع وقت. استفساراتك أو طلباتك ستجد لها اهتمام كامل وخدمة احترافية.</p>
+
+    <!-- ===== نموذج الرسائل ===== -->
+    <form id="contactForm" class="contact-form">
+      <input type="text" name="name" placeholder="اسمك" required>
+      <input type="email" name="email" placeholder="بريدك الإلكتروني" required>
+      <textarea name="message" placeholder="رسالتك" rows="5" required></textarea>
       <button type="submit">إرسال</button>
     </form>
 
+    <!-- ===== أيقونات التواصل الاجتماعي ===== -->
     <div class="contact-icons">
       <a href="https://wa.me/201091838789" target="_blank"><i class="fab fa-whatsapp"></i></a>
       <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
       <a href="mailto:yourmail@example.com"><i class="fas fa-envelope"></i></a>
     </div>
+
+    <!-- ===== صورة أسفل النص ===== -->
+    <div class="contact-image">
+      <img src="images/contact-image.png" alt="تواصل معنا" />
+    </div>
   </section>
+
+  <!-- رابط ملف JavaScript للتحكم لاحقًا -->
+  <script src="js/contact.js"></script>
 
 </body>
 </html>
