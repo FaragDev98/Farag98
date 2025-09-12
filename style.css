@@ -1,6 +1,5 @@
 /* ===== الخلفية العامة ===== */
-/* ===== الخلفية لصفحة واحدة ===== */
-body.single-page {
+body {
   margin: 0;
   font-family: "Segoe UI", sans-serif;
   background: url("images/FB_IMG_1747025807018.jpg") no-repeat center center fixed;
@@ -8,7 +7,6 @@ body.single-page {
   color: white;
   line-height: 1.8;
 }
-
 /* ===== الهيدر الزجاجي ===== */
 .glass-header {
   display: flex;
