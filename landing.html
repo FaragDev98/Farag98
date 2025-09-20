@@ -3,144 +3,206 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FaragDev | صفحة هبوط كتاب HTML</title>
-  <link rel="stylesheet" href="style.css">
+  <title>FaragDev | كتاب HTML للمبتدئين</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
-<body class="single-page">
-
-<!-- ======= رأس الصفحة ======= -->
-<header class="glass-header" id="mainHeader">
-  <div class="site-title-top">FaragDev98</div>
-  <div class="header-container">
-    <div class="logo">
-      <img src="icons/aiicon.png" alt="شعار FaragDev" />
-    </div>
-    <nav class="nav-buttons">
-      <a href="#"><i class="fa fa-home"></i> الرئيسية</a>
-      <a href="#"><i class="fa fa-file-alt"></i> المقالات</a>
-      <a href="#"><i class="fa fa-envelope"></i> تواصل معنا</a>
-    </nav>
-  </div>
-</header>
-  
-<!-- ======= فيديو تعريفي ======= -->
-<section class="video-section">
-  <video id="myVideo" poster="images/video-thumbnail.png" controls>
-    <source src="videos/book-preview.mp4" type="video/mp4">
-    متصفحك لا يدعم عرض الفيديو
-  </video>
-</section>
-
-<!-- ======= الغلاف + المحتوى ======= -->
-<div class="book-section">
-
-  <!-- غلاف الكتاب -->
-  <div class="book-cover-container fade-up">
-    <img src="images/html-book-cover.png" alt="غلاف الكتاب" class="book-cover">
-  </div>
-
-  <!-- نبذة عن الكتاب -->
-  <div class="glass-box fade-up">
-    <h2>📖 لماذا هذا الكتاب؟</h2>
-    <p>
-      إذا كنت مبتدئ في عالم البرمجة، فهذا الكتاب هو دليلك المثالي.  
-      ستتعلم لغة <b>HTML</b> خطوة بخطوة لبناء مواقع احترافية من الصفر.
-    </p>
-  </div>
-
-  <!-- طريقة الاستخدام -->
-  <div class="glass-box orange-box fade-up">
-    <h2>📝 ما الذي ستتعلمه؟</h2>
-    <p>
-      ستتعرف على الأكواد الأساسية، كيفية إنشاء الصفحات، وإضافة النصوص والصور والأزرار.  
-      بالإضافة إلى أمثلة عملية لتطبيق ما تتعلمه فورًا.
-    </p>
-  </div>
-
-  <!-- عن البرمجة -->
-  <div class="glass-box purple-box fade-up">
-    <h2>💻 لماذا HTML؟</h2>
-    <p>
-      HTML هي حجر الأساس في أي موقع ويب.  
-      فهمها يمنحك القدرة على الدخول إلى عالم تطوير المواقع بثقة.
-    </p>
-  </div>
-
-  <!-- عن المؤلف -->
-  <div class="glass-box fade-up">
-    <h2>👨‍💻 من نحن</h2>
-    <p>
-      نحن فريق <b>FaragDev</b> متخصص في تصميم مواقع احترافية.  
-      هدفنا مساعدتك لتصبح مطور ويب ناجح بخطوات عملية وبسيطة.
-    </p>
-  </div>
-
-  <!-- ======= طرق الشراء ======= -->
-  <div class="payment-box fade-up">
-    <h3>📱 طرق شراء الكتاب</h3>
-    <p>
-      السعر: <b>2 دولار (100 جنيه مصري)</b>
-    </p>
-    <ul class="buy-buttons">
-      <li><a href="https://faragdev98.gumroad.com/l/htmlbook" class="btn green"><i class="fa fa-shopping-cart"></i> شراء عبر Gumroad</a></li>
-      <li><a href="https://payhip.com/b/2cJWp" class="btn orange"><i class="fa fa-credit-card"></i> شراء عبر Payhip</a></li>
-    </ul>
-    <hr>
-    <p>إذا لم يكن لديك فيزا أو بايبال، يمكنك الدفع عبر المحافظ المصرية أو التواصل عبر واتساب:</p>
-    <ul class="pay-buttons">
-      <li>
-        <a href="https://wa.me/201066047545?text=مرحبًا، أريد شراء كتاب HTML" class="btn whatsapp">
-          <i class="fab fa-whatsapp"></i> واتساب مباشر
-        </a>
-      </li>
-      <li><button onclick="copyText('01066047545')"><img src="icons/vodafone.png" alt="Vodafone"> 01066047545 - فودافون كاش</button></li>
-      <li><button onclick="copyText('01285895096')"><img src="icons/orange.png" alt="Orange"> 01285895096 - أورنج كاش</button></li>
-      <li><button onclick="copyText('01558516081')"><img src="icons/we.png" alt="WE"> 01558516081 - وي كاش</button></li>
-    </ul>
-    <button class="btn copy-all" onclick="copyAllNumbers()"><i class="fa fa-copy"></i> نسخ كل الأرقام</button>
-  </div>
-
-</div>
-
-<!-- ======= JavaScript ======= -->
-<script>
-  // نسخ الأرقام
-  function copyText(text) {
-    navigator.clipboard.writeText(text);
-    alert("تم نسخ الرقم: " + text);
-  }
-  function copyAllNumbers() {
-    const numbers = ["01066047545", "01285895096", "01558516081"];
-    navigator.clipboard.writeText(numbers.join(" | "));
-    alert("تم نسخ جميع الأرقام:\n" + numbers.join(" | "));
-  }
-
-  // إظهار الأنيميشن عند السكرول
-  const elements = document.querySelectorAll(".fade-up");
-  window.addEventListener("scroll", () => {
-    elements.forEach(el => {
-      const rect = el.getBoundingClientRect();
-      if (rect.top < window.innerHeight - 80) {
-        el.classList.add("visible");
-      }
-    });
-  });
-
-  // الهيدر يظهر بالحركة
-  window.addEventListener("load", () => {
-    document.getElementById("mainHeader").classList.add("active");
-  });
-
-  // الفيديو يتوقف عند التمرير
-  const video = document.getElementById("myVideo");
-  window.addEventListener("scroll", () => {
-    const rect = video.getBoundingClientRect();
-    if (rect.top < 0 || rect.bottom > window.innerHeight) {
-      if (!video.paused) video.pause();
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: #fff;
+      line-height: 1.8;
     }
-  });
-</script>
+
+    /* ======= الهيدر ======= */
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0,0,0,0.6);
+      backdrop-filter: blur(12px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 25px;
+      z-index: 1000;
+    }
+    header .logo {
+      font-size: 20px;
+      font-weight: bold;
+      color: #ffcc70;
+    }
+    header nav a {
+      margin: 0 12px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    header nav a:hover {
+      color: #ffcc70;
+    }
+
+    /* ======= القسم الرئيسي ======= */
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 0 15px;
+    }
+    .hero img {
+      width: 220px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+      margin-bottom: 20px;
+      transition: transform 0.3s;
+    }
+    .hero img:hover { transform: scale(1.05); }
+    .hero h1 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+    .hero p {
+      max-width: 650px;
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+    .hero .cta {
+      margin-top: 25px;
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .btn {
+      background: linear-gradient(45deg,#6a11cb,#2575fc);
+      border: none;
+      color: #fff;
+      padding: 12px 22px;
+      font-size: 1rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: 0.3s;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .btn:hover {
+      transform: scale(1.05);
+      filter: brightness(1.2);
+    }
+    .btn.green { background: #27ae60; }
+    .btn.orange { background: #e67e22; }
+    .btn.whatsapp { background: #25D366; }
+
+    /* ======= الأقسام ======= */
+    section {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 25px;
+      background: rgba(255,255,255,0.08);
+      border-radius: 18px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+    }
+    section h2 {
+      font-size: 1.6rem;
+      margin-bottom: 15px;
+      color: #ffcc70;
+    }
+
+    /* ======= الدفع ======= */
+    .payment {
+      text-align: center;
+    }
+    .payment ul {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0;
+    }
+    .payment li {
+      margin: 10px 0;
+      font-weight: 600;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      font-size: 0.9rem;
+      background: rgba(0,0,0,0.6);
+      margin-top: 60px;
+    }
+
+    /* ===== موبايل ===== */
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 1.6rem; }
+      .hero img { width: 180px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ======= رأس الصفحة ======= -->
+  <header>
+    <div class="logo">FaragDev</div>
+    <nav>
+      <a href="#">الرئيسية</a>
+      <a href="#about">عن الكتاب</a>
+      <a href="#buy">شراء</a>
+    </nav>
+  </header>
+
+  <!-- ======= القسم الرئيسي ======= -->
+  <section class="hero">
+    <img src="images/html-book-cover.png" alt="غلاف الكتاب">
+    <h1>📘 كتاب HTML للمبتدئين</h1>
+    <p>ابدأ رحلتك في عالم البرمجة مع هذا الكتاب المبسط. ستتعلم لغة HTML خطوة بخطوة لبناء مواقع احترافية من الصفر.</p>
+    <div class="cta">
+      <a href="#buy" class="btn green"><i class="fa fa-shopping-cart"></i> اشترِ الآن</a>
+      <a href="https://wa.me/201066047545?text=مرحبًا، أريد شراء كتاب HTML" class="btn whatsapp"><i class="fab fa-whatsapp"></i> تواصل عبر واتساب</a>
+    </div>
+  </section>
+
+  <!-- ======= عن الكتاب ======= -->
+  <section id="about">
+    <h2>📖 لماذا هذا الكتاب؟</h2>
+    <p>✔️ مناسب للمبتدئين بدون خبرة سابقة  
+       ✔️ شرح عملي خطوة بخطوة  
+       ✔️ أمثلة واقعية لبناء مواقع  
+       ✔️ أساس قوي للانتقال إلى CSS و JavaScript</p>
+  </section>
+
+  <!-- ======= ما ستتعلمه ======= -->
+  <section>
+    <h2>📝 ما الذي ستتعلمه؟</h2>
+    <p>ستتعرف على الأكواد الأساسية، كيفية إنشاء الصفحات، إضافة النصوص والصور والأزرار. كل فصل يحتوي على تطبيق عملي لتتأكد أنك تتعلم وتطبق فورًا.</p>
+  </section>
+
+  <!-- ======= الدفع ======= -->
+  <section class="payment" id="buy">
+    <h2>📱 طرق شراء الكتاب</h2>
+    <p>السعر: <b>2 دولار (100 جنيه مصري)</b></p>
+    <div class="cta">
+      <a href="https://faragdev98.gumroad.com/l/htmlbook" class="btn green"><i class="fa fa-credit-card"></i> شراء عبر Gumroad</a>
+      <a href="https://payhip.com/b/2cJWp" class="btn orange"><i class="fa fa-credit-card"></i> شراء عبر Payhip</a>
+    </div>
+    <hr>
+    <p>طرق دفع محلية:</p>
+    <ul>
+      <li>📱 Vodafone Cash: 01066047545</li>
+      <li>📱 Orange Cash: 01285895096</li>
+      <li>📱 WE Cash: 01558516081</li>
+    </ul>
+  </section>
+
+  <!-- ======= الفوتر ======= -->
+  <footer>
+    © 2025 FaragDev | جميع الحقوق محفوظة
+  </footer>
 
 </body>
 </html>
