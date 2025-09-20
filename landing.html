@@ -2,216 +2,145 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>صفحة هبوط | كتاب HTML</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style>
-    body {
-      margin: 0;
-      font-family: "Segoe UI", sans-serif;
-      background: url("images/5416.jpeg") no-repeat center center fixed;
-      background-size: cover;
-      color: #fff;
-      overflow-x: hidden;
-    }
-
-    /* ===== الهيدر ===== */
-    header {
-      position: fixed;
-      top: -100px;
-      left: 0;
-      width: 100%;
-      background: linear-gradient(90deg, #6a11cb, #2575fc);
-      border-bottom: 1px solid rgba(255,255,255,0.3);
-      padding: 15px 25px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      z-index: 1000;
-      transition: top 1s ease;
-    }
-    header.active { top: 0; }
-    header .logo {
-      font-size: 20px;
-      font-weight: bold;
-    }
-    header nav a {
-      color: #fff;
-      margin: 0 12px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-    header nav a:hover { color: #ffcc00; }
-
-    /* ===== البطل ===== */
-    .hero {
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 20px;
-    }
-    .glass-box {
-      background: rgba(255,255,255,0.08);
-      border: 1px solid rgba(255,255,255,0.4);
-      border-radius: 20px;
-      backdrop-filter: blur(15px);
-      padding: 40px;
-      max-width: 700px;
-      animation: fadeIn 2s ease;
-    }
-    .glass-box h1 {
-      font-size: 34px;
-      margin-bottom: 20px;
-    }
-    .glass-box p {
-      font-size: 18px;
-      margin-bottom: 25px;
-      line-height: 1.6;
-    }
-    .cta-btn {
-      padding: 14px 35px;
-      font-size: 18px;
-      background: linear-gradient(90deg, #ff9966, #ff5e62);
-      border: none;
-      border-radius: 30px;
-      color: #fff;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-    .cta-btn:hover {
-      background: linear-gradient(90deg, #ff5e62, #ff9966);
-      transform: scale(1.05);
-    }
-
-    /* ===== المميزات ===== */
-    .features {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      padding: 60px 20px;
-    }
-    .feature-box {
-      background: rgba(255,255,255,0.1);
-      border: 1px solid rgba(255,255,255,0.4);
-      border-radius: 16px;
-      backdrop-filter: blur(12px);
-      padding: 25px;
-      text-align: center;
-      opacity: 0;
-      transform: translateY(50px);
-      transition: 0.8s;
-    }
-    .feature-box.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    .feature-box i {
-      font-size: 35px;
-      margin-bottom: 15px;
-      color: #ffcc00;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: rgba(0,0,0,0.6);
-      font-size: 16px;
-    }
-
-    @keyframes fadeIn {
-      from {opacity:0; transform: scale(0.95);}
-      to {opacity:1; transform: scale(1);}
-    }
-
-    /* ===== موبايل ===== */
-    @media (max-width: 600px) {
-      .glass-box h1 { font-size: 26px; }
-      .glass-box p { font-size: 16px; }
-      .cta-btn { font-size: 16px; padding: 12px 28px; }
-    }
-  </style>
+  <title>FaragDev | كتاب HTML للمبتدئين</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<body>
+<body class="single-page">
 
-  <!-- الهيدر -->
-  <header id="mainHeader">
-    <div class="logo"><i class="fa fa-code"></i> FaragDev98</div>
-    <nav>
-      <a href="#">الرئيسية</a>
-      <a href="#features">مميزات</a>
-      <a href="#buy">شراء</a>
-      <a href="#contact">تواصل</a>
+<!-- ======= رأس الصفحة ======= -->
+<header class="glass-header" id="mainHeader">
+  <div class="site-title-top">FaragDev98</div>
+  <div class="header-container">
+    <div class="logo">
+      <img src="icons/aiicon.png" alt="شعار FaragDev" />
+    </div>
+    <nav class="nav-buttons">
+      <a href="index.html"><i class="fa fa-home"></i> الرئيسية</a>
+      <a href="article1.html"><i class="fa fa-file-alt"></i> المقالات</a>
+      <a href="contact.html"><i class="fa fa-envelope"></i> تواصل معنا</a>
     </nav>
-  </header>
+  </div>
+</header>
+  
+<!-- ======= فيديو تعريفي ======= -->
+<section class="video-section">
+  <video id="myVideo" poster="images/video-thumbnail.png" controls>
+    <source src="videos/book-preview.mp4" type="video/mp4">
+    متصفحك لا يدعم عرض الفيديو
+  </video>
+</section>
 
-  <!-- البطل -->
-  <section class="hero">
-    <div class="glass-box">
-      <h1>📘 كتاب HTML & CSS</h1>
-      <p>تعلم أساسيات البرمجة مع أمثلة عملية وبأسلوب مبسط<br>صفحة هبوط جذابة وسريعة الاستجابة</p>
-      <button class="cta-btn" onclick="window.location.href='contact.html'">💳 اشترِ الآن</button>
-    </div>
-  </section>
+<!-- ======= الغلاف + المحتوى ======= -->
+<div class="book-section">
 
-  <!-- المميزات -->
-  <section class="features" id="features">
-    <div class="feature-box">
-      <i class="fa fa-laptop-code"></i>
-      <h3>مشروع عملي</h3>
-      <p>تطبيق مباشر يثبت المهارات الجديدة.</p>
-    </div>
-    <div class="feature-box">
-      <i class="fa fa-book"></i>
-      <h3>شرح مبسط</h3>
-      <p>خطوة بخطوة للمبتدئين بسهولة.</p>
-    </div>
-    <div class="feature-box">
-      <i class="fa fa-mobile"></i>
-      <h3>متجاوب</h3>
-      <p>يعمل على جميع الأجهزة (موبايل – تابلت – كمبيوتر).</p>
-    </div>
-    <div class="feature-box">
-      <i class="fa fa-bolt"></i>
-      <h3>سرعة وأداء</h3>
-      <p>صفحة خفيفة وسريعة التحميل.</p>
-    </div>
-    <div class="feature-box">
-      <i class="fa fa-lock"></i>
-      <h3>أمان</h3>
-      <p>تصميم آمن ومتوافق مع أحدث المعايير.</p>
-    </div>
-    <div class="feature-box">
-      <i class="fa fa-star"></i>
-      <h3>تصميم عصري</h3>
-      <p>شكل أنيق يعطي انطباع احترافي.</p>
-    </div>
-  </section>
+  <!-- غلاف الكتاب -->
+  <div class="book-cover-container fade-up">
+    <img src="images/html-book-cover.png" alt="غلاف الكتاب" class="book-cover">
+  </div>
 
-  <!-- الفوتر -->
-  <footer id="contact">
-    © جميع الحقوق محفوظة - FaragDev98
-  </footer>
+  <!-- نبذة عن الكتاب -->
+  <div class="glass-box fade-up">
+    <h2>📖 عن كتاب HTML</h2>
+    <p>
+      هذا الكتاب هو دليلك الكامل لتعلم لغة <b>HTML</b> من الصفر إلى الاحتراف.  
+      ستتعلم بناء صفحات ويب متكاملة مع أمثلة عملية مشروحة خطوة بخطوة.
+    </p>
+  </div>
 
-  <script>
-    // إظهار الهيدر
-    window.addEventListener("load", () => {
-      document.getElementById("mainHeader").classList.add("active");
+  <!-- طريقة الاستخدام -->
+  <div class="glass-box orange-box fade-up">
+    <h2>📝 طريقة استخدام الكتاب</h2>
+    <p>
+      افتح الكتاب وابدأ تنفيذ الأكواد مباشرة في محررك.  
+      ستجد أن كل خطوة مدعومة بشرح عملي لتبني موقعك من البداية للنهاية.
+    </p>
+  </div>
+
+  <!-- عن البرمجة -->
+  <div class="glass-box purple-box fade-up">
+    <h2>💻 عن البرمجة</h2>
+    <p>
+      البرمجة فن التفكير المنطقي وصناعة الحلول.  
+      هذا الكتاب هو أول خطوة لفهم كيف يتفاعل المتصفح مع الأكواد.
+    </p>
+  </div>
+
+  <!-- من نحن -->
+  <div class="glass-box fade-up">
+    <h2>👨‍💻 من نحن</h2>
+    <p>
+      نحن فريق <b>FaragDev</b> متخصص في تصميم مواقع احترافية.  
+      هدفنا تقديم محتوى مبسط يساعدك على دخول عالم البرمجة بسهولة.
+    </p>
+  </div>
+
+  <!-- ======= طرق الشراء ======= -->
+  <div class="payment-box fade-up">
+    <h3>📱 طرق شراء الكتاب</h3>
+    <p>
+      السعر: <b>2 دولار (100 جنيه مصري)</b>
+    </p>
+    <ul class="buy-buttons">
+      <li><a href="https://faragdev98.gumroad.com/l/htmlbook" class="btn green"><i class="fa fa-shopping-cart"></i> Gumroad</a></li>
+      <li><a href="https://payhip.com/b/2cJWp" class="btn orange"><i class="fa fa-credit-card"></i> Payhip</a></li>
+    </ul>
+    <hr>
+    <p>إذا لم يكن لديك فيزا أو بايبال، يمكنك الدفع عبر المحافظ المصرية أو واتساب:</p>
+    <ul class="pay-buttons">
+      <li>
+        <a href="https://wa.me/201066047545?text=مرحبًا، أريد شراء كتاب HTML" class="btn whatsapp">
+          <i class="fab fa-whatsapp"></i> واتساب
+        </a>
+      </li>
+      <li><button onclick="copyText('01066047545')"><img src="icons/vodafone.png" alt="Vodafone"> 01066047545 - فودافون كاش</button></li>
+      <li><button onclick="copyText('01285895096')"><img src="icons/orange.png" alt="Orange"> 01285895096 - أورنج كاش</button></li>
+      <li><button onclick="copyText('01558516081')"><img src="icons/we.png" alt="WE"> 01558516081 - وي كاش</button></li>
+    </ul>
+    <button class="btn copy-all" onclick="copyAllNumbers()"><i class="fa fa-copy"></i> نسخ كل الأرقام</button>
+  </div>
+
+</div>
+
+<!-- ======= JavaScript ======= -->
+<script>
+  // نسخ الأرقام
+  function copyText(text) {
+    navigator.clipboard.writeText(text);
+    alert("تم نسخ الرقم: " + text);
+  }
+  function copyAllNumbers() {
+    const numbers = ["01066047545", "01285895096", "01558516081"];
+    navigator.clipboard.writeText(numbers.join(" | "));
+    alert("تم نسخ جميع الأرقام:\n" + numbers.join(" | "));
+  }
+
+  // إظهار الأنيميشن عند السكرول
+  const elements = document.querySelectorAll(".fade-up");
+  window.addEventListener("scroll", () => {
+    elements.forEach(el => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 80) {
+        el.classList.add("visible");
+      }
     });
+  });
 
-    // إظهار المميزات عند التمرير
-    const boxes = document.querySelectorAll(".feature-box");
-    window.addEventListener("scroll", () => {
-      boxes.forEach(box => {
-        const rect = box.getBoundingClientRect();
-        if(rect.top < window.innerHeight - 50){
-          box.classList.add("visible");
-        }
-      });
-    });
-  </script>
+  // الهيدر يظهر بالحركة
+  window.addEventListener("load", () => {
+    document.getElementById("mainHeader").classList.add("active");
+  });
+
+  // الفيديو يتوقف عند التمرير
+  const video = document.getElementById("myVideo");
+  window.addEventListener("scroll", () => {
+    const rect = video.getBoundingClientRect();
+    if (rect.top < 0 || rect.bottom > window.innerHeight) {
+      if (!video.paused) video.pause();
+    }
+  });
+</script>
+
 </body>
 </html>
