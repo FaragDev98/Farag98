@@ -7,156 +7,163 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
   body {
-  margin: 0;
-  font-family: "Segoe UI", Tahoma, sans-serif;
-  background: 
-    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-    url("images/bg.jpg") no-repeat center center fixed;
-  background-size: cover;
-  color: #fff;
-  line-height: 1.8;
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background: 
+      linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+      url("images/bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    line-height: 1.8;
   }
 
-    /* ======= الهيدر ======= */
-    header {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: rgba(0,0,0,0.6);
-      backdrop-filter: blur(12px);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 12px 25px;
-      z-index: 1000;
-    }
-    header .logo {
-      font-size: 20px;
-      font-weight: bold;
-      color: #ffcc70;
-    }
-    header nav a {
-      margin: 0 12px;
-      color: #fff;
-      text-decoration: none;
-      font-weight: 600;
-      transition: 0.3s;
-    }
-    header nav a:hover {
-      color: #ffcc70;
-    }
+  /* ======= يفطة الهيدر ======= */
+  header.banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #1e3c72, #2a5298, #1e3c72);
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 12px 0;
+    overflow: hidden;
+    z-index: 2000;
+    animation: slideDown 1s ease-out;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    border-bottom: 3px solid #ffcc70;
+  }
 
-    /* ======= القسم الرئيسي ======= */
-    .hero {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      text-align: center;
-      padding: 0 15px;
-    }
-    .hero img {
-      width: 220px;
-      border-radius: 15px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
-      margin-bottom: 20px;
-      transition: transform 0.3s;
-    }
-    .hero img:hover { transform: scale(1.05); }
-    .hero h1 {
-      font-size: 2rem;
-      margin-bottom: 15px;
-    }
-    .hero p {
-      max-width: 650px;
-      font-size: 1.1rem;
-      opacity: 0.9;
-    }
-    .hero .cta {
-      margin-top: 25px;
-      display: flex;
-      gap: 15px;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    .btn {
-      background: linear-gradient(45deg,#6a11cb,#2575fc);
-      border: none;
-      color: #fff;
-      padding: 12px 22px;
-      font-size: 1rem;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: 700;
-      transition: 0.3s;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .btn:hover {
-      transform: scale(1.05);
-      filter: brightness(1.2);
-    }
-    .btn.green { background: #27ae60; }
-    .btn.orange { background: #e67e22; }
-    .btn.whatsapp { background: #25D366; }
+  .marquee {
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  .marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 12s linear infinite;
+  }
 
-    /* ======= الأقسام ======= */
-    section {
-      max-width: 900px;
-      margin: 60px auto;
-      padding: 25px;
-      background: rgba(255,255,255,0.08);
-      border-radius: 18px;
-      backdrop-filter: blur(10px);
-      box-shadow: 0 8px 25px rgba(0,0,0,0.25);
-    }
-    section h2 {
-      font-size: 1.6rem;
-      margin-bottom: 15px;
-      color: #ffcc70;
-    }
+  @keyframes marquee {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
 
-    /* ======= الدفع ======= */
-    .payment {
-      text-align: center;
-    }
-    .payment ul {
-      list-style: none;
-      padding: 0;
-      margin: 20px 0;
-    }
-    .payment li {
-      margin: 10px 0;
-      font-weight: 600;
-    }
+  @keyframes slideDown {
+    from { transform: translateY(-100%); }
+    to   { transform: translateY(0); }
+  }
 
-    footer {
-      text-align: center;
-      padding: 25px;
-      font-size: 0.9rem;
-      background: rgba(0,0,0,0.6);
-      margin-top: 60px;
-    }
+  /* ======= القسم الرئيسي ======= */
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 0 15px;
+  }
+  .hero img {
+    width: 220px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+  }
+  .hero img:hover { transform: scale(1.05); }
+  .hero h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  .hero p {
+    max-width: 650px;
+    font-size: 1.1rem;
+    opacity: 0.9;
+  }
+  .hero .cta {
+    margin-top: 25px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .btn {
+    background: linear-gradient(45deg,#6a11cb,#2575fc);
+    border: none;
+    color: #fff;
+    padding: 12px 22px;
+    font-size: 1rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .btn:hover {
+    transform: scale(1.05);
+    filter: brightness(1.2);
+  }
+  .btn.green { background: #27ae60; }
+  .btn.orange { background: #e67e22; }
+  .btn.whatsapp { background: #25D366; }
 
-    /* ===== موبايل ===== */
-    @media (max-width: 768px) {
-      .hero h1 { font-size: 1.6rem; }
-      .hero img { width: 180px; }
-    }
+  /* ======= الأقسام ======= */
+  section {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 25px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 18px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+  }
+  section h2 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: #ffcc70;
+  }
+
+  /* ======= الدفع ======= */
+  .payment {
+    text-align: center;
+  }
+  .payment ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  .payment li {
+    margin: 10px 0;
+    font-weight: 600;
+  }
+
+  footer {
+    text-align: center;
+    padding: 25px;
+    font-size: 0.9rem;
+    background: rgba(0,0,0,0.6);
+    margin-top: 60px;
+  }
+
+  /* ===== موبايل ===== */
+  @media (max-width: 768px) {
+    .hero h1 { font-size: 1.6rem; }
+    .hero img { width: 180px; }
+  }
   </style>
 </head>
 <body>
 
-  <!-- ======= رأس الصفحة ======= -->
-  <header>
-    <div class="logo">FaragDev</div>
-    <nav>
-      <a href="#">الرئيسية</a>
-      <a href="#about">عن الكتاب</a>
-      <a href="#buy">شراء</a>
-    </nav>
+  <!-- ======= يفطة الهيدر ======= -->
+  <header class="banner">
+    <div class="marquee">
+      <span>📘 كتاب HTML للمبتدئين | FaragDev | تعلم وابدأ رحلتك في البرمجة الآن 🚀</span>
+    </div>
   </header>
 
   <!-- ======= القسم الرئيسي ======= -->
@@ -174,10 +181,9 @@
   <section id="about">
     <h2>📖 لماذا هذا الكتاب؟</h2>
     <p>مناسب للمبتدئين بدون خبرة سابقة  
-        شرح عملي خطوة بخطوة  
-       
-      أمثلة واقعية لبناء مواقع      
-    أساس قوي للانتقال إلى CSS و JavaScript</p>
+       ✔️ شرح عملي خطوة بخطوة  
+       ✔️ أمثلة واقعية لبناء مواقع  
+       ✔️ أساس قوي للانتقال إلى CSS و JavaScript</p>
   </section>
 
   <!-- ======= ما ستتعلمه ======= -->
