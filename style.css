@@ -1,44 +1,25 @@
-/* ===== الخلفية العامة ===== */
+/* ===== إعدادات عامة ===== */
 body {
   margin: 0;
   font-family: "Segoe UI", sans-serif;
-  background: url("images/5416.jpeg") no-repeat center center fixed;
-  background-size: cover;
-  color: white;
+  background: #ffffff; /* خلفية بيضاء */
+  color: #333;
   line-height: 1.8;
 }
-/* ===== الهيدر الزجاجي ===== */
+
+/* ===== الهيدر الجديد ===== */
 .glass-header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 25px;
-  background: rgba(255, 255, 255, 0.08);
-  border-radius: 20px;
-  margin: 15px;
-  backdrop-filter: blur(8px);
-  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
-}
-
-/* ===== أزرار زجاجية ===== */
-.glass-btn {
-  background: rgba(255, 255, 255, 0.15);
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  color: #fff;
-  padding: 8px 18px;
-  border-radius: 25px;
-  font-size: 14px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: 0.3s ease-in-out;
-  text-decoration: none;
-  backdrop-filter: blur(6px);
-  margin: 0 5px;
-}
-.glass-btn:hover {
-  background: rgba(255, 255, 255, 0.35);
-  color: #222;
-  transform: translateY(-3px);
+  padding: 12px 20px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
 }
 
 /* ===== عنوان اللوجو ===== */
@@ -46,316 +27,154 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
+  color: #6c5ce7;
 }
 
-/* ===== الكروت الزجاجية ===== */
+/* ===== أزرار الهيدر ===== */
+.glass-btn {
+  background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+  border: none;
+  color: white;
+  padding: 9px 20px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+  margin: 0 5px;
+  box-shadow: 0 4px 12px rgba(108, 92, 231, .3);
+}
+.glass-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(108, 92, 231, .45);
+}
+
+/* ===== كروت لامعة ===== */
 .glass-card {
-  background: rgba(255, 255, 255, 0.12);
-  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 18px;
   padding: 20px;
   margin: 25px;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
-  transition: 0.3s;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 6px 25px rgba(0,0,0,0.1);
+  transition: .3s;
 }
 .glass-card:hover {
   transform: scale(1.02);
 }
-/* ===== قسم الفيديو ===== */
+
+/* ===== فيديو ===== */
 .video-section {
   display: flex;
   justify-content: center;
-  margin: 30px auto;
+  margin: 40px auto;
   padding: 20px;
-  background: rgba(255,255,255,0.12);
-  backdrop-filter: blur(12px);
+  background: rgba(255,255,255,0.85);
   border-radius: 18px;
   max-width: 900px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
 }
 .video-section video {
   width: 100%;
-  max-width: 700px;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  border-radius: 14px;
 }
-/* ===== قسم النبذة ===== */
+
+/* ===== قسم نبذة — المربع الأخضر الجديد ===== */
 .about-section {
-  background: rgba(0, 128, 0, 0.2);
-  border-radius: 15px;
+  background: rgba(108, 92, 231, 0.15);
+  border-radius: 18px;
   padding: 25px;
   margin: 25px;
-  max-width: 450px;
+  max-width: 500px;
   float: right;
   text-align: right;
-  backdrop-filter: blur(6px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 1s ease, transform 1s ease;
-}
-.about-section.show {
-  opacity: 1;
-  transform: translateY(0);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 6px 20px rgba(108, 92, 231, 0.3);
 }
 .about-section h2 {
   font-size: 28px;
-  color: #00ff99;
-  margin-bottom: 15px;
+  color: #6c5ce7;
+  margin-bottom: 10px;
 }
 .about-section p {
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 2;
-  color: #f1f1f1;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-.about-section .certificate-img {
-  width: 320px;
-  border-radius: 14px;
-  margin-top: 15px;
-  box-shadow: 0 8px 20px rgba(0, 128, 0, 0.6);
+  font-size: 18px;
+  color: #333;
+  font-weight: 500;
 }
 
-/* ===== قسم الفيديو ===== */
-.video-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin: 40px auto;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 1s ease, transform 1s ease;
-}
-.video-section.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-.video-section video {
-  width: 80%;
-  max-width: 700px;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-}
-
-/* ===== قسم المشاريع ===== */
+/* ===== المشاريع ===== */
 .portfolio {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 25px;
   padding: 40px 15px;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 1s ease, transform 1s ease;
 }
-
-.portfolio.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 .works {
-  background: rgba(255, 255, 255, 0.1); /* خلفية شفافة */
-  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 18px;
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
   text-align: center;
   width: 90%;
   max-width: 400px;
-  transition: transform 0.3s, box-shadow 0.3s;
-  backdrop-filter: blur(8px); /* تأثير زجاجي */
+  backdrop-filter: blur(6px);
 }
-
-.works:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 25px rgba(0,0,0,0.3);
-}
-
 .works img {
   width: 100%;
   height: 200px;
   object-fit: cover;
 }
-
 .works h3 {
   margin: 15px 0 5px;
   font-size: 20px;
-  color: #fff; /* خط أبيض يبان على الخلفية */
+  color: #6c5ce7;
 }
-
-.works p {
-  font-size: 14px;
-  color: #ddd; /* لون رمادي فاتح */
-  padding: 0 10px;
-}
-
 .works a {
   display: inline-block;
   margin: 15px 0;
   padding: 10px 20px;
-  background: #6c5ce7; /* بنفسجي ناعم */
+  background: linear-gradient(135deg, #6c5ce7, #a29bfe);
   color: white;
   text-decoration: none;
-  border-radius: 8px;
-  transition: background 0.3s;
+  border-radius: 10px;
+  transition: .3s;
 }
-
 .works a:hover {
-  background: #a29bfe;
+  transform: translateY(-3px);
 }
 
 /* ===== صفحة التواصل ===== */
-
 .contact-section {
-  max-width: 700px;
-  margin: 40px auto;
-  padding: 25px;
-  background: rgba(255, 255, 255, 0.12);
+  background: rgba(255,255,255,0.9);
+  padding: 30px;
+  margin: 30px auto;
   border-radius: 20px;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  max-width: 700px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
   text-align: center;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 1s ease, transform 1s ease;
-}
-.contact-section.show {
-  opacity: 1;
-  transform: translateY(0);
 }
 .contact-section h2 {
+  color: #6c5ce7;
   font-size: 26px;
   margin-bottom: 20px;
-  color: #ffd6ff;
-}
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
 }
 .contact-form input,
 .contact-form textarea {
-  padding: 12px 15px;
-  border: none;
-  border-radius: 12px;
-  outline: none;
-  font-size: 15px;
-  background: rgba(255, 255, 255, 0.15);
-  color: white;
-  backdrop-filter: blur(6px);
-}
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
-  color: #ddd;
-}
-.contact-form button {
-  background: #6c5ce7;
-  color: white;
-  padding: 12px;
-  border: none;
-  border-radius: 12px;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.3s;
-}
-.contact-form button:hover {
-  background: #a29bfe;
-  transform: translateY(-3px);
-}
-/* أيقونات التواصل */
-.contact-icons {
-  margin-top: 25px;
-}
-.contact-icons a {
-  margin: 0 10px;
-  font-size: 22px;
-  color: white;
-  transition: 0.3s;
-}
-.contact-icons a:hover {
-  color: #ffd6ff;
-  transform: scale(1.2);
+  background: rgba(255,255,255,0.8);
+  color: #333;
 }
 
-/* ===== الفوتر ===== */
+/* ===== فوتر ===== */
 .social-footer {
+  background: rgba(255,255,255,0.85);
+  border-radius: 18px;
+  padding: 15px;
+  margin: 30px;
   text-align: center;
-  padding: 20px;
-  margin: 25px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
-  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 18px rgba(0,0,0,0.1);
+  color: #6c5ce7;
 }
-/* ===== قسم المشاريع ===== */
-.portfolio {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 25px;
-  padding: 40px 15px;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 1s ease, transform 1s ease;
-}
-
-.portfolio.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.works {
-  background: rgba(255, 255, 255, 0.1); /* خلفية شفافة */
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-  text-align: center;
-  width: 90%;
-  max-width: 400px;
-  transition: transform 0.3s, box-shadow 0.3s;
-  backdrop-filter: blur(8px); /* تأثير زجاجي */
-}
-
-.works:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 25px rgba(0,0,0,0.3);
-}
-
-.works img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.works h3 {
-  margin: 15px 0 5px;
-  font-size: 20px;
-  color: #fff; /* خط أبيض يبان على الخلفية */
-}
-
-.works p {
-  font-size: 14px;
-  color: #ddd; /* لون رمادي فاتح */
-  padding: 0 10px;
-}
-
-.works a {
-  display: inline-block;
-  margin: 15px 0;
-  padding: 10px 20px;
-  background: #6c5ce7; /* بنفسجي ناعم */
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  transition: background 0.3s;
-}
-
-.works a:hover {
-  background: #a29bfe;
-}
-   
